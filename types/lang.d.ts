@@ -1,0 +1,1 @@
+type LangType = 'en' | 'ar';
