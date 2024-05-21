@@ -10,9 +10,15 @@ export default function PartnerCard({ name, logo, link }: Props) {
   return (
     <Link
       href={link}
-      className='flex w-[300px] items-center justify-center rounded-xl bg-white py-6 drop-shadow-[0_6px_24px_0_rgba(115,174,40,0.15)]'
+      className=' flex h-[7.5rem] w-full items-center justify-center rounded-xl bg-white px-8 py-4 shadow-[0_6px_24px_0_rgba(115,174,40,0.15)] '
     >
-      <Image src={logo} alt={name} className='h-full w-full' />
+      <Image
+        src={logo}
+        alt={name}
+        height={88}
+        width={230}
+        className='h-full w-full object-contain'
+      />
     </Link>
   );
 }
