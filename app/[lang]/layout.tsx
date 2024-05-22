@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import React from 'react';
 import { getDir } from '@/lib/utils';
+import Footer from '@/components/footer';
 
 const myFont = localFont({
   src: [
@@ -59,7 +60,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={lang} dir={getDir(lang)}>
-      <body className={myFont.className}>{children}</body>
+      <body className={myFont.className}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
