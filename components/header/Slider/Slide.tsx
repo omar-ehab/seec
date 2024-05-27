@@ -39,15 +39,15 @@ export default function Slide({
       <div
         className={'absolute inset-0 z-10 h-full w-full bg-black opacity-50'}
       ></div>
-      <div className={'absolute bottom-32 z-20 h-40 w-full px-[84px] '}>
+      <div className={'absolute bottom-32 z-20 h-40 w-full px-6 md:px-[84px]'}>
         <h2
           className={
-            'mb-8 max-w-[950px] text-[40px] font-bold leading-[64px] text-white'
+            'mb-8 max-w-[950px] text-2xl font-bold text-white lg:text-[40px] lg:leading-[64px]'
           }
         >
           {title}
         </h2>
-        <div className={'flex items-center gap-8'}>
+        <div className={'flex w-full items-center gap-8 md:w-auto'}>
           {buttonTitle && buttonUrl ? (
             <Link
               href={buttonUrl}

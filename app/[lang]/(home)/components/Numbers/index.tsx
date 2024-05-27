@@ -10,7 +10,7 @@ import EcoEnergyIcon from '@/components/icons/colored/EcoEnergyIcon';
 
 const SvgFilter = () => {
   return (
-    <svg className='flt_svg' xmlns='http://www.w3.org/2000/svg'>
+    <svg className='flt_svg ' xmlns='http://www.w3.org/2000/svg'>
       <defs>
         <filter id='flt_tag'>
           <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
@@ -38,11 +38,21 @@ export default function Index() {
           }
         ></span>
       </div>
-      <div className={'grid grid-cols-12 gap-6 bg-[#F4F9F7] px-20 pb-16'}>
+      <div
+        className={
+          'px grid grid-cols-12 gap-6 bg-[#F4F9F7] px-6 pb-16 md:px-20'
+        }
+      >
         <div className={'col-span-12'}>
-          <h2 className={'text-4xl font-bold text-black'}>كفاءة في الأرقام</h2>
+          <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
+            كفاءة في الأرقام
+          </h2>
         </div>
-        <div className={'col-span-6 grid grid-cols-2 gap-6'}>
+        <div
+          className={
+            'col-span-full grid grid-cols-2 gap-4 md:gap-6 lg:col-span-7 xl:col-span-6'
+          }
+        >
           <NumberCard
             title={'توفير'}
             number={425}
@@ -85,7 +95,7 @@ export default function Index() {
             Icon={LearnIcon}
           />
         </div>
-        <div className={'relative col-span-6'}>
+        <div className={'relative hidden lg:col-span-5 lg:block xl:col-span-6'}>
           <div
             className={'relative z-10 h-full'}
             style={{

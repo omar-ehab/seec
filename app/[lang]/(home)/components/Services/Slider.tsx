@@ -17,7 +17,7 @@ export default function Slider({ className, setSwiper }: Props) {
   return (
     <Swiper
       spaceBetween={24}
-      slidesPerView={3.25}
+      slidesPerView={'auto'}
       slidesOffsetBefore={80}
       slidesOffsetAfter={80}
       className={className}
