@@ -16,7 +16,7 @@ export default function Services() {
         <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
           خدماتنا ومبادراتنا
         </h2>
-        <div className={'flex hidden items-center gap-6 md:flex'}>
+        <div className={'hidden items-center gap-6 md:flex'}>
           <div className={'flex  items-center gap-4'}>
             <button
               onClick={() => {
