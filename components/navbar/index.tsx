@@ -18,9 +18,8 @@ type Props = {
 export default function Navbar({ lang, className }: Props) {
   const pathname = usePathname();
   const controls = useAnimationControls();
-  const [isTransparent, setIsTransparent] = useState<boolean>(
-    pathname === `/${lang}`
-  );
+
+  const [isTransparent, setIsTransparent] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<string | null>(null);
 
   useEffect(() => {
@@ -31,7 +30,9 @@ export default function Navbar({ lang, className }: Props) {
       })
       .then(() => {
         if (activeTab === null) {
-          setIsTransparent(true);
+          if (pathname === `/${lang}`) {
+            setIsTransparent(true);
+          }
         }
       });
   }, [activeTab, controls]);
@@ -41,11 +42,12 @@ export default function Navbar({ lang, className }: Props) {
       if (oldTab === activeTab) {
         return null;
       }
-      setIsTransparent(false);
+      if (pathname === `/${lang}`) {
+        setIsTransparent(false);
+      }
       return activeTab;
     });
   };
-
   return (
     <>
       <nav
@@ -117,7 +119,7 @@ export default function Navbar({ lang, className }: Props) {
               role='listitem'
             >
               <Link
-                href={'/'}
+                href={`/${lang}/online-services`}
                 className={cn('', {
                   'text-[#7E8989] hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,
@@ -131,10 +133,12 @@ export default function Navbar({ lang, className }: Props) {
               role='listitem'
             >
               <Link
-                href={'/'}
+                href={`/${lang}/rules`}
                 className={cn('', {
                   'text-[#7E8989] hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,
+                  'font-medium text-black':
+                    pathname === `/${lang}/rules` && !isTransparent,
                 })}
               >
                 اللوائح والانظمة
@@ -173,7 +177,7 @@ export default function Navbar({ lang, className }: Props) {
               role='listitem'
             >
               <Link
-                href={'/'}
+                href={`/${lang}/careers`}
                 className={cn('', {
                   'text-[#7E8989] hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,
@@ -187,7 +191,7 @@ export default function Navbar({ lang, className }: Props) {
               role='listitem'
             >
               <Link
-                href={'/'}
+                href={`/${lang}/contact-us`}
                 className={cn('', {
                   'text-[#7E8989] hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,

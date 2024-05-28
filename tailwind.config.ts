@@ -71,6 +71,9 @@ const config = {
       backgroundImage: {
         footer: "url('../../public/footer.png')",
       },
+      boxShadow: {
+        mini_call_to_action: '0px 1px 24px 0px #2020211A;',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
