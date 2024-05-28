@@ -23,7 +23,7 @@ export default function Services() {
                 }
               }}
               className={
-                'flex size-12 items-center justify-center rounded-full border border-white bg-white text-[#7E8989] hover:bg-primary/10 hover:text-primary'
+                'text-sub_p flex size-12 items-center justify-center rounded-full border border-white bg-white hover:bg-primary/10 hover:text-primary'
               }
             >
               <ArrowRightIcon />
@@ -35,7 +35,7 @@ export default function Services() {
                 }
               }}
               className={
-                'flex size-12 items-center justify-center rounded-full border border-white bg-white text-[#7E8989] hover:bg-primary/10 hover:text-primary'
+                'text-sub_p flex size-12 items-center justify-center rounded-full border border-white bg-white hover:bg-primary/10 hover:text-primary'
               }
             >
               <ArrowLeftIcon />

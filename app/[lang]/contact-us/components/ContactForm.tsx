@@ -117,7 +117,7 @@ export default function ContactForm() {
                       />
                       <label
                         htmlFor='question'
-                        className='inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm text-[#7E8989] hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
+                        className='text-sub_p inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
                       >
                         سؤال
                       </label>
@@ -135,7 +135,7 @@ export default function ContactForm() {
                       />
                       <label
                         htmlFor='complaint'
-                        className='inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm text-[#7E8989] hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
+                        className='text-sub_p inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
                       >
                         شكوى
                       </label>
@@ -153,7 +153,7 @@ export default function ContactForm() {
                       />
                       <label
                         htmlFor='suggestion'
-                        className='inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm text-[#7E8989] hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
+                        className='text-sub_p inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
                       >
                         إقتراح
                       </label>
@@ -171,7 +171,7 @@ export default function ContactForm() {
                       />
                       <label
                         htmlFor='request'
-                        className='inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm text-[#7E8989] hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
+                        className='text-sub_p inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
                       >
                         طلب
                       </label>

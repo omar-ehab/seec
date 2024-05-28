@@ -30,8 +30,8 @@ export default function RulesPage({ params: { lang } }: Props) {
       </PageHeader>
       <section className={'mb-24 mt-10 px-20'}>
         <div className={'mb-6 flex items-center justify-between'}>
-          <Filters lang={lang} />
-          <SearchInput lang={lang} />
+          <Filters />
+          <SearchInput />
         </div>
         <div className={'mb-8'}>
           <SubFilters lang={lang} />

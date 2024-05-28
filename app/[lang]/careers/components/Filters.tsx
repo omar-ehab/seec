@@ -9,11 +9,11 @@ export default function Filters() {
   const params = useSearchParams();
 
   return (
-    <ul className={'flex items-center gap-4 text-[#7E8989]'}>
+    <ul className={'text-sub_p flex items-center gap-4'}>
       <li>
         <Link
           href={pathname}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               params.get('type') === null,
           })}
@@ -24,7 +24,7 @@ export default function Filters() {
       <li>
         <Link
           href={`${pathname}?type=development`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               params.get('type') === 'development',
           })}
@@ -35,7 +35,7 @@ export default function Filters() {
       <li>
         <Link
           href={`${pathname}?type=design`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               params.get('type') === 'design',
           })}
@@ -46,7 +46,7 @@ export default function Filters() {
       <li>
         <Link
           href={`${pathname}?type=hr`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               params.get('type') === 'hr',
           })}

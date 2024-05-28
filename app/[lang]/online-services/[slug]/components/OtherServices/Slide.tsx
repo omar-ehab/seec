@@ -1,6 +1,5 @@
-import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 type Props = {
   src: any;
@@ -8,12 +7,7 @@ type Props = {
   description: string;
   className?: string;
 };
-export default function ServiceCard({
-  src,
-  title,
-  description,
-  className,
-}: Props) {
+export default function Slide({ src, title, description, className }: Props) {
   return (
     <div
       className={cn(
@@ -28,14 +22,13 @@ export default function ServiceCard({
       >
         <Image src={src} alt={title} width={64} height={64} />
       </div>
-      <Link
-        href={`/online-services/slug`}
+      <p
         className={
           'text-[1.25rem] font-medium text-black group-hover:text-white'
         }
       >
         {title}
-      </Link>
+      </p>
       <p className={'text-sm text-black/50 group-hover:text-white/50'}>
         {description}
       </p>

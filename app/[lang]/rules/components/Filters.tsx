@@ -9,11 +9,11 @@ export default function Filters({ lang }: { lang: LangType }) {
   const params = useSearchParams();
 
   return (
-    <ul className={'flex items-center gap-4 text-[#7E8989]'}>
+    <ul className={'text-sub_p flex items-center gap-4'}>
       <li>
         <Link
           href={`/${lang}/rules`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               pathname === `/${lang}/rules` && params.get('type') === null,
           })}
@@ -24,7 +24,7 @@ export default function Filters({ lang }: { lang: LangType }) {
       <li>
         <Link
           href={`/${lang}/rules?type=systems`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               pathname === `/${lang}/rules` && params.get('type') === 'systems',
           })}
@@ -35,7 +35,7 @@ export default function Filters({ lang }: { lang: LangType }) {
       <li>
         <Link
           href={`/${lang}/rules?type=regulations`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               pathname === `/${lang}/rules` &&
               params.get('type') === 'regulations',
@@ -47,7 +47,7 @@ export default function Filters({ lang }: { lang: LangType }) {
       <li>
         <Link
           href={`/${lang}/rules?type=evidence`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               pathname === `/${lang}/rules` &&
               params.get('type') === 'evidence',

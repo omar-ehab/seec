@@ -9,11 +9,11 @@ export default function Filters() {
   const params = useSearchParams();
 
   return (
-    <ul className={'flex items-center gap-4 text-[#7E8989]'}>
+    <ul className={'text-sub_p flex items-center gap-4'}>
       <li>
         <Link
           href={pathname}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               params.get('type') === null,
           })}
@@ -23,8 +23,8 @@ export default function Filters() {
       </li>
       <li>
         <Link
-          href={`${pathname}?type=systems`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          href={`${pathname}?type=programs`}
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               params.get('type') === 'programs',
           })}
@@ -34,8 +34,8 @@ export default function Filters() {
       </li>
       <li>
         <Link
-          href={`${pathname}?type=regulations`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          href={`${pathname}?type=sectors`}
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               params.get('type') === 'sectors',
           })}
@@ -45,8 +45,8 @@ export default function Filters() {
       </li>
       <li>
         <Link
-          href={`${pathname}?type=evidence`}
-          className={cn('flex items-center text-[#7E8989] hover:text-primary', {
+          href={`${pathname}?type=initiatives`}
+          className={cn('text-sub_p flex items-center hover:text-primary', {
             'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
               params.get('type') === 'initiatives',
           })}

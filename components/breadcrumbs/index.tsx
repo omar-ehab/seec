@@ -21,11 +21,11 @@ export default function Breadcrumbs({ items, className }: Props) {
           <>
             <BreadcrumbItem key={item.title}>
               {idx === items.length - 1 ? (
-                <BreadcrumbPage className={'font-medium text-[#7E8989]'}>
+                <BreadcrumbPage className={'text-sub_p font-medium'}>
                   {item.title}
                 </BreadcrumbPage>
               ) : (
-                <BreadcrumbLink href={item.href} className={'text-[#7E8989]'}>
+                <BreadcrumbLink href={item.href} className={'text-sub_p'}>
                   {item.title}
                 </BreadcrumbLink>
               )}

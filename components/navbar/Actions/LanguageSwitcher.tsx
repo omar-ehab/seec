@@ -14,13 +14,13 @@ export default function LanguageSwitcher({ lang, isTransparent }: Props) {
   return (
     <Link
       href={newPathname}
-      className={cn('group flex items-center gap-1 text-[#7E8989]', {
+      className={cn('text-sub_p group flex items-center gap-1', {
         'text-[rgba(255,255,255,.75)]': isTransparent,
       })}
     >
       <LanguageCircleIcon
         size={24}
-        className={cn('text-[#7E8989] group-hover:text-black', {
+        className={cn('text-sub_p group-hover:text-black', {
           'text-[rgba(255,255,255,.75)] group-hover:text-white': isTransparent,
         })}
       />

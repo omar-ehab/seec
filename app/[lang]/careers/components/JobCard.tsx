@@ -16,7 +16,7 @@ export default function JobCard({ category, title, link, className }: Props) {
         className
       )}
     >
-      <span className={'mb-2 text-sm text-[#7E8989] group-hover:text-white/75'}>
+      <span className={'text-sub_p mb-2 text-sm group-hover:text-white/75'}>
         {category}
       </span>
       <p className={'mb-4 text-xl text-black group-hover:text-white'}>
@@ -26,14 +26,14 @@ export default function JobCard({ category, title, link, className }: Props) {
         <Link
           href={link}
           className={
-            'rounded-full bg-black/5 px-4 py-2 text-[#7E8989] group-hover:bg-black/25 group-hover:text-white'
+            'text-sub_p rounded-full bg-black/5 px-4 py-2 group-hover:bg-black/25 group-hover:text-white'
           }
         >
           معاينة
         </Link>
         <button
           className={
-            'flex items-center gap-1 text-[#7E8989] hover:text-primary group-hover:text-white'
+            'text-sub_p flex items-center gap-1 hover:text-primary group-hover:text-white'
           }
         >
           <ShareIcon className={'mt-1'} />

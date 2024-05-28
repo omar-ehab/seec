@@ -15,6 +15,7 @@ const config = {
     extend: {
       colors: {
         black: '#202021',
+        sub_p: '#7E8989',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

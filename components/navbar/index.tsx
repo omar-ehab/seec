@@ -77,7 +77,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}`}
                 className={cn('', {
-                  'text-[#7E8989]': !isTransparent && pathname !== `/${lang}`,
+                  'text-sub_p': !isTransparent && pathname !== `/${lang}`,
                   'text-black': !isTransparent && pathname === `/${lang}`,
                   'text-white/75': isTransparent && pathname !== `/${lang}`,
                   'text-white': isTransparent && pathname === `/${lang}`,
@@ -93,7 +93,7 @@ export default function Navbar({ lang, className }: Props) {
               <button
                 type={'button'}
                 className={cn('flex grow items-center gap-1', {
-                  'text-[#7E8989] hover:text-black': !isTransparent,
+                  'text-sub_p hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,
                 })}
                 onClick={() => openMenu('about_center')}
@@ -121,7 +121,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}/online-services`}
                 className={cn('', {
-                  'text-[#7E8989] hover:text-black': !isTransparent,
+                  'text-sub_p hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,
                 })}
               >
@@ -135,7 +135,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}/rules`}
                 className={cn('', {
-                  'text-[#7E8989] hover:text-black': !isTransparent,
+                  'text-sub_p hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,
                   'font-medium text-black':
                     pathname === `/${lang}/rules` && !isTransparent,
@@ -151,7 +151,7 @@ export default function Navbar({ lang, className }: Props) {
               <button
                 type={'button'}
                 className={cn('flex grow items-center gap-1', {
-                  'text-[#7E8989] hover:text-black': !isTransparent,
+                  'text-sub_p hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,
                 })}
                 onClick={() => openMenu('media_center')}
@@ -179,7 +179,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}/careers`}
                 className={cn('', {
-                  'text-[#7E8989] hover:text-black': !isTransparent,
+                  'text-sub_p hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,
                 })}
               >
@@ -193,7 +193,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}/contact-us`}
                 className={cn('', {
-                  'text-[#7E8989] hover:text-black': !isTransparent,
+                  'text-sub_p hover:text-black': !isTransparent,
                   'text-white/75 hover:text-white': isTransparent,
                 })}
               >

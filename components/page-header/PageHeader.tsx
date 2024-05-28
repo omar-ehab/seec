@@ -1,15 +1,18 @@
 import React from 'react';
 import Breadcrumbs from '@/components/breadcrumbs';
 import { BreadcrumbItemType } from '@/types/breadcrumb-item';
+import { cn } from '@/lib/utils';
 
 type Props = {
   breadcrumbItems: BreadcrumbItemType[];
   title: string;
+  skewBottomClass?: string;
   children: React.ReactNode;
 };
 export default function PageHeader({
   breadcrumbItems,
   title,
+  skewBottomClass,
   children,
 }: Props) {
   return (
@@ -31,7 +34,10 @@ export default function PageHeader({
           }
         ></span>
         <span
-          className={'skewed-b absolute top-0 block h-full w-full bg-[#FFFFFF]'}
+          className={cn(
+            `skewed-b absolute top-0 block h-full w-full bg-[#FFFFFF]`,
+            skewBottomClass
+          )}
         ></span>
       </div>
     </div>

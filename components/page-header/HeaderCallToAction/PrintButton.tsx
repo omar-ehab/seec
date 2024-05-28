@@ -4,7 +4,7 @@ import PrinterIcon from '@/components/icons/PrinterIcon';
 export default function PrintButton() {
   return (
     <button
-      className={'flex items-center gap-1 text-[#7E8989] hover:text-primary'}
+      className={'text-sub_p flex items-center gap-1 hover:text-primary'}
       onClick={() => {
         window.print();
       }}

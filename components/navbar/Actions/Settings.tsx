@@ -27,7 +27,7 @@ export default function Settings({ isTransparent }: Props) {
           className={cn({
             'text-[rgba(255,255,255,0.75)] group-hover:text-white':
               isTransparent,
-            'text-[#7E8989] group-hover:text-black': !isTransparent,
+            'text-sub_p group-hover:text-black': !isTransparent,
           })}
         />
       </DropdownMenuTrigger>

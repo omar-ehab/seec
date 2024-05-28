@@ -5,40 +5,53 @@ import SearchAddIcon from '@/components/icons/SearchAddIcon';
 import { Separator } from '@/components/ui/separator';
 import ShareIcon from '@/components/icons/ShareIcon';
 import PrintButton from '@/components/page-header/HeaderCallToAction/PrintButton';
+import StarIcon from '@/components/icons/colored/StarIcon';
 
 type Props = {
   numberOfViews: number;
+  rate?: number;
 };
-export default function HeaderCallToAction({ numberOfViews }: Props) {
+export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
   return (
     <div
       className={
         'flex h-16 w-full items-center justify-between rounded-2xl bg-white p-5 shadow-mini_call_to_action '
       }
     >
-      <p className={'text-[#7E8989]'}>
-        <span className={'ml-1'}>{numberOfViews}</span>
-        مشاهدة
-      </p>
+      <div className={'flex items-center gap-2'}>
+        {rate ? (
+          <>
+            <div className={'flex items-center gap-2'}>
+              <StarIcon />
+              <span className={'ml-1'}>{rate}/5</span>
+            </div>
+            <span>.</span>
+          </>
+        ) : null}
+        <p className={'text-sub_p'}>
+          <span className={'ml-1'}>{numberOfViews}</span>
+          مشاهدة
+        </p>
+      </div>
       <div className={'flex h-6 items-center gap-4'}>
         <ul className={'flex items-center gap-4'}>
           <li>
-            <button className={'text-[#7E8989]'}>
+            <button className={'text-sub_p'}>
               <VolumeUpIcon className={'hover:text-primary'} />
             </button>
           </li>
           <li>
-            <button className={'text-[#7E8989]'}>
+            <button className={'text-sub_p'}>
               <EyeIcon className={'hover:text-primary'} />
             </button>
           </li>
           <li>
-            <button className={'text-[#7E8989]'}>
+            <button className={'text-sub_p'}>
               <SearchMinusIcon className={'hover:text-primary'} />
             </button>
           </li>
           <li>
-            <button className={'text-[#7E8989]'}>
+            <button className={'text-sub_p'}>
               <SearchAddIcon className={'hover:text-primary'} />
             </button>
           </li>
@@ -47,9 +60,7 @@ export default function HeaderCallToAction({ numberOfViews }: Props) {
         <PrintButton />
         <Separator orientation={'vertical'} />
         <button
-          className={
-            'flex items-center gap-1 text-[#7E8989] hover:text-primary'
-          }
+          className={'text-sub_p flex items-center gap-1 hover:text-primary'}
         >
           <ShareIcon />
           <span className={'ml-1'}>مشاركة</span>

@@ -7,7 +7,7 @@ export default function Subscribe() {
     <div className={'relative'}>
       <Input
         className={
-          ' h-12 min-w-[420px] rounded-full placeholder:text-[#7E8989] focus-visible:ring-primary'
+          ' placeholder:text-sub_p h-12 min-w-[420px] rounded-full focus-visible:ring-primary'
         }
         placeholder={'ادخل بريدك الإلكتروني'}
       />
