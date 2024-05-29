@@ -36,16 +36,16 @@ export default function Footer() {
           src={footerImage}
           priority
           alt={'footer'}
-          className={'absolute top-0 z-0 h-full w-full'}
+          className={'absolute top-0 z-0 h-full md:w-full'}
         />
-        <div className={'relative z-10 pt-[196px]'}>
-          <div className={'px-20'}>
+        <div className={' relative z-10 pt-[196px]'}>
+          <div className={'px-6 md:px-20'}>
             <div
               className={
-                'mb-8 flex w-full items-center justify-between rounded-2xl border border-[rgba(255,255,255,.25)] px-[68px] py-[45px]'
+                'mb-8 flex w-full flex-col items-center justify-between gap-4 rounded-2xl md:py-[45px] lg:flex-row  lg:gap-0 lg:border lg:border-[rgba(255,255,255,.25)]  lg:px-[68px]'
               }
             >
-              <div>
+              <div className='text-center lg:text-start'>
                 <h3 className={'mb-4 text-2xl font-bold text-white'}>
                   تابع آخر أخبارنا
                 </h3>
@@ -55,8 +55,12 @@ export default function Footer() {
               </div>
               <Subscribe />
             </div>
-            <div className={'z-50 mb-12 grid grid-cols-1 gap-6 lg:grid-cols-4'}>
-              <div>
+            <div
+              className={
+                'z-50 mb-12 grid grid-cols-1 gap-8 lg:grid-cols-4 lg:gap-6'
+              }
+            >
+              <div className='md:order-0 order-2'>
                 <p className={'mb-6 text-xl font-medium text-white'}>
                   روابط مهمة
                 </p>
@@ -80,7 +84,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className='md:order-0 order-1'>
                 <p className={'mb-6 text-xl font-medium text-white'}>
                   اقسام الموقع
                 </p>
@@ -107,7 +111,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className='md:order-0 order-0'>
                 <p className={'mb-6 text-xl font-medium text-white'}>
                   المساعدة والدعم
                 </p>
@@ -129,7 +133,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className='md:order-0 order-3'>
                 <p className={'mb-6 text-xl font-medium text-white'}>
                   معلومات التواصل
                 </p>
@@ -249,11 +253,11 @@ export default function Footer() {
           </div>
           <div
             className={
-              'flex w-full items-center justify-between bg-black/25 px-20 py-2'
+              'flex w-full  flex-col items-center justify-between gap-4 bg-black/25 p-6 text-center md:px-20 lg:flex-row lg:gap-0 lg:py-2 lg:text-start'
             }
           >
-            <div className={'flex flex-col gap-1'}>
-              <div className={'flex items-center gap-4'}>
+            <div className={'flex flex-col gap-2 md:gap-1'}>
+              <div className={'flex  items-center justify-center gap-4 '}>
                 <Link
                   href={'#'}
                   className={'text-sm text-[#D7DAD7] hover:text-white'}
@@ -296,7 +300,7 @@ export default function Footer() {
                 {new Date().getFullYear()}
               </p>
             </div>
-            <div className={'ml-[calc(25%-96px)]'}>
+            <div className={'m-0 lg:ml-[calc(25%-96px)]'}>
               <Image
                 src={Vision2030Image}
                 alt={'vision 2030'}

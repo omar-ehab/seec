@@ -33,7 +33,7 @@ export default function Partners() {
             reverseDirection: true,
           }}
           loop
-          className='partners !overflow-auto !overflow-y-auto !overflow-x-hidden !py-4'
+          className='partners !bt-1 !pb-3 md:!pb-5 md:!pt-1 '
         >
           <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={AramcoLogo} link='#' />
@@ -75,7 +75,7 @@ export default function Partners() {
             disableOnInteraction: false,
           }}
           loop
-          className='partners !overflow-auto !overflow-y-auto !overflow-x-hidden !pb-16 !pt-4'
+          className='partners !pb-3 !pt-1 md:!pb-6 md:!pt-1'
         >
           <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={AramcoLogo} link='#' />
