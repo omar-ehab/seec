@@ -16,6 +16,7 @@ export default function Services() {
         <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
           خدماتنا ومبادراتنا
         </h2>
+
         <div className={'hidden items-center gap-6 md:flex'}>
           <div className={'flex  items-center gap-4'}>
             <button
@@ -25,7 +26,7 @@ export default function Services() {
                 }
               }}
               className={
-                'text-sub_p flex size-12 items-center justify-center rounded-full border border-white bg-white hover:bg-primary/10 hover:text-primary'
+                'flex size-12 items-center justify-center rounded-full border border-white bg-white text-sub_p hover:bg-primary/10 hover:text-primary'
               }
             >
               <ArrowRightIcon />
@@ -37,7 +38,7 @@ export default function Services() {
                 }
               }}
               className={
-                'text-sub_p flex size-12 items-center justify-center rounded-full border border-white bg-white hover:bg-primary/10 hover:text-primary'
+                'flex size-12 items-center justify-center rounded-full border border-white bg-white text-sub_p hover:bg-primary/10 hover:text-primary'
               }
             >
               <ArrowLeftIcon />

@@ -12,6 +12,7 @@ export default function Slide({ src, title, description, className }: Props) {
     <div
       className={cn(
         'home__services__slide-gradient group flex w-64 flex-col gap-4 rounded-2xl  border border-[#D7D7D7] bg-white p-4 hover:border-white md:h-auto md:w-[25.5rem] md:border-2 md:p-6',
+
         className
       )}
     >

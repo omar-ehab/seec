@@ -39,6 +39,7 @@ export default function Slide({
       <div
         className={'absolute inset-0 z-10 h-full w-full bg-black opacity-50'}
       ></div>
+
       <div
         className={
           'absolute bottom-12 z-20 w-full  px-6 md:bottom-32 md:px-[84px]'
