@@ -8,17 +8,19 @@ import Estbdalmage from '@/public/estbdal.png';
 import KafaaImage from '@/public/kafaa.png';
 import { Dispatch, SetStateAction } from 'react';
 import { Swiper as SwiperType } from 'swiper/types';
+import { useWindowSize } from '@uidotdev/usehooks';
 
 type Props = {
   className?: string;
   setSwiper: Dispatch<SetStateAction<SwiperType | null>>;
 };
 export default function Slider({ className, setSwiper }: Props) {
+  const { width } = useWindowSize();
   return (
     <Swiper
       spaceBetween={24}
       slidesPerView={'auto'}
-      slidesOffsetBefore={80}
+      slidesOffsetBefore={width && width > 769 ? 80 : 24}
       slidesOffsetAfter={80}
       className={className}
       onSwiper={(swiper) => setSwiper(swiper)}
