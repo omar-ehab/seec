@@ -40,7 +40,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className={'z-10 h-full w-full'}>
+    <div className={'z-10 h-full w-full md:rounded-3xl md:p-6'}>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
           <FormField
@@ -103,7 +103,7 @@ export default function ContactForm() {
               <FormItem className='space-y-3'>
                 <FormLabel>الموضوع</FormLabel>
                 <FormControl>
-                  <ul className='grid w-full gap-6 md:grid-cols-4'>
+                  <ul className='grid w-full grid-cols-4 gap-4 lg:gap-6'>
                     <li>
                       <input
                         type='radio'
@@ -117,7 +117,7 @@ export default function ContactForm() {
                       />
                       <label
                         htmlFor='question'
-                        className='text-sub_p inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
+                        className='inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-2 text-sm text-sub_p hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white lg:p-3'
                       >
                         سؤال
                       </label>
@@ -135,7 +135,7 @@ export default function ContactForm() {
                       />
                       <label
                         htmlFor='complaint'
-                        className='text-sub_p inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
+                        className='inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-2 text-sm text-sub_p hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white lg:p-3'
                       >
                         شكوى
                       </label>
@@ -153,7 +153,7 @@ export default function ContactForm() {
                       />
                       <label
                         htmlFor='suggestion'
-                        className='text-sub_p inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
+                        className='inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-2 text-sm text-sub_p hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white lg:p-3'
                       >
                         إقتراح
                       </label>
@@ -171,7 +171,7 @@ export default function ContactForm() {
                       />
                       <label
                         htmlFor='request'
-                        className='text-sub_p inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-3 text-sm hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white'
+                        className='inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#7E8989] bg-white p-2 text-sm text-sub_p hover:border-primary hover:bg-primary/10 hover:text-primary peer-checked:border-primary peer-checked:bg-primary peer-checked:font-medium peer-checked:text-white lg:p-3'
                       >
                         طلب
                       </label>

@@ -27,7 +27,7 @@ export default function Pagination({ numberOfPages, className }: Props) {
         <Link
           href={navigationUrl(currentPage - 1)}
           className={
-            'text-sub_p flex size-10 items-center justify-center rounded-full hover:bg-primary/10 hover:text-primary'
+            'flex size-8 items-center justify-center rounded-full text-sub_p hover:bg-primary/10 hover:text-primary md:size-10'
           }
         >
           <ArrowRightIcon />
@@ -42,7 +42,7 @@ export default function Pagination({ numberOfPages, className }: Props) {
               <div
                 key={idx}
                 className={
-                  'flex size-10 items-center justify-center rounded-full bg-primary font-medium text-white'
+                  'flex size-8 items-center justify-center rounded-full bg-primary font-medium text-white md:size-10'
                 }
               >
                 {idx + 1}
@@ -54,7 +54,7 @@ export default function Pagination({ numberOfPages, className }: Props) {
               href={navigationUrl(idx + 1)}
               key={idx}
               className={
-                'text-sub_p flex size-10 items-center justify-center rounded-full border border-[#D7D7D7] bg-white font-medium hover:border-primary hover:text-primary'
+                'flex size-8 items-center justify-center rounded-full border border-[#D7D7D7] bg-white font-medium text-sub_p hover:border-primary hover:text-primary md:size-10'
               }
             >
               {idx + 1}
@@ -66,7 +66,7 @@ export default function Pagination({ numberOfPages, className }: Props) {
         <Link
           href={navigationUrl(currentPage + 1)}
           className={
-            'text-sub_p flex size-10 items-center justify-center rounded-full hover:bg-primary/10 hover:text-primary'
+            'flex size-8 items-center justify-center rounded-full  text-sub_p hover:bg-primary/10 hover:text-primary md:size-10'
           }
         >
           <ArrowLeftIcon />

@@ -15,7 +15,7 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
   return (
     <div
       className={
-        'flex h-16 w-full items-center justify-between rounded-2xl bg-white p-5 shadow-mini_call_to_action '
+        'flex  w-full flex-col items-center justify-between gap-4 rounded-2xl bg-white p-5 shadow-mini_call_to_action md:flex-row md:gap-0 '
       }
     >
       <div className={'flex items-center gap-2'}>
@@ -60,7 +60,7 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
         <PrintButton />
         <Separator orientation={'vertical'} />
         <button
-          className={'text-sub_p flex items-center gap-1 hover:text-primary'}
+          className={'flex items-center gap-1 text-sub_p hover:text-primary'}
         >
           <ShareIcon />
           <span className={'ml-1'}>مشاركة</span>

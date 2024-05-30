@@ -22,7 +22,7 @@ export default function PageHeader({
           'absolute inset-0 z-0 bg-gradient-to-b from-[rgba(115,174,40,0.1)] to-[rgba(0,111,89,0.1)]'
         }
       ></span>
-      <div className={'relative z-10 px-20 py-14'}>
+      <div className={'relative z-10 px-6 py-14 md:px-20 '}>
         <Breadcrumbs items={breadcrumbItems} className={'mb-6'} />
         <h1 className={'mb-8 text-4xl font-bold text-black'}>{title}</h1>
         {children}
