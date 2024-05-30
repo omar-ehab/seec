@@ -6,6 +6,7 @@ import Services from '@/app/[lang]/(home)/components/Services';
 import News from '@/app/[lang]/(home)/components/News';
 import Partners from '@/app/[lang]/(home)/components/Partners';
 
+
 type Props = {
   params: {
     lang: LangType;

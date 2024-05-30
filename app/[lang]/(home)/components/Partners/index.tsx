@@ -15,9 +15,11 @@ import 'swiper/css';
 
 export default function Partners() {
   return (
-    <section className='relative w-full overflow-hidden bg-[#F8FBF3] py-16'>
-      <div className={'mb-12 flex items-center justify-between  px-20'}>
-        <h2 className={'text-4xl font-bold text-black'}>شركاؤنا في النجاح</h2>
+    <section className='relative w-full  bg-[#F8FBF3] py-16'>
+      <div className={'mb-12 flex items-center justify-between px-6 md:px-20'}>
+        <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
+          شركاؤنا في النجاح
+        </h2>
       </div>
       <div>
         <Swiper
@@ -31,33 +33,33 @@ export default function Partners() {
             reverseDirection: true,
           }}
           loop
-          className='partners !overflow-auto !overflow-y-auto !overflow-x-hidden !py-4'
+          className='partners !bt-1 !pb-3 md:!pb-5 md:!pt-1 '
         >
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={AramcoLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={EnergyLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={FinanceLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={HousingLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={MediaLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={TransportationLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={WaterElectricLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={CityLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={AgricultureLogo} link='#' />
           </SwiperSlide>
         </Swiper>
@@ -73,33 +75,33 @@ export default function Partners() {
             disableOnInteraction: false,
           }}
           loop
-          className='partners !overflow-auto !overflow-y-auto !overflow-x-hidden !pb-16 !pt-4'
+          className='partners !pb-3 !pt-1 md:!pb-6 md:!pt-1'
         >
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={AramcoLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={EnergyLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={FinanceLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={HousingLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={MediaLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={TransportationLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={WaterElectricLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={CityLogo} link='#' />
           </SwiperSlide>
-          <SwiperSlide className='!w-[18.5rem]'>
+          <SwiperSlide className='!w-[10rem] md:!w-[18.5rem]'>
             <PartnerCard name='test' logo={AgricultureLogo} link='#' />
           </SwiperSlide>
         </Swiper>

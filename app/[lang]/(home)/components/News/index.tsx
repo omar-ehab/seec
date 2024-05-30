@@ -12,9 +12,11 @@ export default function News() {
   const [swiper, setSwiper] = useState<Swiper | null>(null);
   return (
     <section className={'relative bg-white pt-20'}>
-      <div className={'mb-12 flex items-center justify-between px-20'}>
-        <h2 className={'text-4xl font-bold text-black'}>آخر المستجدات</h2>
-        <div className={'flex items-center gap-6'}>
+      <div className={'mb-12 flex items-center justify-between px-6 md:px-20'}>
+        <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
+          آخر المستجدات
+        </h2>
+        <div className={'hidden items-center gap-6 md:flex'}>
           <div className={'flex items-center gap-4'}>
             <button
               onClick={() => {
@@ -57,6 +59,18 @@ export default function News() {
       </div>
       <div className={'pb-24'}>
         <Slider setSwiper={setSwiper} />
+        <Link
+          href={'#'}
+          className={cn(
+            buttonVariants({
+              variant: 'outline',
+            }),
+            'text-medium mx-6 mt-6 flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary md:hidden'
+          )}
+        >
+          <span className={'mb-1'}>عرض الكل</span>
+          <ChevronLeftIcon className={'size-5'} />
+        </Link>
       </div>
       <div className={'relative h-24 bg-white'}>
         <span

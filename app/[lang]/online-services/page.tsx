@@ -28,8 +28,12 @@ export default function RulesPage({ params: { lang } }: Props) {
       >
         <HeaderCallToAction numberOfViews={124} />
       </PageHeader>
-      <section className={'mb-24 mt-10 px-20'}>
-        <div className={'mb-6 flex items-center justify-between'}>
+      <section className={'mb-24 mt-10 px-6 md:px-20'}>
+        <div
+          className={
+            'mb-6 flex flex-col-reverse items-center justify-between gap-4 md:flex-row md:gap-0'
+          }
+        >
           <Filters />
           <SearchInput />
         </div>

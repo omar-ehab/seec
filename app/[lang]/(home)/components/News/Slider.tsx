@@ -8,22 +8,28 @@ import Estbdalmage from '@/public/estbdal.png';
 import KafaaImage from '@/public/kafaa.png';
 import { Dispatch, SetStateAction } from 'react';
 import { Swiper as SwiperType } from 'swiper/types';
+import { useWindowSize } from '@uidotdev/usehooks';
 
 type Props = {
   className?: string;
   setSwiper: Dispatch<SetStateAction<SwiperType | null>>;
 };
 export default function Slider({ className, setSwiper }: Props) {
+  const { width } = useWindowSize();
   return (
     <Swiper
       spaceBetween={24}
-      slidesPerView={4.5}
+      slidesPerView={'auto'}
       className={className}
-      slidesOffsetBefore={80}
-      slidesOffsetAfter={290}
+      slidesOffsetBefore={width && width > 769 ? 80 : 24}
+      slidesOffsetAfter={200}
       onSwiper={(swiper) => setSwiper(swiper)}
     >
-      <SwiperSlide className={'!h-[360px] !w-[40%]'}>
+      <SwiperSlide
+        className={
+          '!h-[196px] !w-[calc(100%-3rem)] md:!h-[360px] first:md:!w-[40%] [&:not(:first-child)]:md:!w-1/4'
+        }
+      >
         <Slide
           src={MomkenatImage}
           title={
@@ -31,7 +37,11 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className={'!h-[360px]'}>
+      <SwiperSlide
+        className={
+          ' !h-[196px] !w-[calc(100%-3rem)] md:!h-[360px] first:md:!w-[40%] [&:not(:first-child)]:md:!w-1/4'
+        }
+      >
         <Slide
           src={Estbdalmage}
           title={
@@ -39,7 +49,11 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className={'!h-[360px]'}>
+      <SwiperSlide
+        className={
+          ' !h-[196px] !w-[calc(100%-3rem)] md:!h-[360px] first:md:!w-[40%] [&:not(:first-child)]:md:!w-1/4'
+        }
+      >
         <Slide
           src={KafaaImage}
           title={
@@ -47,7 +61,11 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className={'!h-[360px]'}>
+      <SwiperSlide
+        className={
+          ' !h-[196px] !w-[calc(100%-3rem)] md:!h-[360px] first:md:!w-[40%] [&:not(:first-child)]:md:!w-1/4'
+        }
+      >
         <Slide
           src={MomkenatImage}
           title={
@@ -55,7 +73,11 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className={'!h-[360px]'}>
+      <SwiperSlide
+        className={
+          ' !h-[196px] !w-[calc(100%-3rem)] md:!h-[360px] first:md:!w-[40%] [&:not(:first-child)]:md:!w-1/4'
+        }
+      >
         <Slide
           src={MomkenatImage}
           title={
@@ -63,7 +85,11 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className={'!h-[360px]'}>
+      <SwiperSlide
+        className={
+          ' !h-[196px] !w-[calc(100%-3rem)] md:!h-[360px] first:md:!w-[40%] [&:not(:first-child)]:md:!w-1/4'
+        }
+      >
         <Slide
           src={Estbdalmage}
           title={
@@ -71,7 +97,11 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className={'!h-[360px]'}>
+      <SwiperSlide
+        className={
+          ' !h-[196px] !w-[calc(100%-3rem)] md:!h-[360px] first:md:!w-[40%] [&:not(:first-child)]:md:!w-1/4'
+        }
+      >
         <Slide
           src={KafaaImage}
           title={
@@ -79,7 +109,11 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className={'!h-[360px]'}>
+      <SwiperSlide
+        className={
+          ' !h-[196px] !w-[calc(100%-3rem)] md:!h-[360px] first:md:!w-[40%] [&:not(:first-child)]:md:!w-1/4'
+        }
+      >
         <Slide
           src={MomkenatImage}
           title={

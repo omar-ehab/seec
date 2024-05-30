@@ -4,10 +4,10 @@ import { Input } from '@/components/ui/input';
 
 export default function Subscribe() {
   return (
-    <div className={'relative'}>
+    <div className={'relative w-full max-w-[420px] '}>
       <Input
         className={
-          ' placeholder:text-sub_p h-12 min-w-[420px] rounded-full focus-visible:ring-primary'
+          'h-12 flex-1 rounded-full placeholder:text-sub_p focus-visible:ring-primary md:w-[420px]'
         }
         placeholder={'ادخل بريدك الإلكتروني'}
       />

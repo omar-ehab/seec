@@ -5,12 +5,8 @@ import SearchInput from '@/app/[lang]/careers/components/SearchInput';
 import Pagination from '@/components/pagination';
 import HeaderCallToAction from '@/components/page-header/HeaderCallToAction';
 import JobCard from '@/app/[lang]/careers/components/JobCard';
+import { Props } from './page';
 
-type Props = {
-  params: {
-    lang: LangType;
-  };
-};
 export default function RulesPage({ params: { lang } }: Props) {
   return (
     <>

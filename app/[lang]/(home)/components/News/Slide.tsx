@@ -30,7 +30,7 @@ export default function Slide({ src, title, className }: Props) {
       />
       <p
         className={cn(
-          'absolute bottom-6 right-6 z-20 w-[257px] text-[1.25rem] text-white',
+          'absolute bottom-6 right-6 z-20 w-[257px] text-base text-white md:text-2xl',
           {
             'text-white': isActive,
           }
