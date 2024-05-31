@@ -32,7 +32,7 @@ export default function RulesPage({ params: { lang } }: Props) {
           }
         >
           <Filters lang={lang} />
-          <SearchInput lang={lang} />
+          <SearchInput />
         </div>
         <div className={'mb-8'}>
           <SubFilters lang={lang} />
@@ -45,63 +45,63 @@ export default function RulesPage({ params: { lang } }: Props) {
             title={
               'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'
             }
-            link={'#'}
+            link={`/${lang}/rules/slug`}
           />
           <FileCard
             category={'اللوائح'}
             title={
               'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'
             }
-            link={'#'}
+            link={`/${lang}/rules/slug`}
           />
           <FileCard
             category={'اللوائح'}
             title={
               'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'
             }
-            link={'#'}
+            link={`/${lang}/rules/slug`}
           />
           <FileCard
             category={'اللوائح'}
             title={
               'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'
             }
-            link={'#'}
+            link={`/${lang}/rules/slug`}
           />
           <FileCard
             category={'اللوائح'}
             title={
               'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'
             }
-            link={'#'}
+            link={`/${lang}/rules/slug`}
           />
           <FileCard
             category={'اللوائح'}
             title={
               'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'
             }
-            link={'#'}
+            link={`/${lang}/rules/slug`}
           />
           <FileCard
             category={'اللوائح'}
             title={
               'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'
             }
-            link={'#'}
+            link={`/${lang}/rules/slug`}
           />
           <FileCard
             category={'اللوائح'}
             title={
               'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'
             }
-            link={'#'}
+            link={`/${lang}/rules/slug`}
           />
           <FileCard
             category={'اللوائح'}
             title={
               'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'
             }
-            link={'#'}
+            link={`/${lang}/rules/slug`}
           />
         </div>
         <div className={'mt-14'}>
