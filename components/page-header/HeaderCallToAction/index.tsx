@@ -5,7 +5,8 @@ import SearchAddIcon from '@/components/icons/SearchAddIcon';
 import { Separator } from '@/components/ui/separator';
 import ShareIcon from '@/components/icons/ShareIcon';
 import PrintButton from '@/components/page-header/HeaderCallToAction/PrintButton';
-import StarIcon from '@/components/icons/colored/StarIcon';
+import ColoredStarIcon from '@/components/icons/colored/StarIcon';
+import StarIcon from '@/components/icons/StarIcon';
 
 type Props = {
   numberOfViews: number;
@@ -22,7 +23,7 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
         {rate ? (
           <>
             <div className={'flex items-center gap-2'}>
-              <StarIcon />
+              <ColoredStarIcon />
               <span className={'ml-1'}>{rate}/5</span>
             </div>
             <span>.</span>
@@ -56,6 +57,17 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
             </button>
           </li>
         </ul>
+        {rate ? (
+          <>
+            <Separator orientation={'vertical'} />
+            <button
+              className={'flex items-center gap-1 text-sub_p hover:text-primary group'}
+            >
+              <StarIcon />
+              <span className={'ml-1'}>إضافة تقييم</span>
+            </button>
+          </>
+        ) : null}
         <Separator orientation={'vertical'} />
         <PrintButton />
         <Separator orientation={'vertical'} />
