@@ -24,7 +24,11 @@ export default function PageHeader({
       ></span>
       <div className={'relative z-10 px-6 py-14 md:px-20 '}>
         <Breadcrumbs items={breadcrumbItems} className={'mb-6'} />
-        <h1 className={'mb-8 text-4xl font-bold text-black'}>{title}</h1>
+        <h1
+          className={'mb-6 text-2xl font-bold text-black md:mb-8 md:text-4xl'}
+        >
+          {title}
+        </h1>
         {children}
       </div>
       <div className={'relative h-24 bg-transparent'}>

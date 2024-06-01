@@ -280,13 +280,15 @@ export default function Footer() {
                 />
                 <Link
                   href={'#'}
-                  className={'text-sm text-[#D7DAD7] hover:text-white'}
+                  className={
+                    'hidden text-sm text-[#D7DAD7] hover:text-white md:block'
+                  }
                 >
                   حرية المعلومات
                 </Link>
                 <Separator
                   orientation={'vertical'}
-                  className={'h-3 bg-[#D7DAD7]'}
+                  className={'hidden h-3 bg-[#D7DAD7] md:block'}
                 />
                 <Link
                   href={'#'}

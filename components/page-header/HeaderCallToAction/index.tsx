@@ -16,10 +16,10 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
   return (
     <div
       className={
-        'flex  w-full flex-col items-center justify-between gap-4 rounded-2xl bg-white p-5 shadow-mini_call_to_action md:flex-row md:gap-0 '
+        'flex  w-full flex-col items-center justify-between gap-4 rounded-2xl bg-white p-2 shadow-mini_call_to_action md:flex-row md:gap-0 md:p-5 '
       }
     >
-      <div className={'flex items-center gap-2'}>
+      <div className={'md:text-md flex items-center gap-2 text-lg'}>
         {rate ? (
           <>
             <div className={'flex items-center gap-2'}>
@@ -34,8 +34,8 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
           مشاهدة
         </p>
       </div>
-      <div className={'flex h-6 items-center gap-4'}>
-        <ul className={'flex items-center gap-4'}>
+      <div className={'flex items-center gap-2.5 sm:h-6 sm:gap-4'}>
+        <ul className={'just flex items-center gap-3 xs:gap-4'}>
           <li>
             <button className={'text-sub_p'}>
               <VolumeUpIcon className={'hover:text-primary'} />
@@ -61,21 +61,25 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
           <>
             <Separator orientation={'vertical'} />
             <button
-              className={'flex items-center gap-1 text-sub_p hover:text-primary group'}
+              className={
+                'group flex items-center gap-1 text-sub_p hover:text-primary'
+              }
             >
               <StarIcon />
               <span className={'ml-1'}>إضافة تقييم</span>
             </button>
           </>
         ) : null}
-        <Separator orientation={'vertical'} />
+        <Separator className='h-8 sm:h-full' orientation={'vertical'} />
         <PrintButton />
-        <Separator orientation={'vertical'} />
+        <Separator className='h-8 sm:h-full' orientation={'vertical'} />
         <button
-          className={'flex items-center gap-1 text-sub_p hover:text-primary'}
+          className={
+            'flex flex-col items-center justify-center gap-0 text-sub_p hover:text-primary sm:flex-row sm:gap-1'
+          }
         >
           <ShareIcon />
-          <span className={'ml-1'}>مشاركة</span>
+          <span className={''}>مشاركة</span>
         </button>
       </div>
     </div>

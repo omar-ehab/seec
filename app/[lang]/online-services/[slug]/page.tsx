@@ -38,15 +38,17 @@ export default function ServicePage({
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
       <div
-        className={'relative overflow-hidden bg-[#F7F8F7] px-20 pb-36 pt-16'}
+        className={
+          'relative overflow-hidden bg-[#F7F8F7] px-6 pb-36 pt-16 md:px-20'
+        }
       >
         <DoubleSquareMonoColor className={'absolute bottom-0 left-0 z-0'} />
         <div className={'grid grid-cols-2'}>
-          <div className={'mb-6'}>
-            <h3 className={'mb-4 text-2xl font-medium text-black'}>
+          <div className={'col-span-2 mb-6 lg:col-span-1'}>
+            <h3 className={'mb-4 text-xl font-medium text-black md:text-2xl'}>
               برنامج إدارة الطاقة
             </h3>
-            <p className={'text-sub_p'}>
+            <p className={'text-base text-sub_p'}>
               تتيح هذه الخدمة للمنشآت الصناعية التسجيل في منصة برنامج إدارة
               الطاقة لمعرفة طرق تنفيذ نظام إدارة الطاقة وفقاً لأبرز الممارسات في
               إدارة الطاقة والحصول على أدلة وأدوات مساندة لتنفيذ النظام وتحسين
@@ -54,7 +56,11 @@ export default function ServicePage({
             </p>
           </div>
           <div></div>
-          <div className={'flex items-center gap-6'}>
+          <div
+            className={
+              'col-span-2 mb-6 flex items-center gap-4 md:gap-6 lg:col-span-1 '
+            }
+          >
             <Link
               href={'#'}
               className={cn(
@@ -76,49 +82,47 @@ export default function ServicePage({
           </div>
         </div>
       </div>
-      <div className={'bg-white px-20 pb-24'}>
+      <div className={'bg-white px-6 pb-24 md:px-20'}>
         <div
           className={
             'z-20 flex w-full -translate-y-1/2 items-center justify-between rounded-2xl bg-white p-6 shadow-[0_1px_24px_0px_rgba(32,32,33,0.1)]'
           }
         >
-          <div className={'flex items-center gap-6'}>
+          <div
+            className={
+              'grid grid-cols-[repeat(6,minmax(max-content,1fr))] items-center gap-6 2xl:flex'
+            }
+          >
             <InfoCard
               icon={<UserMultipleIcon />}
               title={'الفئة المستهدفة'}
               value={'الأفراد, الجهات الحكومية'}
-              className={'min-w-[180px]'}
             />
             <InfoCard
               icon={<CalenderIcon />}
               title={'تاريخ إصدار الخدمة'}
               value={'11/08/1440'}
-              className={'min-w-[180px]'}
             />
             <InfoCard
               icon={<ClockIcon />}
               title={'مدة تنفيذ الخدمة'}
               value={'1-2 يوم'}
-              className={'min-w-[180px]'}
             />
             <InfoCard
               icon={<MoneyIcon />}
               title={'التكلفة'}
               value={'مجانية'}
-              className={'min-w-[180px]'}
             />
-            <Separator className={'h-12 w-[1px]'} />
+            <Separator className={'hidden h-12 w-[1px] 2xl:block'} />
             <InfoCard
               icon={<CallIcon size={26} />}
               title={'رقم الهاتف'}
               value={'920002724'}
-              className={'min-w-[180px]'}
             />
             <InfoCard
               icon={<MailIcon size={26} />}
               title={'البريد الإلكتروني'}
               value={'info@seec.gov.sa'}
-              className={'min-w-[180px]'}
             />
           </div>
         </div>
