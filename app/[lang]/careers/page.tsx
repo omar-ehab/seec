@@ -16,7 +16,7 @@ export default function RulesPage({ params: { lang } }: Props) {
     <>
       <Navbar lang={lang} />
       <PageHeader
-        title='التوظيف'
+        title="التوظيف"
         breadcrumbItems={[
           { title: 'الرئيسية', href: `/${lang}` },
           { title: 'التوظيف' },
@@ -30,46 +30,46 @@ export default function RulesPage({ params: { lang } }: Props) {
             'mb-6 flex flex-col-reverse items-center justify-between gap-4 md:flex-row'
           }
         >
-          <Filters lang={lang} />
-          <SearchInput lang={lang} />
+          <Filters />
+          <SearchInput />
         </div>
         <div
           className={
             'grid grid-cols-1 grid-rows-[repeat(3,minmax(164px,_min-content))] gap-6 lg:grid-cols-3  2xl:lg:grid-cols-4 '
           }
         >
-          <JobCard category={'التطوير'} title={'مطلوب مطور IOS'} link={'#'} />
+          <JobCard category={'التطوير'} title={'مطلوب مطور IOS'} link={`/${lang}/career/slug`} />
           <JobCard
             category={'التصميم'}
             title={'مصمم تجربة المستخدم'}
-            link={'#'}
+            link={`/${lang}/careers/slug`}
           />
           <JobCard
             category={'التطوير'}
             title={'مطلوب مطور اندرويد'}
-            link={'#'}
+            link={`/${lang}/careers/slug`}
           />
-          <JobCard category={'التطوير'} title={'مطلوب مطور IOS'} link={'#'} />
+          <JobCard category={'التطوير'} title={'مطلوب مطور IOS'} link={`/${lang}/careers/slug`} />
           <JobCard
             category={'التصميم'}
             title={'مصمم تجربة المستخدم'}
-            link={'#'}
+            link={`/${lang}/careers/slug`}
           />
           <JobCard
             category={'التطوير'}
             title={'مطلوب مطور اندرويد'}
-            link={'#'}
+            link={`/${lang}/careers/slug`}
           />
-          <JobCard category={'التطوير'} title={'مطلوب مطور IOS'} link={'#'} />
+          <JobCard category={'التطوير'} title={'مطلوب مطور IOS'} link={`/${lang}/careers/slug`} />
           <JobCard
             category={'التصميم'}
             title={'مصمم تجربة المستخدم'}
-            link={'#'}
+            link={`/${lang}/careers/slug`}
           />
           <JobCard
             category={'التطوير'}
             title={'مطلوب مطور اندرويد'}
-            link={'#'}
+            link={`/${lang}/careers/slug`}
           />
         </div>
         <div className={'mt-8'}>
