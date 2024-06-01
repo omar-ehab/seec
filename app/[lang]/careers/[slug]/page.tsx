@@ -2,9 +2,7 @@ import Navbar from '@/components/navbar';
 import PageHeader from '@/components/page-header/PageHeader';
 import HeaderCallToAction from '@/components/page-header/HeaderCallToAction';
 import DoubleSquareMonoColor from '@/components/shapes/DoubleSquareMonoColor';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
-import { Button, buttonVariants } from '@/components/ui/button';
+import { Button } from '@/components/ui/button';
 import InfoCard from '@/app/[lang]/careers/[slug]/components/InfoCard';
 import UserMultipleIcon from '@/components/icons/colored/UserMultipleIcon';
 import SubFilters from '@/app/[lang]/careers/[slug]/components/SubFilters';
@@ -13,26 +11,19 @@ import CommentCta from '@/components/comment-cta';
 import CalenderIcon from '@/components/icons/colored/CalenderIcon';
 import ClockIcon from '@/components/icons/colored/ClockIcon';
 import MoneyIcon from '@/components/icons/colored/MoneyIcon';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import CareerForm from '@/app/[lang]/careers/[slug]/components/CareerForm';
 
 export default function ServicePage({
-                                      params: { lang, slug },
-                                    }: {
+  params: { lang, slug },
+}: {
   params: { slug: string; lang: LangType };
 }) {
   return (
     <>
       <Navbar lang={lang} />
       <PageHeader
-        title="مطلوب مطور IOS"
+        title='مطلوب مطور IOS'
         skewBottomClass={'bg-[#F7F8F7]'}
         breadcrumbItems={[
           { title: 'الرئيسية', href: `/${lang}` },
@@ -52,28 +43,37 @@ export default function ServicePage({
               عن الوظيفة
             </h3>
             <p className={'text-sub_p'}>
-              المركز السعودي لكفاءة الطاقة يعتبر مرجعا دوليا في مجال كفاءة الطاقة وذلك من خلال العمل مع الجهات المعنية
-              المحلية والدولية في كل من القطاعين الحكومي والخاص بهدف تطوير المعرفة والخبرة في مجال كفاءة الطاقة وتطبيق
-              أفضل الممارسات في المملكة العربية وخارجها. ويهدف المركز الى رفع كفاءة انتاج واستهلاك الطاقة وحسن ادارتها
-              وذلك حفاظا على الموارد الطبيعية وتعزيزا للرفاهية الاقتصادية والاجتماعية.
+              المركز السعودي لكفاءة الطاقة يعتبر مرجعا دوليا في مجال كفاءة
+              الطاقة وذلك من خلال العمل مع الجهات المعنية المحلية والدولية في كل
+              من القطاعين الحكومي والخاص بهدف تطوير المعرفة والخبرة في مجال
+              كفاءة الطاقة وتطبيق أفضل الممارسات في المملكة العربية وخارجها.
+              ويهدف المركز الى رفع كفاءة انتاج واستهلاك الطاقة وحسن ادارتها وذلك
+              حفاظا على الموارد الطبيعية وتعزيزا للرفاهية الاقتصادية
+              والاجتماعية.
             </p>
-            <p className={'text-sub_p my-4'}>
-              وصف الدور
+            <p className={'my-4 text-sub_p'}>وصف الدور</p>
+            <p className={'text-sub_p'}>
+              هذا الدور هو دور تدريب مهني لمطور تطبيقات iOS في معهد مركز كفاءة
+              الطاقة . كمطور تطبيقات iOS، ستكون مسؤولاً عن تطوير التطبيقات
+              المحمولة، وتحديداً في نظام iOS. مهامك اليومية ستشمل تطوير
+              البرمجيات وإنشاء تطبيقات محمولة. هذا الدور مدمج، يستند بشكل أساسي
+              ، مع مرونة للعمل عن بُعد.
             </p>
-            <p className={'text-sub_p'}>هذا الدور هو دور تدريب مهني لمطور تطبيقات iOS في معهد مركز كفاءة الطاقة . كمطور
-              تطبيقات iOS، ستكون مسؤولاً عن تطوير التطبيقات المحمولة، وتحديداً في نظام iOS. مهامك اليومية ستشمل تطوير
-              البرمجيات وإنشاء تطبيقات محمولة. هذا الدور مدمج، يستند بشكل أساسي ، مع مرونة للعمل عن بُعد.
-            </p>
-
           </div>
           <div></div>
           <div className={'flex items-center gap-6'}>
             <Dialog>
-              <DialogTrigger className={'rounded-full bg-primary text-white font-normal px-4 py-2'}>
+              <DialogTrigger
+                className={
+                  'rounded-full bg-primary px-4 py-2 font-normal text-white'
+                }
+              >
                 التقدم للوظيفة
               </DialogTrigger>
               <DialogContent className={'sm:rounded-3xl'}>
-                <h2 className={'text-black text-2xl font-bold mb-8'}>استمارة التقدم</h2>
+                <h2 className={'mb-8 text-2xl font-bold text-black'}>
+                  استمارة التقدم
+                </h2>
                 <CareerForm />
               </DialogContent>
             </Dialog>
@@ -86,7 +86,7 @@ export default function ServicePage({
             'z-20 flex w-full -translate-y-1/2 items-center justify-between rounded-2xl bg-white p-6 shadow-[0_1px_24px_0px_rgba(32,32,33,0.1)]'
           }
         >
-          <div className={'flex items-center justify-between w-full gap-6'}>
+          <div className={'flex w-full items-center justify-between gap-6'}>
             <InfoCard
               icon={<UserMultipleIcon />}
               title={'مستوى الخبرة'}
