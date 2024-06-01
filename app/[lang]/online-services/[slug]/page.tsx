@@ -14,6 +14,9 @@ import SubFilters from '@/app/[lang]/online-services/[slug]/components/SubFilter
 import SubPage from '@/app/[lang]/online-services/[slug]/components/SubPage';
 import CommentCta from '@/components/comment-cta';
 import OtherServices from '@/app/[lang]/online-services/[slug]/components/OtherServices';
+import CalenderIcon from '@/components/icons/colored/CalenderIcon';
+import ClockIcon from '@/components/icons/colored/ClockIcon';
+import MoneyIcon from '@/components/icons/colored/MoneyIcon';
 
 export default function ServicePage({
   params: { lang, slug },
@@ -87,19 +90,19 @@ export default function ServicePage({
               className={'min-w-[180px]'}
             />
             <InfoCard
-              icon={<UserMultipleIcon />}
+              icon={<CalenderIcon />}
               title={'تاريخ إصدار الخدمة'}
               value={'11/08/1440'}
               className={'min-w-[180px]'}
             />
             <InfoCard
-              icon={<UserMultipleIcon />}
+              icon={<ClockIcon />}
               title={'مدة تنفيذ الخدمة'}
               value={'1-2 يوم'}
               className={'min-w-[180px]'}
             />
             <InfoCard
-              icon={<UserMultipleIcon />}
+              icon={<MoneyIcon />}
               title={'التكلفة'}
               value={'مجانية'}
               className={'min-w-[180px]'}
@@ -124,7 +127,7 @@ export default function ServicePage({
           <SubPage />
           <div className={'xl:mt-24'}>
             <p className={'mb-8'}>
-              <span className={'text-sub_p ml-2'}>آخر تحديث بتاريخ:</span>
+              <span className={'ml-2 text-sub_p'}>آخر تحديث بتاريخ:</span>
               <span className={'font-medium text-black'}>12/5/2024</span>
             </p>
             <CommentCta className={'mb-6'} />
