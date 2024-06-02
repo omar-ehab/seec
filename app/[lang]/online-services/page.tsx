@@ -40,7 +40,11 @@ export default function RulesPage({ params: { lang } }: Props) {
         <div className={'mb-8'}>
           <SubFilters lang={lang} />
         </div>
-        <div className={'grid grid-cols-1 gap-6 lg:grid-cols-3'}>
+        <div
+          className={
+            'grid grid-cols-1 grid-rows-[repeat(2,minmax(164px,_min-content))] gap-6 lg:grid-cols-3'
+          }
+        >
           <ServiceCard
             src={MomkenatImage}
             title={'ممكنات'}

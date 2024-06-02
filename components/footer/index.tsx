@@ -1,4 +1,3 @@
-import footerImage from '@/public/footer.png';
 import Image from 'next/image';
 import Subscribe from '@/components/footer/Subscribe';
 import Link from 'next/link';
@@ -11,6 +10,7 @@ import SearchAddIcon from '@/components/icons/SearchAddIcon';
 import RotateRightIcon from '@/components/icons/RotateRightIcon';
 import Vision2030Image from '@/public/vision_2030.png';
 import { Separator } from '@/components/ui/separator';
+import FooterBg from './FooterBg';
 
 export default function Footer() {
   return (
@@ -32,14 +32,9 @@ export default function Footer() {
             'absolute top-0 z-10 h-full w-full bg-gradient-to-b from-[rgba(115,174,40,1)] to-[rgba(0,111,89,1)] opacity-95'
           }
         ></span>
-        <Image
-          src={footerImage}
-          priority
-          alt={'footer'}
-          className={'absolute top-0 z-0 h-full md:w-full'}
-        />
-        <div className={' relative z-10 pt-[196px]'}>
-          <div className={'px-6 md:px-20'}>
+        <FooterBg />
+        <div className={'relative z-10 pt-[196px]'}>
+          <div className={'container px-6'}>
             <div
               className={
                 'mb-8 flex w-full flex-col items-center justify-between gap-4 rounded-2xl md:py-[45px] lg:flex-row  lg:gap-0 lg:border lg:border-[rgba(255,255,255,.25)]  lg:px-[68px]'
@@ -280,13 +275,15 @@ export default function Footer() {
                 />
                 <Link
                   href={'#'}
-                  className={'text-sm text-[#D7DAD7] hover:text-white'}
+                  className={
+                    'hidden text-sm text-[#D7DAD7] hover:text-white md:block'
+                  }
                 >
                   حرية المعلومات
                 </Link>
                 <Separator
                   orientation={'vertical'}
-                  className={'h-3 bg-[#D7DAD7]'}
+                  className={'hidden h-3 bg-[#D7DAD7] md:block'}
                 />
                 <Link
                   href={'#'}

@@ -40,7 +40,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className={'z-10 h-full w-full md:rounded-3xl md:p-6'}>
+    <div className={'z-10 mb-12 h-full w-full md:mb-0 md:rounded-3xl md:p-6'}>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
           <FormField
