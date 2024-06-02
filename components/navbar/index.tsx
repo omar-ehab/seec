@@ -11,6 +11,14 @@ import Actions from '@/components/navbar/Actions';
 import ArrowDownIcon from '@/components/icons/ArrowDownIcon';
 import { motion, useAnimationControls } from 'framer-motion';
 
+const isAboutCenterActive = (lang: LangType, pathname: string) =>
+  pathname === `/${lang}/about-center` ||
+  pathname === `/${lang}/center-strategy` ||
+  pathname === `/${lang}/center-specializations` ||
+  pathname === `/${lang}/board-members` ||
+  pathname === `/${lang}/energy-efficiency-sectors` ||
+  pathname === `/${lang}/energy-efficiency-enablers`;
+
 type Props = {
   lang: LangType;
   className?: string;
@@ -98,7 +106,16 @@ export default function Navbar({ lang, className }: Props) {
                 })}
                 onClick={() => openMenu('about_center')}
               >
-                <span>عن المركز</span>
+                <span
+                  className={cn({
+                    'font-medium text-black': isAboutCenterActive(
+                      lang,
+                      pathname
+                    ),
+                  })}
+                >
+                  عن المركز
+                </span>
                 <ArrowDownIcon
                   size={16}
                   className={cn('mt-2 transition-transform', {
@@ -222,7 +239,7 @@ export default function Navbar({ lang, className }: Props) {
           >
             <li className={'w-[164px]'} role='listitem'>
               <Link
-                href={`/${lang}`}
+                href={`/${lang}/about-center`}
                 className={
                   'block w-full rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
                 }

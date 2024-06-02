@@ -23,7 +23,7 @@ export default function PageHeader({
         }
       ></span>
       <div className='container'>
-        <div className={'relative z-10 px-6 py-14  '}>
+        <div className={'relative z-10 py-14  '}>
           <Breadcrumbs items={breadcrumbItems} className={'mb-6'} />
           <h1
             className={'mb-6 text-2xl font-bold text-black md:mb-8 md:text-4xl'}
