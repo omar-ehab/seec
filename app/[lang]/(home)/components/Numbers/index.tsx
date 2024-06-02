@@ -7,25 +7,7 @@ import FactoryIcon from '@/components/icons/colored/FactoryIcon';
 import LearnIcon from '@/components/icons/colored/LearnIcon';
 import MoneyBagIcon from '@/components/icons/colored/MoneyBagIcon';
 import EcoEnergyIcon from '@/components/icons/colored/EcoEnergyIcon';
-
-const SvgFilter = () => {
-  return (
-    <svg className='flt_svg ' xmlns='http://www.w3.org/2000/svg'>
-      <defs>
-        <filter id='flt_tag'>
-          <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
-          <feColorMatrix
-            in='blur'
-            mode='matrix'
-            values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
-            result='flt_tag'
-          />
-          <feComposite in='SourceGraphic' in2='flt_tag' operator='atop' />
-        </filter>
-      </defs>
-    </svg>
-  );
-};
+import RoundedPolygonFilter from '@/components/svg-filters/RoundedPolygonFilter';
 
 export default function Index() {
   return (
@@ -112,7 +94,7 @@ export default function Index() {
                 clipPath: 'polygon(0 12%, 100% 0, 100% 100%, 0 88%)',
               }}
             />
-            <SvgFilter />
+            <RoundedPolygonFilter />
           </div>
           <div
             className={

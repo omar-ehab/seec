@@ -17,9 +17,13 @@ export default function SubLinks({ lang, activeTab }: Props) {
       <li className={'mb-6'}>
         <Link
           href={`/${lang}/about-center`}
-          className={cn('rounded bg-white px-6 py-3 text-sub_p', {
-            'bg-primary font-medium text-white': activeTab === 'about-center',
-          })}
+          className={cn(
+            'rounded bg-white px-6 py-3 text-sub_p hover:bg-zinc-50',
+            {
+              'bg-primary font-medium text-white hover:bg-primary':
+                activeTab === 'about-center',
+            }
+          )}
         >
           تعرف على المركز
         </Link>
@@ -27,10 +31,13 @@ export default function SubLinks({ lang, activeTab }: Props) {
       <li className={'mb-6'}>
         <Link
           href={`/${lang}/center-strategy`}
-          className={cn('rounded bg-white px-6 py-3 text-sub_p', {
-            'bg-primary font-medium text-white':
-              activeTab === 'center-strategy',
-          })}
+          className={cn(
+            'rounded bg-white px-6 py-3 text-sub_p hover:bg-zinc-50',
+            {
+              'bg-primary font-medium text-white hover:bg-primary':
+                activeTab === 'center-strategy',
+            }
+          )}
         >
           استراتيجية المركز
         </Link>
@@ -38,10 +45,13 @@ export default function SubLinks({ lang, activeTab }: Props) {
       <li className={'mb-6'}>
         <Link
           href={`/${lang}/center-specializations`}
-          className={cn('rounded bg-white px-6 py-3 text-sub_p', {
-            'bg-primary font-medium text-white':
-              activeTab === 'center-specializations',
-          })}
+          className={cn(
+            'rounded bg-white px-6 py-3 text-sub_p hover:bg-zinc-50',
+            {
+              'bg-primary font-medium text-white hover:bg-primary':
+                activeTab === 'center-specializations',
+            }
+          )}
         >
           اختصاصات المركز
         </Link>
@@ -49,9 +59,13 @@ export default function SubLinks({ lang, activeTab }: Props) {
       <li className={'mb-6'}>
         <Link
           href={`/${lang}/board-members`}
-          className={cn('rounded bg-white px-6 py-3 text-sub_p', {
-            'bg-primary font-medium text-white': activeTab === 'board-members',
-          })}
+          className={cn(
+            'rounded bg-white px-6 py-3 text-sub_p hover:bg-zinc-50',
+            {
+              'bg-primary font-medium text-white hover:bg-primary':
+                activeTab === 'board-members',
+            }
+          )}
         >
           مجلس الإدارة
         </Link>
@@ -59,10 +73,13 @@ export default function SubLinks({ lang, activeTab }: Props) {
       <li className={'mb-6'}>
         <Link
           href={`/${lang}/energy-efficiency-sectors`}
-          className={cn('rounded bg-white px-6 py-3 text-sub_p', {
-            'bg-primary font-medium text-white':
-              activeTab === 'energy-efficiency-sectors',
-          })}
+          className={cn(
+            'rounded bg-white px-6 py-3 text-sub_p hover:bg-zinc-50',
+            {
+              'bg-primary font-medium text-white hover:bg-primary':
+                activeTab === 'energy-efficiency-sectors',
+            }
+          )}
         >
           قطاعات كفاءة الطاقة
         </Link>
@@ -70,10 +87,13 @@ export default function SubLinks({ lang, activeTab }: Props) {
       <li className={'mb-6'}>
         <Link
           href={`/${lang}/energy-efficiency-enablers`}
-          className={cn('rounded bg-white px-6 py-3 text-sub_p', {
-            'bg-primary font-medium text-white':
-              activeTab === 'energy-efficiency-enablers',
-          })}
+          className={cn(
+            'rounded bg-white px-6 py-3 text-sub_p hover:bg-zinc-50',
+            {
+              'bg-primary font-medium text-white hover:bg-primary':
+                activeTab === 'energy-efficiency-enablers',
+            }
+          )}
         >
           ممكنات كفاءة الطاقة
         </Link>
