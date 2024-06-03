@@ -90,7 +90,7 @@ export default function ServicePage({
         >
           <div
             className={
-              'grid grid-cols-[repeat(6,minmax(max-content,1fr))] items-center gap-6 2xl:flex'
+              'grid grid-cols-[repeat(6,minmax(max-content,1fr))] items-center gap-6 2xl:flex 2xl:w-full 2xl:justify-between'
             }
           >
             <InfoCard
@@ -108,11 +108,7 @@ export default function ServicePage({
               title={'مدة تنفيذ الخدمة'}
               value={'1-2 يوم'}
             />
-            <InfoCard
-              icon={<MoneyIcon />}
-              title={'التكلفة'}
-              value={'مجانية'}
-            />
+            <InfoCard icon={<MoneyIcon />} title={'التكلفة'} value={'مجانية'} />
             <Separator className={'hidden h-12 w-[1px] 2xl:block'} />
             <InfoCard
               icon={<CallIcon size={26} />}

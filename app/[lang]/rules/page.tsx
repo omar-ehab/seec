@@ -38,7 +38,7 @@ export default function RulesPage({ params: { lang } }: Props) {
           <SubFilters lang={lang} />
         </div>
         <div
-          className={'grid grid-cols-1 gap-6 lg:grid-cols-3 2xl:lg:grid-cols-4'}
+          className={'grid grid-cols-1 gap-6 lg:grid-cols-3 2xl:grid-cols-4'}
         >
           <FileCard
             category={'اللوائح'}

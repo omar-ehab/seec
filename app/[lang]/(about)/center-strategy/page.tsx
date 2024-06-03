@@ -269,16 +269,6 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                 </span>
                 <p className={'text-black'}>رفع كفاءة الإنفاق والأداء المالي</p>
               </div>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  8
-                </span>
-                <p>تعزيز التحول الرقمي</p>
-              </div>
             </div>
           </div>
         </div>
