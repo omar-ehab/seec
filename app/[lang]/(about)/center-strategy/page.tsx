@@ -8,6 +8,7 @@ import VisionIcon from '@/components/icons/VisionIcon';
 import MissionIcon from '@/components/icons/MissionIcon';
 import CenterStrategyImage from '@/public/center-strategy-image.png';
 import RoundedPolygonFilter from '@/components/svg-filters/RoundedPolygonFilter';
+import FooterCta from '@/components/footer-cta';
 
 type Props = {
   params: {
@@ -272,34 +273,7 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
             </div>
           </div>
         </div>
-        <div className={'mt-24'}>
-          <p className={'mb-8'}>
-            <span className={'ml-2 text-sub_p'}>آخر تحديث بتاريخ:</span>
-            <span className={'font-medium text-black'}>12/5/2024</span>
-          </p>
-          <CommentCta className={'mb-6'} />
-          <div className={'flex items-center gap-6'}>
-            <p>هل أعجبك المحتوى المقدم في هذه الصفحة؟</p>
-            <div className={'flex items-center gap-4'}>
-              <Button
-                variant={'outline'}
-                className={
-                  'h-8 rounded-full border-primary px-4 py-2 text-primary hover:text-primary'
-                }
-              >
-                نعم
-              </Button>
-              <Button
-                variant={'outline'}
-                className={
-                  'h-8 rounded-full border-primary px-4 py-2 text-primary hover:text-primary'
-                }
-              >
-                لا
-              </Button>
-            </div>
-          </div>
-        </div>
+        <FooterCta lastUpdateDate={'12/5/2024'} />
       </div>
     </>
   );

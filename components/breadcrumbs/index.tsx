@@ -19,9 +19,9 @@ export default function Breadcrumbs({ items, className }: Props) {
       <BreadcrumbList>
         {items.map((item, idx) => (
           <>
-            <BreadcrumbItem key={item.title}>
+            <BreadcrumbItem key={`${item.title}-${idx}`}>
               {idx === items.length - 1 ? (
-                <BreadcrumbPage className={'text-sub_p font-medium'}>
+                <BreadcrumbPage className={'font-medium text-sub_p'}>
                   {item.title}
                 </BreadcrumbPage>
               ) : (

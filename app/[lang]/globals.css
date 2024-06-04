@@ -111,13 +111,19 @@
     .about-center__list-bullet-solid-gradient {
         background: radial-gradient(144.51% 119.22% at -5.13% 5.32%, rgb(220, 222, 34) 0%, rgb(180, 204, 54) 20.37%, rgb(128, 178, 65) 38.47%, rgb(43, 144, 70) 64.34%, rgb(41, 125, 89) 80.52%, rgb(45, 109, 90) 100%);
     }
+
     .about-center__list-bullet-gradient {
         background: radial-gradient(144.51% 119.22% at -5.13% 5.32%, rgba(220, 222, 34, 0.15) 0%, rgba(180, 204, 54, 0.15) 20.37%, rgba(128, 178, 65, 0.15) 38.47%, rgba(43, 144, 70, 0.15) 64.34%, rgba(41, 125, 89, 0.15) 80.52%, rgba(45, 109, 90, 0.15) 100%);
     }
 
     .bullet-gradient {
         background: radial-gradient(144.51% 119.22% at -5.13% 5.32%, rgba(220, 222, 34, 0.15) 0%, rgba(180, 204, 54, 0.15) 20.37%, rgba(128, 178, 65, 0.15) 38.47%, rgba(43, 144, 70, 0.15) 64.34%, rgba(41, 125, 89, 0.15) 80.52%, rgba(45, 109, 90, 0.15) 100%);
-
+    }
+    .leader_member_image_bg {
+        background: linear-gradient(180deg, #73AE28 13.64%, #006F59 100%);
+    }
+    .normal_member_image_bg {
+        background: linear-gradient(180deg, rgba(230, 230, 230, 0.26) 13.64%, #D7D7D7 100%);
     }
 
     .partners .swiper-wrapper {
