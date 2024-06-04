@@ -11,7 +11,7 @@ import RoundedPolygonFilter from '@/components/svg-filters/RoundedPolygonFilter'
 
 export default function Index() {
   return (
-    <section className={'relative bg-[#F8FBF3]'}>
+    <section className={'relative  bg-[#F4F9F7]'}>
       <div className={'relative h-24 bg-[#F4F9F7]'}>
         <span className={'skewed-t block h-full w-full bg-[#F8FBF3]'}></span>
         <span
@@ -20,11 +20,7 @@ export default function Index() {
           }
         ></span>
       </div>
-      <div
-        className={
-          'px grid grid-cols-12 gap-6 bg-[#F4F9F7] px-6 pb-16 md:px-20'
-        }
-      >
+      <div className={'container grid grid-cols-12 gap-6 pb-16'}>
         <div className={'col-span-12'}>
           <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
             كفاءة في الأرقام

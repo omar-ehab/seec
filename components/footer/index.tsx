@@ -34,7 +34,7 @@ export default function Footer() {
         ></span>
         <FooterBg />
         <div className={'relative z-10 pt-[196px]'}>
-          <div className={'container px-6'}>
+          <div className={'container'}>
             <div
               className={
                 'mb-8 flex w-full flex-col items-center justify-between gap-4 rounded-2xl md:py-[45px] lg:flex-row  lg:gap-0 lg:border lg:border-[rgba(255,255,255,.25)]  lg:px-[68px]'

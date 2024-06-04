@@ -16,7 +16,7 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
   return (
     <div
       className={
-        'flex  w-full flex-col items-center justify-between gap-4 rounded-2xl bg-white p-2 shadow-mini_call_to_action md:flex-row md:gap-0 md:p-5 '
+        'flex  w-full flex-col items-center justify-between gap-6 rounded-2xl bg-white p-2 shadow-mini_call_to_action md:gap-4 lg:flex-row lg:gap-0 lg:p-5 '
       }
     >
       <div className={'md:text-md flex items-center gap-2 text-lg'}>
@@ -34,51 +34,72 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
           مشاهدة
         </p>
       </div>
-      <div className={'flex items-center gap-2.5 sm:h-6 sm:gap-4'}>
-        <ul className={'just flex items-center gap-3 xs:gap-4'}>
+      <div
+        className={
+          'grid w-full grid-flow-dense grid-cols-3 content-center items-center justify-center justify-items-center gap-x-0 gap-y-4 md:flex md:w-auto md:gap-4'
+        }
+      >
+        <ul className={'col-span-full flex items-center gap-6 md:gap-4'}>
           <li>
-            <button className={'text-sub_p'}>
-              <VolumeUpIcon className={'hover:text-primary'} />
+            <button
+              className={'rounded-full border p-2 text-sub_p md:border-0'}
+            >
+              <VolumeUpIcon
+                className={'size-4  hover:text-primary md:size-auto'}
+              />
             </button>
           </li>
           <li>
-            <button className={'text-sub_p'}>
-              <EyeIcon className={'hover:text-primary'} />
+            <button
+              className={'rounded-full border p-2 text-sub_p md:border-0'}
+            >
+              <EyeIcon className={'size-4  hover:text-primary md:size-auto'} />
             </button>
           </li>
           <li>
-            <button className={'text-sub_p'}>
-              <SearchMinusIcon className={'hover:text-primary'} />
+            <button
+              className={'rounded-full border p-2 text-sub_p md:border-0'}
+            >
+              <SearchMinusIcon
+                className={'size-4  hover:text-primary md:size-auto'}
+              />
             </button>
           </li>
           <li>
-            <button className={'text-sub_p'}>
-              <SearchAddIcon className={'hover:text-primary'} />
+            <button
+              className={'rounded-full border p-2 text-sub_p md:border-0'}
+            >
+              <SearchAddIcon
+                className={'size-4  hover:text-primary md:size-auto'}
+              />
             </button>
           </li>
         </ul>
         {rate ? (
           <>
-            <Separator orientation={'vertical'} />
+            <Separator
+              className='hidden h-8 md:block'
+              orientation={'vertical'}
+            />
             <button
               className={
-                'group flex items-center gap-1 text-sub_p hover:text-primary'
+                'group col-start-2 flex items-center gap-1 text-sm text-sub_p hover:text-primary sm:text-base'
               }
             >
-              <StarIcon />
-              <span className={'ml-1'}>إضافة تقييم</span>
+              <StarIcon className=' size-4 sm:size-auto sm:text-base' />
+              <span className={''}>إضافة تقييم</span>
             </button>
           </>
         ) : null}
-        <Separator className='h-8 sm:h-full' orientation={'vertical'} />
+        <Separator className='hidden h-8 md:block' orientation={'vertical'} />
         <PrintButton />
-        <Separator className='h-8 sm:h-full' orientation={'vertical'} />
+        <Separator className='hidden h-8 md:block' orientation={'vertical'} />
         <button
           className={
-            'flex flex-col items-center justify-center gap-0 text-sub_p hover:text-primary sm:flex-row sm:gap-1'
+            'col-start-3 flex flex-row  items-center justify-center gap-1 text-sm  text-sub_p hover:text-primary sm:text-base'
           }
         >
-          <ShareIcon />
+          <ShareIcon className=' size-4 sm:size-auto sm:text-base' />
           <span className={''}>مشاركة</span>
         </button>
       </div>

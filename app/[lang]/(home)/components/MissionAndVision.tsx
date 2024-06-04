@@ -3,7 +3,7 @@ import MissionIcon from '@/components/icons/MissionIcon';
 
 export default function MissionAndVision() {
   return (
-    <section className='relative w-full bg-[#F8FBF3] px-6 pt-24'>
+    <section className='relative w-full bg-[#F8FBF3] pt-24'>
       <div className='container'>
         <div className={'grid grid-cols-12 gap-4'}>
           <div className='col-span-12 md:col-span-6'>

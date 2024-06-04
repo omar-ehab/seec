@@ -7,23 +7,23 @@ const config = {
   theme: {
     screens: {
       xs: '375px',
-
       sm: '640px',
-
       md: '768px',
-
       lg: '1024px',
-
       xl: '1280px',
-
       '2xl': '1440px',
     },
 
     container: {
       center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1440px',
+      padding: {
+        DEFAULT: '1.5rem',
+        xs: '1.5rem',
+        sm: '1.5rem',
+        md: '2.5rem',
+        lg: '5rem',
+        xl: '5rem',
+        '2xl': '5rem',
       },
     },
     extend: {
@@ -91,7 +91,31 @@ const config = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [
+    require('tailwindcss-animate'),
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          '@screen sm': {
+            maxWidth: '100%',
+          },
+          '@screen md': {
+            maxWidth: '100%',
+          },
+          '@screen lg': {
+            maxWidth: '100%',
+          },
+          '@screen xl': {
+            maxWidth: '100%',
+          },
+          '@screen 2xl': {
+            maxWidth: '1440px',
+          },
+        },
+      });
+    },
+  ],
 } satisfies Config;
 
 export default config;
