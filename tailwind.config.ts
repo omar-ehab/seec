@@ -93,7 +93,7 @@ const config = {
   },
   plugins: [
     require('tailwindcss-animate'),
-    function ({ addComponents }) {
+    function ({ addComponents }: { addComponents: (arg0: any) => void }) {
       addComponents({
         '.container': {
           maxWidth: '100%',
