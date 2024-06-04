@@ -59,167 +59,165 @@ export default function Navbar({ lang, className }: Props) {
   return (
     <>
       <nav
-        className={cn(
-          'relative z-20 flex h-[4.5rem] w-full items-center justify-between bg-white px-[5.25rem]',
-          className,
-          {
-            'bg-[rgba(0,0,0,.25)]': isTransparent,
-          }
-        )}
+        className={cn('relative z-20 h-[4.5rem] w-full  bg-white', className, {
+          'bg-[rgba(0,0,0,.25)]': isTransparent,
+        })}
         role='navigation'
         aria-label='Main Navigation'
       >
-        <div className={'flex h-full grow items-center gap-8'}>
-          <Link href={`/${lang}`}>
-            <Image
-              priority
-              src={isTransparent ? WhiteLogo : ColoredLogo}
-              alt={'SEEC'}
-            />
-          </Link>
-          <ul className={'flex h-full items-center gap-6'}>
-            <li
-              className={'flex h-full flex-col items-center justify-center'}
-              role='listitem'
-            >
-              <Link
-                href={`/${lang}`}
-                className={cn('', {
-                  'text-sub_p': !isTransparent && pathname !== `/${lang}`,
-                  'text-black': !isTransparent && pathname === `/${lang}`,
-                  'text-white/75': isTransparent && pathname !== `/${lang}`,
-                  'text-white': isTransparent && pathname === `/${lang}`,
-                })}
+        <div className='container flex h-full items-center justify-between'>
+          <div className={'flex h-full grow items-center gap-8'}>
+            <Link href={`/${lang}`}>
+              <Image
+                priority
+                src={isTransparent ? WhiteLogo : ColoredLogo}
+                alt={'SEEC'}
+              />
+            </Link>
+            <ul className={'flex h-full items-center gap-6'}>
+              <li
+                className={'flex h-full flex-col items-center justify-center'}
+                role='listitem'
               >
-                الرئيسية
-              </Link>
-            </li>
-            <li
-              className={'flex h-full flex-col items-center justify-center'}
-              role='listitem'
-            >
-              <button
-                type={'button'}
-                className={cn('flex grow items-center gap-1', {
-                  'text-sub_p hover:text-black': !isTransparent,
-                  'text-white/75 hover:text-white': isTransparent,
-                })}
-                onClick={() => openMenu('about_center')}
-              >
-                <span
-                  className={cn({
-                    'font-medium text-black': isAboutCenterActive(
-                      lang,
-                      pathname
-                    ),
+                <Link
+                  href={`/${lang}`}
+                  className={cn('', {
+                    'text-sub_p': !isTransparent && pathname !== `/${lang}`,
+                    'text-black': !isTransparent && pathname === `/${lang}`,
+                    'text-white/75': isTransparent && pathname !== `/${lang}`,
+                    'text-white': isTransparent && pathname === `/${lang}`,
                   })}
                 >
-                  عن المركز
-                </span>
-                <ArrowDownIcon
-                  size={16}
-                  className={cn('mt-2 transition-transform', {
-                    'rotate-180': activeTab === 'about_center',
+                  الرئيسية
+                </Link>
+              </li>
+              <li
+                className={'flex h-full flex-col items-center justify-center'}
+                role='listitem'
+              >
+                <button
+                  type={'button'}
+                  className={cn('flex grow items-center gap-1', {
+                    'text-sub_p hover:text-black': !isTransparent,
+                    'text-white/75 hover:text-white': isTransparent,
                   })}
-                />
-              </button>
-              {activeTab === 'about_center' && (
-                <motion.span
-                  layoutId='bubble'
-                  className='block h-[2px] w-full rounded-full bg-[#006F59]'
-                  transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
-                />
-              )}
-            </li>
-            <li
-              className={'flex h-full flex-col items-center justify-center'}
-              role='listitem'
-            >
-              <Link
-                href={`/${lang}/online-services`}
-                className={cn('', {
-                  'text-sub_p hover:text-black': !isTransparent,
-                  'text-white/75 hover:text-white': isTransparent,
-                })}
+                  onClick={() => openMenu('about_center')}
+                >
+                  <span
+                    className={cn({
+                      'font-medium text-black': isAboutCenterActive(
+                        lang,
+                        pathname
+                      ),
+                    })}
+                  >
+                    عن المركز
+                  </span>
+                  <ArrowDownIcon
+                    size={16}
+                    className={cn('mt-2 transition-transform', {
+                      'rotate-180': activeTab === 'about_center',
+                    })}
+                  />
+                </button>
+                {activeTab === 'about_center' && (
+                  <motion.span
+                    layoutId='bubble'
+                    className='block h-[2px] w-full rounded-full bg-[#006F59]'
+                    transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
+                  />
+                )}
+              </li>
+              <li
+                className={'flex h-full flex-col items-center justify-center'}
+                role='listitem'
               >
-                الخدمات الإلكترونية
-              </Link>
-            </li>
-            <li
-              className={'flex h-full flex-col items-center justify-center'}
-              role='listitem'
-            >
-              <Link
-                href={`/${lang}/rules`}
-                className={cn('', {
-                  'text-sub_p hover:text-black': !isTransparent,
-                  'text-white/75 hover:text-white': isTransparent,
-                  'font-medium text-black':
-                    pathname === `/${lang}/rules` && !isTransparent,
-                })}
-              >
-                اللوائح والانظمة
-              </Link>
-            </li>
-            <li
-              className={'flex h-full flex-col items-center justify-center'}
-              role='listitem'
-            >
-              <button
-                type={'button'}
-                className={cn('flex grow items-center gap-1', {
-                  'text-sub_p hover:text-black': !isTransparent,
-                  'text-white/75 hover:text-white': isTransparent,
-                })}
-                onClick={() => openMenu('media_center')}
-              >
-                <span>المركز الإعلامي</span>
-                <ArrowDownIcon
-                  size={16}
-                  className={cn('mt-2 transition-transform', {
-                    'rotate-180': activeTab === 'media_center',
+                <Link
+                  href={`/${lang}/online-services`}
+                  className={cn('', {
+                    'text-sub_p hover:text-black': !isTransparent,
+                    'text-white/75 hover:text-white': isTransparent,
                   })}
-                />
-              </button>
-              {activeTab === 'media_center' && (
-                <motion.span
-                  layoutId='bubble'
-                  className='block h-[2px] w-full rounded-full bg-[#006F59]'
-                  transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
-                />
-              )}
-            </li>
-            <li
-              className={'flex h-full flex-col items-center justify-center'}
-              role='listitem'
-            >
-              <Link
-                href={`/${lang}/careers`}
-                className={cn('', {
-                  'text-sub_p hover:text-black': !isTransparent,
-                  'text-white/75 hover:text-white': isTransparent,
-                })}
+                >
+                  الخدمات الإلكترونية
+                </Link>
+              </li>
+              <li
+                className={'flex h-full flex-col items-center justify-center'}
+                role='listitem'
               >
-                التوظيف
-              </Link>
-            </li>
-            <li
-              className={'flex h-full flex-col items-center justify-center'}
-              role='listitem'
-            >
-              <Link
-                href={`/${lang}/contact-us`}
-                className={cn('', {
-                  'text-sub_p hover:text-black': !isTransparent,
-                  'text-white/75 hover:text-white': isTransparent,
-                })}
+                <Link
+                  href={`/${lang}/rules`}
+                  className={cn('', {
+                    'text-sub_p hover:text-black': !isTransparent,
+                    'text-white/75 hover:text-white': isTransparent,
+                    'font-medium text-black':
+                      pathname === `/${lang}/rules` && !isTransparent,
+                  })}
+                >
+                  اللوائح والانظمة
+                </Link>
+              </li>
+              <li
+                className={'flex h-full flex-col items-center justify-center'}
+                role='listitem'
               >
-                تواصل معنا
-              </Link>
-            </li>
-          </ul>
+                <button
+                  type={'button'}
+                  className={cn('flex grow items-center gap-1', {
+                    'text-sub_p hover:text-black': !isTransparent,
+                    'text-white/75 hover:text-white': isTransparent,
+                  })}
+                  onClick={() => openMenu('media_center')}
+                >
+                  <span>المركز الإعلامي</span>
+                  <ArrowDownIcon
+                    size={16}
+                    className={cn('mt-2 transition-transform', {
+                      'rotate-180': activeTab === 'media_center',
+                    })}
+                  />
+                </button>
+                {activeTab === 'media_center' && (
+                  <motion.span
+                    layoutId='bubble'
+                    className='block h-[2px] w-full rounded-full bg-[#006F59]'
+                    transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
+                  />
+                )}
+              </li>
+              <li
+                className={'flex h-full flex-col items-center justify-center'}
+                role='listitem'
+              >
+                <Link
+                  href={`/${lang}/careers`}
+                  className={cn('', {
+                    'text-sub_p hover:text-black': !isTransparent,
+                    'text-white/75 hover:text-white': isTransparent,
+                  })}
+                >
+                  التوظيف
+                </Link>
+              </li>
+              <li
+                className={'flex h-full flex-col items-center justify-center'}
+                role='listitem'
+              >
+                <Link
+                  href={`/${lang}/contact-us`}
+                  className={cn('', {
+                    'text-sub_p hover:text-black': !isTransparent,
+                    'text-white/75 hover:text-white': isTransparent,
+                  })}
+                >
+                  تواصل معنا
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <Actions lang={lang} isTransparent={isTransparent} />
         </div>
-        <Actions lang={lang} isTransparent={isTransparent} />
       </nav>
       <motion.div
         initial={{ height: 0 }}

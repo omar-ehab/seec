@@ -16,7 +16,7 @@ import 'swiper/css';
 export default function Partners() {
   return (
     <section className='relative w-full  bg-[#F8FBF3] py-16'>
-      <div className={'mb-12 flex items-center justify-between px-6 md:px-20'}>
+      <div className={'container mb-12 flex items-center justify-between'}>
         <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
           شركاؤنا في النجاح
         </h2>

@@ -32,9 +32,9 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
       <div className={'relative overflow-hidden bg-[#F7F8F7] pb-40 pt-16'}>
         <DoubleSquareMonoColor className={'absolute bottom-0 left-0 z-0'} />
         <div className={'container'}>
-          <div className={'grid grid-cols-2'}>
+          <div className={'grid grid-cols-1 md:grid-cols-2'}>
             <div className={'mb-6'}>
-              <h3 className={'mb-4 text-2xl font-medium text-black'}>
+              <h3 className={'mb-4 text-xl font-medium text-black md:text-2xl'}>
                 لمحة عن المركز
               </h3>
               <p className={'text-sub_p'}>

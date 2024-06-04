@@ -13,7 +13,7 @@ export default function FreedomOfInformationPage({ params: { lang } }: Props) {
       <Navbar lang={lang} />
       <PageHeader
         title='حرية المعلومات'
-        skewBottomClass={'bg-[#F7F8F7]'}
+        skewBottomClass={'bg-white'}
         breadcrumbItems={[
           { title: 'الرئيسية', href: `/${lang}` },
           { title: 'حرية المعلومات' },
@@ -21,7 +21,110 @@ export default function FreedomOfInformationPage({ params: { lang } }: Props) {
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <section></section>
+      <section>
+        <div className='container py-16'>
+          <div className='[&:not(:last-child)]:mb-16'>
+            <h2 className='mb-6 text-2xl font-medium text-black'>
+              حقوق الأفراد في حرية المعلومات
+            </h2>
+            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+              المبدأ الأول: الشفافية للفرد الحق في معرفة المعلومات المتعلقة
+              بأنشطة الجهات العامة؛ تعزيزاً لمنظومة النزاهة والشفافية والمساءلة.
+            </p>
+            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+              المبدأ الثاني: الضرورة والتناسب أي قيود على طلب الاطلاع أو الحصول
+              على المعلومات المحمية التي تتلقاها أو تنتجها أو تتعامل معها الجهات
+              العامة يجب أن تكون مبررة بطريقة واضحة وصريحة.
+            </p>
+            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+              المبدأ الثالث: الأصل في المعلومات العامة الإفصاح لكل فرد الحق في
+              الاطلاع على المعلومات العامة –غير المحمية– وليس بالضرورة أن يتمتع
+              مقدم الطلب بحيثية معينة أو باهتمام معين بهذه المعلومات ليتمكن من
+              الحصول عليها، كما لا يتعرض لأي مساءلة قانونية متعلقة بهذا الحق.
+            </p>
+            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+              المبدأ الرابع: المساواة يتم التعامل مع جميع طلبات الاطلاع أو
+              الحصول على المعلومات العامة على أساس المساواة وعدم التمييز بين
+              الأفراد.
+            </p>
+          </div>
+
+          <div className='[&:not(:last-child)]:mb-16'>
+            <h2 className='mb-6 text-2xl font-medium text-black'>
+              حقوق الأفراد فيما يتعلق بالاطلاع على المعلومات العامة أو الحصول
+              عليها
+            </h2>
+            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+              تم إعداد وثيقة الخصوصية وسرية المعلومات لمساعدة الزوار والمستخدمين
+              على تفهم طبيعة البيانات التي يتم جمعها منهم عند زيارة البوابة
+              وكيفية التعامل معها. تقوم إدارة البوابة باتخاذ الإجراءات والتدابير
+              المناسبة والملائمة للمحافظة على المعلومات الشخصية التي لديها بشكل
+              آمن يضمن حمايتها من الفقدان أو الدخول غير المصرح به أو إساءة
+              الاستخدام، أو التعديل والإفصاح غير المصرح بهما، ومن أهم التدابير
+              المعمول بها في الوزارة لحماية معلومات الزائر الشخصية:
+            </p>
+
+            <div className={'flex flex-col justify-start gap-4'}>
+              <div className={'flex items-center gap-4'}>
+                <span
+                  className={
+                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                  }
+                >
+                  1
+                </span>
+                <p className={'text-black'}>
+                  حق الاطلاع والحصول على أي معلومة غير محمية لدى أي جهة عامة.
+                </p>
+              </div>
+              <div className={'flex items-center gap-4'}>
+                <span
+                  className={
+                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                  }
+                >
+                  2
+                </span>
+                <p className={'text-black'}>
+                  الحق في معرفة سبب رفض الاطلاع أو الحصول على المعلومات
+                  المطلوبة.
+                </p>
+              </div>
+              <div className={'flex items-center gap-4'}>
+                <span
+                  className={
+                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                  }
+                >
+                  3
+                </span>
+                <p className={'text-black'}>
+                  الحق في التظلم على قرار رفض طلب الاطلاع والحصول على المعلومات
+                  المطلوبة.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className='[&:not(:last-child)]:mb-16'>
+            <h2 className='mb-6 text-2xl font-medium text-black'>
+              حقوق المواطنين في الوصول إلى المعلومات الحكومية
+            </h2>
+            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+              البيانات الحكومية المفتوحة تعد من أهم مصادر البيانات التي يمكن لأي
+              شخص استخدامها بحرية دون قيود فنية أو مالية أو قانونية، كما يمكن
+              إعادة استخدامها وتوزيعها مع مراعاة متطلبات ترخيص البيانات المفتوحة
+              التي تُنشر بموجبها وذلك من خلال البوابة الوطنية للبيانات المفتوحة.
+            </p>
+            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+              وتعمل الهيئة على تسهيل الحصول على البيانات المفتوحة لجميع الزوار،
+              كما تسعى الهيئة إلى مشاركة هذه البيانات مع المستفيدين عبر البوابة
+              الوطنية للبيانات المفتوحة؛ و ذلك بهدف تعزيز الشفافية وتشجيع
+              المشاركة الإلكترونية.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

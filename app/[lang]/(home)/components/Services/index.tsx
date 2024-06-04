@@ -11,67 +11,69 @@ import { Swiper } from 'swiper/types';
 export default function Services() {
   const [swiper, setSwiper] = useState<Swiper | null>(null);
   return (
-    <section className={'relative bg-[#F7F9FA] pt-20'}>
-      <div className={'mb-12 flex items-center justify-between px-6 md:px-20'}>
-        <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
-          خدماتنا ومبادراتنا
-        </h2>
+    <section className={'relative overflow-x-hidden bg-[#F7F9FA] pt-20'}>
+      <div className='container'>
+        <div className={'mb-12 flex items-center justify-between'}>
+          <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
+            خدماتنا ومبادراتنا
+          </h2>
 
-        <div className={'hidden items-center gap-6 md:flex'}>
-          <div className={'flex  items-center gap-4'}>
-            <button
-              onClick={() => {
-                if (swiper) {
-                  swiper.slidePrev();
+          <div className={'hidden items-center gap-6 md:flex'}>
+            <div className={'flex  items-center gap-4'}>
+              <button
+                onClick={() => {
+                  if (swiper) {
+                    swiper.slidePrev();
+                  }
+                }}
+                className={
+                  'flex size-12 items-center justify-center rounded-full border border-white bg-white text-sub_p hover:bg-primary/10 hover:text-primary'
                 }
-              }}
-              className={
-                'flex size-12 items-center justify-center rounded-full border border-white bg-white text-sub_p hover:bg-primary/10 hover:text-primary'
-              }
-            >
-              <ArrowRightIcon />
-            </button>
-            <button
-              onClick={() => {
-                if (swiper) {
-                  swiper.slideNext();
+              >
+                <ArrowRightIcon />
+              </button>
+              <button
+                onClick={() => {
+                  if (swiper) {
+                    swiper.slideNext();
+                  }
+                }}
+                className={
+                  'flex size-12 items-center justify-center rounded-full border border-white bg-white text-sub_p hover:bg-primary/10 hover:text-primary'
                 }
-              }}
-              className={
-                'flex size-12 items-center justify-center rounded-full border border-white bg-white text-sub_p hover:bg-primary/10 hover:text-primary'
-              }
+              >
+                <ArrowLeftIcon />
+              </button>
+            </div>
+            <Link
+              href={'#'}
+              className={cn(
+                buttonVariants({
+                  variant: 'outline',
+                }),
+                'text-medium flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary'
+              )}
             >
-              <ArrowLeftIcon />
-            </button>
+              <span className={'mb-1'}>عرض الكل</span>
+              <ChevronLeftIcon className={'size-5'} />
+            </Link>
           </div>
+        </div>
+        <div className={'pb-24'}>
+          <Slider setSwiper={setSwiper} className='!overflow-visible' />
           <Link
             href={'#'}
             className={cn(
               buttonVariants({
                 variant: 'outline',
               }),
-              'text-medium flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary'
+              'text-medium mx-6 mt-6 flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary md:hidden'
             )}
           >
             <span className={'mb-1'}>عرض الكل</span>
             <ChevronLeftIcon className={'size-5'} />
           </Link>
         </div>
-      </div>
-      <div className={'pb-24'}>
-        <Slider setSwiper={setSwiper} />
-        <Link
-          href={'#'}
-          className={cn(
-            buttonVariants({
-              variant: 'outline',
-            }),
-            'text-medium mx-6 mt-6 flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary md:hidden'
-          )}
-        >
-          <span className={'mb-1'}>عرض الكل</span>
-          <ChevronLeftIcon className={'size-5'} />
-        </Link>
       </div>
       <div className={'relative h-24 bg-[#F4F9F7]'}>
         <span
