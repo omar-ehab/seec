@@ -157,6 +157,9 @@
   .partners .swiper-wrapper {
     transition-timing-function: linear;
   }
+  .news__card_gradient {
+    background: linear-gradient(179.32deg, rgba(32, 32, 33, 0) 0.58%, rgba(32, 32, 33, 0.785) 77.17%, #202021 99.41%);
+  }
 }
 
 @layer base {

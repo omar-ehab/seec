@@ -378,7 +378,7 @@ export default function Navbar({ lang, className }: Props) {
               <>
                 <li className={'w-[164px]'} role='listitem'>
                   <Link
-                    href={`/${lang}/about-center`}
+                    href={`/${lang}/news`}
                     className={cn(
                       'block rounded p-2 text-sm leading-5 hover:font-medium',
                       {
@@ -388,12 +388,12 @@ export default function Navbar({ lang, className }: Props) {
                       }
                     )}
                   >
-                    إنشاء المركز
+                    الأخبار
                   </Link>
                 </li>
                 <li className={'w-[164px]'} role='listitem'>
                   <Link
-                    href={`/${lang}`}
+                    href={`/${lang}/events`}
                     className={cn(
                       'block rounded p-2 text-sm leading-5 hover:font-medium',
                       {
@@ -403,12 +403,12 @@ export default function Navbar({ lang, className }: Props) {
                       }
                     )}
                   >
-                    استراتيجية المركز
+                    الفعاليات
                   </Link>
                 </li>
                 <li className={'w-[164px]'} role='listitem'>
                   <Link
-                    href={`/${lang}`}
+                    href={`/${lang}/reports`}
                     className={cn(
                       'block rounded p-2 text-sm leading-5 hover:font-medium',
                       {
@@ -418,12 +418,12 @@ export default function Navbar({ lang, className }: Props) {
                       }
                     )}
                   >
-                    اختصاصات المركز
+                    التقارير
                   </Link>
                 </li>
                 <li className={'w-[164px]'} role='listitem'>
                   <Link
-                    href={`/${lang}`}
+                    href={`/${lang}/media-library`}
                     className={cn(
                       'block rounded p-2 text-sm leading-5 hover:font-medium',
                       {
@@ -433,12 +433,12 @@ export default function Navbar({ lang, className }: Props) {
                       }
                     )}
                   >
-                    مجلس الإدارة
+                    مكتبة الوسائط
                   </Link>
                 </li>
                 <li className={'w-[164px]'} role='listitem'>
                   <Link
-                    href={`/${lang}`}
+                    href={`/${lang}/open-data`}
                     className={cn(
                       'block rounded p-2 text-sm leading-5 hover:font-medium',
                       {
@@ -448,12 +448,12 @@ export default function Navbar({ lang, className }: Props) {
                       }
                     )}
                   >
-                    الهيكل التنظيمي
+                    البيانات المفتوحة
                   </Link>
                 </li>
                 <li className={'w-[164px]'} role='listitem'>
                   <Link
-                    href={`/${lang}`}
+                    href={`/${lang}/statistics`}
                     className={cn(
                       'block rounded p-2 text-sm leading-5 hover:font-medium',
                       {
@@ -463,12 +463,12 @@ export default function Navbar({ lang, className }: Props) {
                       }
                     )}
                   >
-                    قطاعات كفاءة الطاقة
+                    الاحصاءات
                   </Link>
                 </li>
                 <li className={'w-[164px]'} role='listitem'>
                   <Link
-                    href={`/${lang}`}
+                    href={`/${lang}/visual-identity`}
                     className={cn(
                       'block rounded p-2 text-sm leading-5 hover:font-medium',
                       {
@@ -478,7 +478,7 @@ export default function Navbar({ lang, className }: Props) {
                       }
                     )}
                   >
-                    ممكنات كفاءة الطاقة
+                    الهوية البصرية
                   </Link>
                 </li>
               </>

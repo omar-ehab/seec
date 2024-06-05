@@ -33,7 +33,9 @@ export default function Pagination({ numberOfPages, className }: Props) {
           <ArrowRightIcon />
         </Link>
       ) : (
-        <ArrowRightIcon className={'cursor-not-allowed text-zinc-300'} />
+        <div className='flex size-10 items-center justify-center'>
+          <ArrowRightIcon className={'cursor-not-allowed text-zinc-300'} />
+        </div>
       )}
       <div className={'flex items-center justify-center gap-2'}>
         {[...Array(numberOfPages)].map((i, idx) => {
@@ -72,7 +74,9 @@ export default function Pagination({ numberOfPages, className }: Props) {
           <ArrowLeftIcon />
         </Link>
       ) : (
-        <ArrowLeftIcon className={'cursor-not-allowed text-zinc-300'} />
+        <div className='flex size-10 items-center justify-center'>
+          <ArrowLeftIcon className={'cursor-not-allowed text-zinc-300'} />
+        </div>
       )}
     </div>
   );
