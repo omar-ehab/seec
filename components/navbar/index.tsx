@@ -65,157 +65,157 @@ export default function Navbar({ lang, className }: Props) {
         role='navigation'
         aria-label='Main Navigation'
       >
-        <div className='container flex h-full items-center justify-between'>
-          <div className={'flex h-full grow items-center gap-8'}>
-            <Link href={`/${lang}`}>
-              <Image
-                priority
-                src={isTransparent ? WhiteLogo : ColoredLogo}
-                alt={'SEEC'}
-              />
-            </Link>
-            <ul className={'flex h-full items-center gap-6'}>
-              <li
-                className={'flex h-full flex-col items-center justify-center'}
-                role='listitem'
+        <div className='container grid h-full grid-cols-[124px,75px,101px,141px,122px,137px,77px,92px,1fr,196px] items-center justify-between'>
+          <Link href={`/${lang}`}>
+            <Image
+              priority
+              src={isTransparent ? WhiteLogo : ColoredLogo}
+              alt={'SEEC'}
+            />
+          </Link>
+          <ul
+            className={'col-span-7 col-start-2 flex h-full items-center gap-6'}
+          >
+            <li
+              className={'flex h-full flex-col items-center justify-center'}
+              role='listitem'
+            >
+              <Link
+                href={`/${lang}`}
+                className={cn('', {
+                  'text-sub_p': !isTransparent && pathname !== `/${lang}`,
+                  'text-black': !isTransparent && pathname === `/${lang}`,
+                  'text-white/75': isTransparent && pathname !== `/${lang}`,
+                  'text-white': isTransparent && pathname === `/${lang}`,
+                })}
               >
-                <Link
-                  href={`/${lang}`}
-                  className={cn('', {
-                    'text-sub_p': !isTransparent && pathname !== `/${lang}`,
-                    'text-black': !isTransparent && pathname === `/${lang}`,
-                    'text-white/75': isTransparent && pathname !== `/${lang}`,
-                    'text-white': isTransparent && pathname === `/${lang}`,
+                الرئيسية
+              </Link>
+            </li>
+            <li
+              className={'flex h-full flex-col items-center justify-center'}
+              role='listitem'
+            >
+              <button
+                type={'button'}
+                className={cn('flex grow items-center gap-1', {
+                  'text-sub_p hover:text-black': !isTransparent,
+                  'text-white/75 hover:text-white': isTransparent,
+                })}
+                onClick={() => openMenu('about_center')}
+              >
+                <span
+                  className={cn({
+                    'font-medium text-black': isAboutCenterActive(
+                      lang,
+                      pathname
+                    ),
                   })}
                 >
-                  الرئيسية
-                </Link>
-              </li>
-              <li
-                className={'flex h-full flex-col items-center justify-center'}
-                role='listitem'
-              >
-                <button
-                  type={'button'}
-                  className={cn('flex grow items-center gap-1', {
-                    'text-sub_p hover:text-black': !isTransparent,
-                    'text-white/75 hover:text-white': isTransparent,
+                  عن المركز
+                </span>
+                <ArrowDownIcon
+                  size={16}
+                  className={cn('mt-2 transition-transform', {
+                    'rotate-180': activeTab === 'about_center',
                   })}
-                  onClick={() => openMenu('about_center')}
-                >
-                  <span
-                    className={cn({
-                      'font-medium text-black': isAboutCenterActive(
-                        lang,
-                        pathname
-                      ),
-                    })}
-                  >
-                    عن المركز
-                  </span>
-                  <ArrowDownIcon
-                    size={16}
-                    className={cn('mt-2 transition-transform', {
-                      'rotate-180': activeTab === 'about_center',
-                    })}
-                  />
-                </button>
-                {activeTab === 'about_center' && (
-                  <motion.span
-                    layoutId='bubble'
-                    className='block h-[2px] w-full rounded-full bg-[#006F59]'
-                    transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
-                  />
-                )}
-              </li>
-              <li
-                className={'flex h-full flex-col items-center justify-center'}
-                role='listitem'
+                />
+              </button>
+              {activeTab === 'about_center' && (
+                <motion.span
+                  layoutId='bubble'
+                  className='block h-[2px] w-full rounded-full bg-[#006F59]'
+                  transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
+                />
+              )}
+            </li>
+            <li
+              className={'flex h-full flex-col items-center justify-center'}
+              role='listitem'
+            >
+              <Link
+                href={`/${lang}/online-services`}
+                className={cn('', {
+                  'text-sub_p hover:text-black': !isTransparent,
+                  'text-white/75 hover:text-white': isTransparent,
+                })}
               >
-                <Link
-                  href={`/${lang}/online-services`}
-                  className={cn('', {
-                    'text-sub_p hover:text-black': !isTransparent,
-                    'text-white/75 hover:text-white': isTransparent,
-                  })}
-                >
-                  الخدمات الإلكترونية
-                </Link>
-              </li>
-              <li
-                className={'flex h-full flex-col items-center justify-center'}
-                role='listitem'
+                الخدمات الإلكترونية
+              </Link>
+            </li>
+            <li
+              className={'flex h-full flex-col items-center justify-center'}
+              role='listitem'
+            >
+              <Link
+                href={`/${lang}/rules`}
+                className={cn('', {
+                  'text-sub_p hover:text-black': !isTransparent,
+                  'text-white/75 hover:text-white': isTransparent,
+                  'font-medium text-black':
+                    pathname === `/${lang}/rules` && !isTransparent,
+                })}
               >
-                <Link
-                  href={`/${lang}/rules`}
-                  className={cn('', {
-                    'text-sub_p hover:text-black': !isTransparent,
-                    'text-white/75 hover:text-white': isTransparent,
-                    'font-medium text-black':
-                      pathname === `/${lang}/rules` && !isTransparent,
-                  })}
-                >
-                  اللوائح والانظمة
-                </Link>
-              </li>
-              <li
-                className={'flex h-full flex-col items-center justify-center'}
-                role='listitem'
+                اللوائح والانظمة
+              </Link>
+            </li>
+            <li
+              className={'flex h-full flex-col items-center justify-center'}
+              role='listitem'
+            >
+              <button
+                type={'button'}
+                className={cn('flex grow items-center gap-1', {
+                  'text-sub_p hover:text-black': !isTransparent,
+                  'text-white/75 hover:text-white': isTransparent,
+                })}
+                onClick={() => openMenu('media_center')}
               >
-                <button
-                  type={'button'}
-                  className={cn('flex grow items-center gap-1', {
-                    'text-sub_p hover:text-black': !isTransparent,
-                    'text-white/75 hover:text-white': isTransparent,
+                <span>المركز الإعلامي</span>
+                <ArrowDownIcon
+                  size={16}
+                  className={cn('mt-2 transition-transform', {
+                    'rotate-180': activeTab === 'media_center',
                   })}
-                  onClick={() => openMenu('media_center')}
-                >
-                  <span>المركز الإعلامي</span>
-                  <ArrowDownIcon
-                    size={16}
-                    className={cn('mt-2 transition-transform', {
-                      'rotate-180': activeTab === 'media_center',
-                    })}
-                  />
-                </button>
-                {activeTab === 'media_center' && (
-                  <motion.span
-                    layoutId='bubble'
-                    className='block h-[2px] w-full rounded-full bg-[#006F59]'
-                    transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
-                  />
-                )}
-              </li>
-              <li
-                className={'flex h-full flex-col items-center justify-center'}
-                role='listitem'
+                />
+              </button>
+              {activeTab === 'media_center' && (
+                <motion.span
+                  layoutId='bubble'
+                  className='block h-[2px] w-full rounded-full bg-[#006F59]'
+                  transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
+                />
+              )}
+            </li>
+            <li
+              className={'flex h-full flex-col items-center justify-center'}
+              role='listitem'
+            >
+              <Link
+                href={`/${lang}/careers`}
+                className={cn('', {
+                  'text-sub_p hover:text-black': !isTransparent,
+                  'text-white/75 hover:text-white': isTransparent,
+                })}
               >
-                <Link
-                  href={`/${lang}/careers`}
-                  className={cn('', {
-                    'text-sub_p hover:text-black': !isTransparent,
-                    'text-white/75 hover:text-white': isTransparent,
-                  })}
-                >
-                  التوظيف
-                </Link>
-              </li>
-              <li
-                className={'flex h-full flex-col items-center justify-center'}
-                role='listitem'
+                التوظيف
+              </Link>
+            </li>
+            <li
+              className={'flex h-full flex-col items-center justify-center'}
+              role='listitem'
+            >
+              <Link
+                href={`/${lang}/contact-us`}
+                className={cn('', {
+                  'text-sub_p hover:text-black': !isTransparent,
+                  'text-white/75 hover:text-white': isTransparent,
+                })}
               >
-                <Link
-                  href={`/${lang}/contact-us`}
-                  className={cn('', {
-                    'text-sub_p hover:text-black': !isTransparent,
-                    'text-white/75 hover:text-white': isTransparent,
-                  })}
-                >
-                  تواصل معنا
-                </Link>
-              </li>
-            </ul>
-          </div>
+                تواصل معنا
+              </Link>
+            </li>
+          </ul>
           <Actions lang={lang} isTransparent={isTransparent} />
         </div>
       </nav>
@@ -224,13 +224,17 @@ export default function Navbar({ lang, className }: Props) {
         animate={controls}
         className={cn('relative z-20 w-full overflow-hidden bg-white')}
       >
-        <div className={'h-full w-full px-[5.25rem] py-6'}>
+        <div
+          className={
+            'container grid h-full grid-cols-[124px,75px,101px,141px,122px,137px,77px,92px,1fr,196px]'
+          }
+        >
           <ul
             className={cn(
-              'flex h-full w-[600px] flex-col flex-wrap justify-start gap-x-6 gap-y-2',
+              'grid grid-cols-[repeat(3,max-content)] grid-rows-[repeat(3,max-content)] gap-x-6  gap-y-2 py-6',
               {
-                'mr-[200px]': activeTab === 'about_center',
-                'mr-[558px]': activeTab === 'media_center',
+                'col-start-3': activeTab === 'about_center',
+                'col-start-6': activeTab === 'media_center',
               }
             )}
             role='list'
@@ -239,7 +243,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}/about-center`}
                 className={
-                  'block w-full rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
+                  'block rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
                 }
               >
                 إنشاء المركز
@@ -249,7 +253,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}`}
                 className={
-                  'block w-full rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
+                  'block rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
                 }
               >
                 استراتيجية المركز
@@ -259,7 +263,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}`}
                 className={
-                  'block w-full rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
+                  'block rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
                 }
               >
                 اختصاصات المركز
@@ -269,7 +273,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}`}
                 className={
-                  'block w-full rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
+                  'block rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
                 }
               >
                 مجلس الإدارة
@@ -279,7 +283,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}`}
                 className={
-                  'block w-full rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
+                  'block rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
                 }
               >
                 الهيكل التنظيمي
@@ -289,7 +293,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}`}
                 className={
-                  'block w-full rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
+                  'block rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
                 }
               >
                 قطاعات كفاءة الطاقة
@@ -299,7 +303,7 @@ export default function Navbar({ lang, className }: Props) {
               <Link
                 href={`/${lang}`}
                 className={
-                  'block w-full rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
+                  'block rounded p-2 text-sm leading-5 text-black hover:bg-primary/5 hover:font-medium hover:text-primary'
                 }
               >
                 ممكنات كفاءة الطاقة

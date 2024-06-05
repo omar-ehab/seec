@@ -7,7 +7,7 @@ type Props = {
 };
 export default function Actions({ lang, isTransparent }: Props) {
   return (
-    <div className='flex items-center justify-end gap-4'>
+    <div className='col-start-10 flex items-center justify-end gap-4'>
       <LanguageSwitcher lang={lang} isTransparent={isTransparent} />
       <Settings isTransparent={isTransparent} />
     </div>
