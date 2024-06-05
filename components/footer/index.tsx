@@ -12,7 +12,7 @@ import Vision2030Image from '@/public/vision_2030.png';
 import { Separator } from '@/components/ui/separator';
 import FooterBg from './FooterBg';
 
-export default function Footer() {
+export default function Footer({ lang }: { lang: LangType }) {
   return (
     <footer className={'-mt-24 overflow-hidden'}>
       <div className={'relative z-50 h-24 translate-y-24 bg-transparent'}>
@@ -85,10 +85,10 @@ export default function Footer() {
                 </p>
                 <ul className={'mb-4 flex flex-col gap-4'}>
                   <li className={'text-[#D7DAD7]'}>
-                    <Link href={'#'}>الرئيسية</Link>
+                    <Link href={`/${lang}`}>الرئيسية</Link>
                   </li>
                   <li className={'text-[#D7DAD7]'}>
-                    <Link href={'#'}>عن المركز</Link>
+                    <Link href={`/${lang}/about-center`}>عن المركز</Link>
                   </li>
                 </ul>
                 <p className={'mb-4 text-xl font-medium text-white'}>
@@ -96,13 +96,13 @@ export default function Footer() {
                 </p>
                 <ul className={'flex flex-col gap-4'}>
                   <li className={'text-[#D7DAD7]'}>
-                    <Link href={'#'}>اللوائح والأنظمة</Link>
+                    <Link href={`/${lang}/rules`}>اللوائح والأنظمة</Link>
                   </li>
                   <li className={'text-[#D7DAD7]'}>
                     <Link href={'#'}>المركز الإعلامي</Link>
                   </li>
                   <li className={'text-[#D7DAD7]'}>
-                    <Link href={'#'}>التوظيف</Link>
+                    <Link href={`/${lang}/careers`}>التوظيف</Link>
                   </li>
                 </ul>
               </div>
@@ -112,16 +112,20 @@ export default function Footer() {
                 </p>
                 <ul className={'flex flex-col gap-4'}>
                   <li className={'text-[#D7DAD7]'}>
-                    <Link href={'#'}>تواصل معنا</Link>
+                    <Link href={`/${lang}/contact-us`}>تواصل معنا</Link>
                   </li>
                   <li className={'text-[#D7DAD7]'}>
-                    <Link href={'#'}>الأسئلة الشائعة</Link>
+                    <Link href={`/${lang}/faq`}>الأسئلة الشائعة</Link>
                   </li>
                   <li className={'text-[#D7DAD7]'}>
-                    <Link href={'#'}>اتفاقية مستوى الخدمة</Link>
+                    <Link href={`/${lang}/service-level-agreement`}>
+                      اتفاقية مستوى الخدمة
+                    </Link>
                   </li>
                   <li className={'text-[#D7DAD7]'}>
-                    <Link href={'#'}>المشاركة الإلكترونية</Link>
+                    <Link href={`/${lang}/online-participation`}>
+                      المشاركة الإلكترونية
+                    </Link>
                   </li>
                   <li className={'text-[#D7DAD7]'}>
                     <Link href={'#'}>الإحصاءات</Link>
@@ -254,7 +258,7 @@ export default function Footer() {
             <div className={'flex flex-col gap-2 md:gap-1'}>
               <div className={'flex  items-center justify-center gap-4 '}>
                 <Link
-                  href={'#'}
+                  href={`/${lang}/usage-policy`}
                   className={'text-sm text-[#D7DAD7] hover:text-white'}
                 >
                   سياسة الاستخدام
@@ -264,7 +268,7 @@ export default function Footer() {
                   className={'h-3 bg-[#D7DAD7]'}
                 />
                 <Link
-                  href={'#'}
+                  href={`/${lang}/privacy-policy`}
                   className={'text-sm text-[#D7DAD7] hover:text-white'}
                 >
                   سياسة الخصوصية
@@ -274,7 +278,7 @@ export default function Footer() {
                   className={'h-3 bg-[#D7DAD7]'}
                 />
                 <Link
-                  href={'#'}
+                  href={`/${lang}/freedom-of-information`}
                   className={
                     'hidden text-sm text-[#D7DAD7] hover:text-white md:block'
                   }
@@ -286,7 +290,7 @@ export default function Footer() {
                   className={'hidden h-3 bg-[#D7DAD7] md:block'}
                 />
                 <Link
-                  href={'#'}
+                  href={`/${lang}/site-map`}
                   className={'text-sm text-[#D7DAD7] hover:text-white'}
                 >
                   خارطة الموقع

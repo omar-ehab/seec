@@ -62,7 +62,7 @@ export default function RootLayout({
     <html lang={lang} dir={getDir(lang)}>
       <body className={myFont.className}>
         {children}
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );
