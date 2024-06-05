@@ -1,6 +1,7 @@
 import Navbar from '@/components/navbar';
 import PageHeader from '@/components/page-header/PageHeader';
 import HeaderCallToAction from '@/components/page-header/HeaderCallToAction';
+import FooterCta from '@/components/footer-cta';
 
 type Props = {
   params: {
@@ -40,7 +41,6 @@ export default function ServiceLevelAgreementPage({ params: { lang } }: Props) {
               دليل الخدمات الإلكترونية في الوزارة. 
             </p>
           </div>
-
           <div className='[&:not(:last-child)]:mb-16'>
             <h2 className='mb-6 text-2xl font-medium text-black'>
               ‌المساعدة والدعم
@@ -66,6 +66,7 @@ export default function ServiceLevelAgreementPage({ params: { lang } }: Props) {
               الخصوصية وسرية المعلومات.
             </p>
           </div>
+          <FooterCta lastUpdateDate={'12/5/2024'} />
         </div>
       </section>
     </>

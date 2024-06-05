@@ -1,6 +1,7 @@
 import Navbar from '@/components/navbar';
 import PageHeader from '@/components/page-header/PageHeader';
 import HeaderCallToAction from '@/components/page-header/HeaderCallToAction';
+import FooterCta from '@/components/footer-cta';
 
 type Props = {
   params: {
@@ -123,6 +124,7 @@ export default function FreedomOfInformationPage({ params: { lang } }: Props) {
               المشاركة الإلكترونية.
             </p>
           </div>
+          <FooterCta lastUpdateDate={'12/5/2024'} />
         </div>
       </section>
     </>
