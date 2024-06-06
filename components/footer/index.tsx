@@ -280,14 +280,14 @@ export default function Footer({ lang }: { lang: LangType }) {
                 <Link
                   href={`/${lang}/freedom-of-information`}
                   className={
-                    'hidden text-sm text-[#D7DAD7] hover:text-white md:block'
+                    'hidden text-sm text-[#D7DAD7] hover:text-white lg:block'
                   }
                 >
                   حرية المعلومات
                 </Link>
                 <Separator
                   orientation={'vertical'}
-                  className={'hidden h-3 bg-[#D7DAD7] md:block'}
+                  className={'hidden h-3 bg-[#D7DAD7] lg:block'}
                 />
                 <Link
                   href={`/${lang}/site-map`}

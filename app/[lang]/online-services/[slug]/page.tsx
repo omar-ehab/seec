@@ -39,7 +39,7 @@ export default function ServicePage({
       </PageHeader>
       <div
         className={
-          'relative overflow-hidden bg-[#F7F8F7] px-6 pb-36 pt-16 md:px-20'
+          'container relative overflow-hidden bg-[#F7F8F7] pb-36 pt-16'
         }
       >
         <DoubleSquareMonoColor className={'absolute bottom-0 left-0 z-0'} />
@@ -82,7 +82,7 @@ export default function ServicePage({
           </div>
         </div>
       </div>
-      <div className={'bg-white px-6 pb-24 md:px-20'}>
+      <div className={'container bg-white pb-24'}>
         <div
           className={
             'z-20 flex w-full -translate-y-1/2 items-center justify-between rounded-2xl bg-white p-6 shadow-[0_1px_24px_0px_rgba(32,32,33,0.1)]'

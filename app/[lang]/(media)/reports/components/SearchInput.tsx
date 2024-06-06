@@ -3,7 +3,7 @@ import SearchIcon from '@/components/icons/SearchIcon';
 
 export default function SearchInput() {
   return (
-    <div className={'relative w-[300px]'}>
+    <div className={'relative w-full xs:w-[300px]'}>
       <Input
         className={
           'rounded-full bg-transparent pr-10 placeholder:text-sub_p focus-visible:ring-primary'

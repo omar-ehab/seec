@@ -16,7 +16,7 @@ export default function HeaderCallToAction({ numberOfViews, rate }: Props) {
   return (
     <div
       className={
-        'flex w-full flex-col items-center justify-between gap-6 rounded-2xl bg-white p-2 shadow-mini_call_to_action md:gap-4 lg:flex-row lg:gap-0 lg:px-5 lg:py-3'
+        'flex w-full flex-col items-center justify-between gap-6 rounded-2xl bg-white px-1 py-3 shadow-mini_call_to_action md:gap-4 lg:flex-row lg:gap-0 lg:px-5'
       }
     >
       <div className={'md:text-md flex items-center gap-2 text-lg'}>

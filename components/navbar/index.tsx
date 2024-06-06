@@ -66,7 +66,7 @@ export default function Navbar({ lang, className }: Props) {
         role='navigation'
         aria-label='Main Navigation'
       >
-        <div className='container grid h-full grid-cols-[115px,75px,170px,141px,122px,137px,77px,92px,1fr,196px] items-center justify-between'>
+        <div className='container grid h-full items-center justify-between xl:grid-cols-[115px,75px,170px,141px,122px,137px,77px,92px,1fr,196px]'>
           <Link href={`/${lang}`}>
             <Image
               priority
@@ -75,7 +75,9 @@ export default function Navbar({ lang, className }: Props) {
             />
           </Link>
           <ul
-            className={'col-span-7 col-start-2 flex h-full items-center gap-3'}
+            className={
+              'col-span-7 col-start-2 hidden h-full items-center gap-3 xl:flex '
+            }
           >
             <li
               className={

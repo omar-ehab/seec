@@ -22,7 +22,7 @@ export default function RulesPage({ params: { lang } }: Props) {
       >
         <HeaderCallToAction numberOfViews={124} />
       </PageHeader>
-      <section className={'mx-auto mb-24 mt-16 max-w-[1056] px-6 md:px-20'}>
+      <section className={'mx-auto mb-24 mt-16 !max-w-[1056] container'}>
         <div
           className={
             'md:rounded-3xl md:bg-[#D7DAD7]/35 lg:rounded-[3rem] lg:p-12'

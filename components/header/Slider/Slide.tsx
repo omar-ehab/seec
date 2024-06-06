@@ -40,32 +40,30 @@ export default function Slide({
         className={'absolute inset-0 z-10 h-full w-full bg-black opacity-50'}
       ></div>
 
-      <div
-        className={
-          'absolute bottom-12 z-20 w-full  px-6 md:bottom-32 md:px-[84px]'
-        }
-      >
-        <h2
-          className={
-            'mb-6 max-w-[950px] text-2xl font-bold text-white md:mb-8 lg:text-[40px] lg:leading-[64px]'
-          }
-        >
-          {title}
-        </h2>
-        <div className={'flex w-full items-center gap-8 md:w-auto'}>
-          {buttonTitle && buttonUrl ? (
-            <Link
-              href={buttonUrl}
-              className={cn(
-                buttonVariants({ variant: 'default' }),
-                'flex items-center gap-1 rounded-full text-base font-medium '
-              )}
-            >
-              <span className={'mb-1'}>{buttonTitle}</span>
-              <ChevronLeftIcon size={20} />
-            </Link>
-          ) : null}
-          <SliderNavigations />
+      <div className={'absolute bottom-12 z-20 w-full md:bottom-32'}>
+        <div className='container'>
+          <h2
+            className={
+              'mb-6 max-w-[950px] text-2xl font-bold text-white md:mb-8 md:text-[40px] md:leading-[64px]'
+            }
+          >
+            {title}
+          </h2>
+          <div className={'flex w-full items-center gap-8 md:w-auto'}>
+            {buttonTitle && buttonUrl ? (
+              <Link
+                href={buttonUrl}
+                className={cn(
+                  buttonVariants({ variant: 'default' }),
+                  'flex items-center gap-1 rounded-full text-base font-medium '
+                )}
+              >
+                <span className={'mb-1'}>{buttonTitle}</span>
+                <ChevronLeftIcon size={20} />
+              </Link>
+            ) : null}
+            <SliderNavigations />
+          </div>
         </div>
       </div>
     </div>

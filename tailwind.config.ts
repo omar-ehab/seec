@@ -6,7 +6,7 @@ const config = {
   prefix: '',
   theme: {
     screens: {
-      xs: '375px',
+      xs: '450px',
       sm: '640px',
       md: '768px',
       lg: '1024px',

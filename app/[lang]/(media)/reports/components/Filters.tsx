@@ -35,25 +35,27 @@ export default function Filters({ lang }: { lang: LangType }) {
   };
 
   return (
-    <ul className={'flex items-center gap-6 text-sub_p'}>
+    <ul
+      className={'flex w-full items-center gap-2 text-sub_p xs:w-auto xs:gap-6'}
+    >
       <li>
         <Link
-          href={`/${lang}/reports`}
+          href={`/${lang}/news`}
           className={cn('flex items-center text-sub_p hover:text-primary', {
-            'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
-              pathname === `/${lang}/reports` && params.get('year') === null,
+            'rounded-full bg-primary/10  px-4 py-1 font-medium text-primary xs:py-2':
+              pathname === `/${lang}/news` && params.get('year') === null,
           })}
         >
           الكل
         </Link>
       </li>
       {last3Years.map((year) => (
-        <li key={year}>
+        <li key={year} className='hidden xs:block'>
           <Link
-            href={`/${lang}/reports?year=${year}`}
+            href={`/${lang}/news?year=${year}`}
             className={cn('flex items-center text-sub_p hover:text-primary', {
               'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
-                pathname === `/${lang}/reports` &&
+                pathname === `/${lang}/news` &&
                 params.get('year') === year.toString(),
             })}
           >

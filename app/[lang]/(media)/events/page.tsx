@@ -27,14 +27,18 @@ export default function EventsPage({ params: { lang } }: Props) {
       >
         <SubLinks lang={lang} activeTab='events' />
       </PageHeader>
-      <section className={'container mt-10 px-6 md:px-20'}>
+      <section className={'container mt-10'}>
         <div
           className={
-            'mb-6 flex flex-col-reverse items-center justify-between gap-4 md:flex-row md:gap-0'
+            'mb-6 flex flex-col-reverse items-center justify-between gap-4 lg:flex-row lg:gap-0'
           }
         >
           <Filters lang={lang} />
-          <div className={'flex items-center gap-4'}>
+          <div
+            className={
+              'flex w-full flex-grow items-start gap-4 xs:w-auto xs:items-center'
+            }
+          >
             <Button
               variant={'outline'}
               size={'icon'}
@@ -45,7 +49,7 @@ export default function EventsPage({ params: { lang } }: Props) {
             <SearchInput />
           </div>
         </div>
-        <div className={'mb-14 grid grid-cols-3 gap-6'}>
+        <div className={'mb-14 grid  gap-6 md:grid-cols-2 lg:grid-cols-3'}>
           <EventsCard
             image={FirstImage}
             title={'مبادرة برنامج إدارة الطاقة'}

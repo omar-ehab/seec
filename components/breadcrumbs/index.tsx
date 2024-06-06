@@ -21,7 +21,11 @@ export default function Breadcrumbs({ items, className }: Props) {
           <>
             <BreadcrumbItem key={`${item.title}-${idx}`}>
               {idx === items.length - 1 ? (
-                <BreadcrumbPage className={'font-medium text-sub_p'}>
+                <BreadcrumbPage
+                  className={
+                    'block max-w-[55vw] overflow-hidden text-ellipsis whitespace-nowrap font-medium text-sub_p'
+                  }
+                >
                   {item.title}
                 </BreadcrumbPage>
               ) : (

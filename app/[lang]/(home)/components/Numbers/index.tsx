@@ -8,6 +8,10 @@ import LearnIcon from '@/components/icons/colored/LearnIcon';
 import MoneyBagIcon from '@/components/icons/colored/MoneyBagIcon';
 import EcoEnergyIcon from '@/components/icons/colored/EcoEnergyIcon';
 import RoundedPolygonFilter from '@/components/svg-filters/RoundedPolygonFilter';
+import Link from 'next/link';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/button';
+import ChevronLeftIcon from '@/components/icons/ChevronLeftIcon';
 
 export default function Index() {
   return (
@@ -20,7 +24,7 @@ export default function Index() {
           }
         ></span>
       </div>
-      <div className={'container grid grid-cols-12 gap-6 pb-16'}>
+      <div className={'container mb-[58px] grid grid-cols-12 gap-x-6 gap-y-12'}>
         <div className={'col-span-12'}>
           <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
             كفاءة في الأرقام
@@ -98,6 +102,19 @@ export default function Index() {
             }
           ></div>
         </div>
+
+        <Link
+          href={'#'}
+          className={cn(
+            buttonVariants({
+              variant: 'outline',
+            }),
+            'text-medium col-span-12 -mt-4 hidden h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary md:flex lg:col-span-7 xl:col-span-6'
+          )}
+        >
+          <span className={'mb-1'}>كل الاحصائيات</span>
+          <ChevronLeftIcon className={'size-5'} />
+        </Link>
       </div>
       <div className={'relative h-24 bg-[#F4F9F7]'}>
         <span

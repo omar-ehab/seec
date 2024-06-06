@@ -27,7 +27,7 @@ export default function Slider({ className, setSwiper }: Props) {
     >
       <SwiperSlide
         className={
-          '!h-[196px] !w-[calc(100%-3rem)] first:!w-[40%] md:!h-[360px] md:!w-1/4'
+          '!h-[196px] !w-full md:!h-[360px] md:!w-1/4 md:first:!w-[40%]'
         }
       >
         <Slide
@@ -39,7 +39,7 @@ export default function Slider({ className, setSwiper }: Props) {
       </SwiperSlide>
       <SwiperSlide
         className={
-          ' !h-[196px] !w-[calc(100%-3rem)] first:!w-[40%] md:!h-[360px] md:!w-1/4'
+          ' !h-[196px] !w-full md:!h-[360px] md:!w-1/4 md:first:!w-[40%]'
         }
       >
         <Slide
@@ -51,7 +51,7 @@ export default function Slider({ className, setSwiper }: Props) {
       </SwiperSlide>
       <SwiperSlide
         className={
-          ' !h-[196px] !w-[calc(100%-3rem)] first:!w-[40%] md:!h-[360px] md:!w-1/4'
+          ' !h-[196px] !w-full md:!h-[360px] md:!w-1/4 md:first:!w-[40%]'
         }
       >
         <Slide
@@ -63,7 +63,7 @@ export default function Slider({ className, setSwiper }: Props) {
       </SwiperSlide>
       <SwiperSlide
         className={
-          ' !h-[196px] !w-[calc(100%-3rem)] first:!w-[40%] md:!h-[360px] md:!w-1/4'
+          ' !h-[196px] !w-full md:!h-[360px] md:!w-1/4 md:first:!w-[40%]'
         }
       >
         <Slide
@@ -75,7 +75,7 @@ export default function Slider({ className, setSwiper }: Props) {
       </SwiperSlide>
       <SwiperSlide
         className={
-          ' !h-[196px] !w-[calc(100%-3rem)] first:!w-[40%] md:!h-[360px] md:!w-1/4'
+          ' !h-[196px] !w-full md:!h-[360px] md:!w-1/4 md:first:!w-[40%]'
         }
       >
         <Slide
@@ -87,7 +87,7 @@ export default function Slider({ className, setSwiper }: Props) {
       </SwiperSlide>
       <SwiperSlide
         className={
-          ' !h-[196px] !w-[calc(100%-3rem)] first:!w-[40%] md:!h-[360px] md:!w-1/4'
+          ' !h-[196px] !w-full md:!h-[360px] md:!w-1/4 md:first:!w-[40%]'
         }
       >
         <Slide
@@ -99,7 +99,7 @@ export default function Slider({ className, setSwiper }: Props) {
       </SwiperSlide>
       <SwiperSlide
         className={
-          ' !h-[196px] !w-[calc(100%-3rem)] first:!w-[40%] md:!h-[360px] md:!w-1/4'
+          ' !h-[196px] !w-full md:!h-[360px] md:!w-1/4 md:first:!w-[40%]'
         }
       >
         <Slide
@@ -111,7 +111,7 @@ export default function Slider({ className, setSwiper }: Props) {
       </SwiperSlide>
       <SwiperSlide
         className={
-          ' !h-[196px] !w-[calc(100%-3rem)] first:!w-[40%] md:!h-[360px] md:!w-1/4'
+          ' !h-[196px] !w-full md:!h-[360px] md:!w-1/4 md:first:!w-[40%]'
         }
       >
         <Slide
