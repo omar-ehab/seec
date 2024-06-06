@@ -6,7 +6,7 @@ import SquarePatterns from '@/components/shapes/SquarePatterns';
 
 export default function CenterValues() {
   return (
-    <section className='relative w-full bg-[#F8FBF3] pb-20 pt-12'>
+    <section className='relative block w-full bg-[#F8FBF3] pb-20 pt-12 md:hidden'>
       <SquarePatterns className={'absolute left-0 top-[-200px] z-0'} />
       <div className='container'>
         <div className={'grid grid-cols-12'}>

@@ -12,7 +12,7 @@ export default function SliderIndicators() {
   return (
     <div
       className={
-        'absolute bottom-6 left-0 right-0 z-20 mt-6 flex items-center gap-2 px-6 md:bottom-12 md:mt-12 md:px-20'
+        'container absolute bottom-6 left-0 right-0 z-20 mt-6 flex items-center gap-2 md:bottom-12 md:mt-12'
       }
     >
       {swiper.slides.map((_, index) => (

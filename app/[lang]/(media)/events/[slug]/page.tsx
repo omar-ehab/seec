@@ -26,7 +26,7 @@ export default function SingleEventPage({ params: { lang } }: Props) {
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <section className={'container mb-20 mt-10 px-6 md:px-20'}>
+      <section className={'container mb-20 mt-10'}>
         <div className={'h-[420px] w-full overflow-hidden rounded-xl'}>
           <Image
             src={FirstImage}
@@ -35,7 +35,7 @@ export default function SingleEventPage({ params: { lang } }: Props) {
             className={'h-full w-full object-cover'}
           />
         </div>
-        <h2 className={'mt-8 text-2xl font-medium text-black'}>
+        <h2 className={'mt-8 text-xl font-medium text-black md:text-2xl'}>
           «الاعتماد السعودي» و «كفاءة الطاقة» يوقعان اتفاقية تعاون
         </h2>
         <p className={'mt-2 text-xl text-sub_p'}>شعبان 1444</p>

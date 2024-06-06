@@ -6,12 +6,12 @@ export default function CommentCta({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'flex items-center justify-between rounded-2xl bg-primary/10 p-6',
+        'flex flex-col items-center justify-between gap-6 rounded-2xl bg-primary/10 px-4 py-6 xs:flex-row xs:gap-4 md:p-6',
         className
       )}
     >
       <div className={'flex items-center gap-6'}>
-        <CommentIcon />
+        <CommentIcon className={'size-8 flex-shrink-0'} />
         <p className={'text-xl text-black'}>
           هل لديك تعليق أو استفسار عن الخدمة
         </p>

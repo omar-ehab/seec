@@ -25,7 +25,7 @@ export default function ReportsPage({ params: { lang } }: Props) {
       >
         <SubLinks lang={lang} activeTab='reports' />
       </PageHeader>
-      <section className={'container mt-10 px-6 md:px-20'}>
+      <section className={'container mt-10'}>
         <div
           className={
             'mb-6 flex flex-col-reverse items-center justify-between gap-4 md:flex-row md:gap-0'
@@ -35,7 +35,11 @@ export default function ReportsPage({ params: { lang } }: Props) {
           <SearchInput />
         </div>
         <MainTitle />
-        <div className={'mb-14 mt-8 grid grid-cols-3 gap-6 2xl:grid-cols-4'}>
+        <div
+          className={
+            'mb-14 mt-8 grid  gap-4 md:grid-cols-2 lg:grid-cols-3 xl:gap-6 2xl:grid-cols-4 '
+          }
+        >
           <ReportCard
             year={'2023'}
             title={'التقرير السنوي لعام 2023 '}

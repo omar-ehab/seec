@@ -28,16 +28,16 @@ export default function NewsPage({ params: { lang } }: Props) {
       >
         <SubLinks lang={lang} activeTab='news' />
       </PageHeader>
-      <section className={'container mt-10 px-6 md:px-20'}>
+      <section className={'container mt-10 '}>
         <div
           className={
-            'mb-6 flex flex-col-reverse items-center justify-between gap-4 md:flex-row md:gap-0'
+            'mb-6 flex flex-col-reverse items-center justify-between gap-4 lg:flex-row lg:gap-0'
           }
         >
           <Filters lang={lang} />
           <SearchInput />
         </div>
-        <div className={'mb-14 grid grid-cols-2 gap-6'}>
+        <div className={'mb-14 grid gap-6 md:grid-cols-2'}>
           <NewsCard
             image={FirstImage}
             title={

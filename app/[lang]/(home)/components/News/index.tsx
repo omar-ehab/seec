@@ -50,7 +50,7 @@ export default function News() {
                 buttonVariants({
                   variant: 'outline',
                 }),
-                'text-medium flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary'
+                'flex h-12 items-center justify-center gap-1 rounded-full border-primary bg-transparent px-6 py-3 text-base text-primary hover:bg-primary/10 hover:text-primary'
               )}
             >
               <span className={'mb-1'}>عرض الكل</span>
@@ -66,7 +66,7 @@ export default function News() {
               buttonVariants({
                 variant: 'outline',
               }),
-              'text-medium mx-6 mt-6 flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary md:hidden'
+              'text-medium mt-6 flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary md:mx-6 md:hidden'
             )}
           >
             <span className={'mb-1'}>عرض الكل</span>

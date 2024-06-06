@@ -9,7 +9,9 @@ export default function Filters({ lang }: { lang: LangType }) {
   const params = useSearchParams();
 
   return (
-    <ul className={'flex items-center gap-6 text-sub_p'}>
+    <ul
+      className={'flex items-center gap-6 text-center text-sub_p xs:text-start'}
+    >
       <li>
         <Link
           href={`/${lang}/events`}

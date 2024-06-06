@@ -20,7 +20,7 @@ export default function NumberCard({
   return (
     <div
       className={
-        'number_card_gradient group relative flex flex-col justify-between overflow-hidden rounded-2xl p-4 hover:shadow-[0px_4px_0px_0px_#73AE28] md:p-6'
+        'number_card_gradient group relative flex flex-col justify-between gap-1 overflow-hidden rounded-2xl p-4 hover:shadow-[0px_4px_0px_0px_#73AE28] md:p-6'
       }
     >
       <p className='text-xs'>{title}</p>

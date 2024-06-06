@@ -15,7 +15,7 @@ export default function FooterCta({ lastUpdateDate, className }: Props) {
         <span className={'font-medium text-black'}>{lastUpdateDate}</span>
       </p>
       <CommentCta className={'mb-6'} />
-      <div className={'flex items-center gap-6'}>
+      <div className={'xs-flex-row flex flex-col items-center gap-6'}>
         <p>هل أعجبك المحتوى المقدم في هذه الصفحة؟</p>
         <div className={'flex items-center gap-4'}>
           <Button

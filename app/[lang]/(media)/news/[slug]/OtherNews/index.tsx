@@ -11,21 +11,8 @@ import { Swiper } from 'swiper/types';
 export default function OtherNews({ lang }: { lang: LangType }) {
   const [swiper, setSwiper] = useState<Swiper | null>(null);
   return (
-    <section className={'news relative overflow-x-hidden bg-[#F7F9FA]'}>
-      <div className={'relative h-24 bg-white'}>
-        <span
-          className={'skewed-t absolute top-0 block h-full w-full bg-white'}
-        ></span>
-        <span
-          className={
-            'skewed absolute top-0 block h-full w-full bg-gradient-to-l from-[rgb(215,215,215)] to-transparent'
-          }
-        ></span>
-        <span
-          className={'skewed-b absolute top-0 block h-full w-full bg-[#F7F9FA]'}
-        ></span>
-      </div>
-      <div className='container pt-20'>
+    <section className={'news relative overflow-x-hidden bg-white pt-20'}>
+      <div className='container'>
         <div className={'mb-12 flex items-center justify-between'}>
           <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
             آخر المستجدات
@@ -58,12 +45,12 @@ export default function OtherNews({ lang }: { lang: LangType }) {
               </button>
             </div>
             <Link
-              href={`/${lang}/news`}
+              href={'#'}
               className={cn(
                 buttonVariants({
                   variant: 'outline',
                 }),
-                'text-medium flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary'
+                'flex h-12 items-center justify-center gap-1 rounded-full border-primary bg-transparent px-6 py-3 text-base text-primary hover:bg-primary/10 hover:text-primary'
               )}
             >
               <span className={'mb-1'}>عرض الكل</span>
@@ -74,18 +61,32 @@ export default function OtherNews({ lang }: { lang: LangType }) {
         <div className={'pb-24'}>
           <Slider setSwiper={setSwiper} className='!overflow-visible' />
           <Link
-            href={`/${lang}/news/slug`}
+            href={'#'}
             className={cn(
               buttonVariants({
                 variant: 'outline',
               }),
-              'text-medium mx-6 mt-6 flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary md:hidden'
+              'text-medium mt-6 flex h-12 items-center justify-center rounded-full border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary md:mx-6 md:hidden'
             )}
           >
             <span className={'mb-1'}>عرض الكل</span>
             <ChevronLeftIcon className={'size-5'} />
           </Link>
         </div>
+      </div>
+
+      <div className={'relative h-24 bg-white'}>
+        <span
+          className={'skewed-t absolute top-0 block h-full w-full bg-white'}
+        ></span>
+        <span
+          className={
+            'skewed absolute top-0 block h-full w-full bg-gradient-to-l from-[rgb(215,215,215)] to-transparent'
+          }
+        ></span>
+        <span
+          className={'skewed-b absolute top-0 block h-full w-full bg-[#F8FBF5]'}
+        ></span>
       </div>
     </section>
   );
