@@ -1,10 +1,10 @@
 'use client';
-import Slider from '@/app/[lang]/(about)/energy-efficiency-sectors/components/OtherSectors/Slider';
+import Slider from '@/app/[lang]/(about)/energy-efficiency-enablers/components/OtherEnablers/Slider';
 import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react';
 import { useState } from 'react';
 import { Swiper } from 'swiper/types';
 
-export default function OtherSectors() {
+export default function OtherEnablers() {
   const [swiper, setSwiper] = useState<Swiper | null>(null);
   return (
     <section className={'relative bg-[#F7F9FA]'}>
@@ -20,7 +20,9 @@ export default function OtherSectors() {
       </div>
       <div className={'container'}>
         <div className={'mb-12 flex items-center justify-between pt-10'}>
-          <h2 className={'text-4xl font-bold text-black'}>قطاعات آخرى</h2>
+          <h2 className={'text-4xl font-bold text-black'}>
+            ممكنات كفاءة الطاقة
+          </h2>
           <div className={'flex items-center gap-6'}>
             <div className={'flex items-center gap-4'}>
               <button

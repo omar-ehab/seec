@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import LanguageCircleIcon from '@/components/icons/LanguageCircleIcon';
@@ -14,7 +15,7 @@ export default function LanguageSwitcher({ lang, isTransparent }: Props) {
   return (
     <Link
       href={newPathname}
-      className={cn('text-sub_p group flex items-center gap-1', {
+      className={cn('group flex items-center gap-1 text-sub_p', {
         'text-[rgba(255,255,255,.75)]': isTransparent,
       })}
     >

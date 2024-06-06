@@ -43,28 +43,28 @@ export default function EnergyEfficiencySectorsPage({
         </div>
         <div className={'grid w-full grid-cols-2 gap-8 lg:w-[900px]'}>
           <EnablerCard
-            href={'#'}
+            href={`/${lang}/energy-efficiency-enablers/energy-services-companies`}
             icon={
               <Building2Icon className={'text-black group-hover:text-white'} />
             }
             title='شركات خدمات الطاقة'
           />
           <EnablerCard
-            href={'#'}
+            href={`/${lang}/energy-efficiency-enablers/human-capabilities-development`}
             icon={
               <UserIdIcon className={'text-black group-hover:text-white'} />
             }
             title='تنمية القدرات البشرية'
           />
           <EnablerCard
-            href={'#'}
+            href={`/${lang}/energy-efficiency-enablers/awareness`}
             icon={
               <BookUploadIcon className={'text-black group-hover:text-white'} />
             }
             title='التوعية'
           />
           <EnablerCard
-            href={'#'}
+            href={`/${lang}/energy-efficiency-enablers/inspection-monitoring-certification`}
             icon={
               <SearchingIcon className={'text-black group-hover:text-white'} />
             }
