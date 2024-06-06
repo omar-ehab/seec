@@ -42,26 +42,26 @@ export default function EnergyEfficiencySectorsPage({
         </div>
         <div className={'grid w-full grid-cols-2 gap-8 lg:w-[900px]'}>
           <SectorCard
-            href={'#'}
+            href={`/${lang}/energy-efficiency-sectors/buildings-sector`}
             icon={
               <BuildingIcon className={'text-black group-hover:text-white'} />
             }
             title='قطاع المباني'
           />
           <SectorCard
-            href={'#'}
+            href={`/${lang}/energy-efficiency-sectors/land-transport-sector`}
             icon={<CarIcon className={'text-black group-hover:text-white'} />}
             title='قطاع النقل البري'
           />
           <SectorCard
-            href={'#'}
+            href={`/${lang}/energy-efficiency-sectors/benefits-sector`}
             icon={
               <EnergyIcon className={'text-black group-hover:text-white'} />
             }
             title='قطاع المنافع'
           />
           <SectorCard
-            href={'#'}
+            href={`/${lang}/energy-efficiency-sectors/industry-sector`}
             icon={
               <FactoryIcon className={'text-black group-hover:text-white'} />
             }
