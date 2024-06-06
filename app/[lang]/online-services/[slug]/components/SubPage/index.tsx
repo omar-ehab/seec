@@ -2,7 +2,6 @@
 import { usePathname, useSearchParams } from 'next/navigation';
 
 export default function SubPage() {
-  const pathname = usePathname();
   const params = useSearchParams();
 
   if (params.get('sub_type') === null) {
@@ -31,8 +30,8 @@ export default function SubPage() {
               2
             </span>
             <p>
-              اختر "بادر بالتسجيل" ثم قم بإنشاء حساب لمنشأتك، ومن ثم قم باستكمال
-              البيانات المطلوب.
+              اختر &quot;بادر بالتسجيل&quot; ثم قم بإنشاء حساب لمنشأتك، ومن ثم
+              قم باستكمال البيانات المطلوب.
             </p>
           </li>
           <li className={'flex items-center gap-4'}>
