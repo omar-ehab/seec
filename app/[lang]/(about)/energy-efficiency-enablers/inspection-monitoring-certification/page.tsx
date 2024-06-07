@@ -33,30 +33,38 @@ export default function InspectionMonitoringCertificationPage({
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <div
-        className={'relative overflow-hidden bg-[#F7F8F7] px-20 pb-20 pt-16'}
-      >
-        <SearchingIcon
-          className={'absolute -bottom-16 left-0 z-0 size-80 opacity-25'}
-        />
-        <div className={'grid grid-cols-2'}>
-          <div className={'mb-6'}>
-            <h3 className={'mb-4 text-2xl font-medium text-black'}>
-              الفحص والمراقبة والشهادات
-            </h3>
-            <p className={'mb-8 max-w-[600px] text-sub_p'}>
-              يقوم المركز بالتعاون مع الجهات ذات العلاقة بمراقبة المصانع
-              والأسواق والمستودعات لضمان الالتزام بمواصفات واشتراطات كفاءة
-              الطاقة، ويدعم تطوير البنية التحتية لمواصفات كفاءة الطاقة المحدثة،
-              مما يساهم في تمكين القطاع من الالتزام بالمعايير والتحول نحو الطاقة
-              النظيفة.
-            </p>
+      <div className={'overflow-hidden bg-[#F7F8F7] pt-16'}>
+        <div className='container relative'>
+          <SearchingIcon
+            className={
+              'absolute -bottom-36 end-4 z-0 size-96 opacity-5 md:opacity-25'
+            }
+          />
+          <div className={'grid md:grid-cols-2'}>
+            <div className={'mb-6'}>
+              <h3 className={'mb-4 text-2xl font-medium text-black'}>
+                الفحص والمراقبة والشهادات
+              </h3>
+              <p className={'mb-8 max-w-[600px] text-sub_p'}>
+                يقوم المركز بالتعاون مع الجهات ذات العلاقة بمراقبة المصانع
+                والأسواق والمستودعات لضمان الالتزام بمواصفات واشتراطات كفاءة
+                الطاقة، ويدعم تطوير البنية التحتية لمواصفات كفاءة الطاقة
+                المحدثة، مما يساهم في تمكين القطاع من الالتزام بالمعايير والتحول
+                نحو الطاقة النظيفة.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <section className={'container mt-16 bg-white'}>
-        <h4 className={'mb-8 text-2xl font-medium text-black'}>المبادرات</h4>
-        <div className={'flex flex-col gap-16'}>
+        <h4
+          className={
+            'mx-auto mb-8 max-w-[1052px] text-2xl font-medium text-black'
+          }
+        >
+          المبادرات
+        </h4>
+        <div className={'mx-auto flex max-w-[1052px] flex-col gap-16'}>
           <InitiativeCard
             title={'مسح السوق (شراء العينات من الأسواق للاختبار)'}
             description={

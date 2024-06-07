@@ -33,29 +33,37 @@ export default function EnergyServicesCompaniesPage({
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <div
-        className={'relative overflow-hidden bg-[#F7F8F7] px-20 pb-20 pt-16'}
-      >
-        <UserIdIcon
-          className={'absolute -bottom-16 left-0 z-0 size-80 opacity-25'}
-        />
-        <div className={'grid grid-cols-2'}>
-          <div className={'mb-6'}>
-            <h3 className={'mb-4 text-2xl font-medium text-black'}>
-              تنمية القدرات البشرية
-            </h3>
-            <p className={'mb-8 max-w-[600px] text-sub_p'}>
-              يقوم المركز بتعزيز المعرفة والمهارات لدى طلاب التعليم العالي
-              والمهني من خلال إدراج مقررات تعنى بكفاءة الطاقة وتقديم الدورات
-              التدريبية، ودعم الأبحاث والدراسات في مجال كفاءة الطاقة لرفع مستوى
-              الوعي والاستفادة من الابتكارات والتطورات.
-            </p>
+      <div className={'overflow-hidden bg-[#F7F8F7] pt-16'}>
+        <div className='container relative'>
+          <UserIdIcon
+            className={
+              'absolute -bottom-32 end-4 left-0 z-0 size-96 opacity-5 md:opacity-25'
+            }
+          />
+          <div className={'grid md:grid-cols-2'}>
+            <div className={'mb-6'}>
+              <h3 className={'mb-4 text-2xl font-medium text-black'}>
+                تنمية القدرات البشرية
+              </h3>
+              <p className={'mb-8 max-w-[600px] text-sub_p'}>
+                يقوم المركز بتعزيز المعرفة والمهارات لدى طلاب التعليم العالي
+                والمهني من خلال إدراج مقررات تعنى بكفاءة الطاقة وتقديم الدورات
+                التدريبية، ودعم الأبحاث والدراسات في مجال كفاءة الطاقة لرفع
+                مستوى الوعي والاستفادة من الابتكارات والتطورات.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <section className={'container mt-16 bg-white'}>
-        <h4 className={'mb-8 text-2xl font-medium text-black'}>المبادرات</h4>
-        <div className={'flex flex-col gap-16'}>
+        <h4
+          className={
+            'mx-auto mb-8 max-w-[1052px] text-2xl font-medium text-black'
+          }
+        >
+          المبادرات
+        </h4>
+        <div className={'mx-auto flex max-w-[1052px] flex-col gap-16'}>
           <InitiativeCard
             title={'منصة التعليم الإلكتروني'}
             description={

@@ -23,13 +23,11 @@ export default function Slider({ className, setSwiper }: Props) {
   return (
     <Swiper
       spaceBetween={24}
-      slidesPerView={3.25}
-      slidesOffsetAfter={width && width > 769 ? 500 : 200}
+      slidesPerView={'auto'}
       className={className}
-      slidesOffsetBefore={80}
       onSwiper={(swiper) => setSwiper(swiper)}
     >
-      <SwiperSlide>
+      <SwiperSlide className=' w-full whitespace-nowrap xs:!w-[300px] md:!w-[332px]'>
         <SectorCard
           href={`/${lang}/energy-efficiency-sectors/buildings-sector`}
           icon={
@@ -39,7 +37,7 @@ export default function Slider({ className, setSwiper }: Props) {
           className={'bg-white'}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=' w-full whitespace-nowrap xs:!w-[300px] md:!w-[332px]'>
         <SectorCard
           href={`/${lang}/energy-efficiency-sectors/land-transport-sector`}
           icon={<CarIcon className={'text-black group-hover:text-white'} />}
@@ -47,7 +45,7 @@ export default function Slider({ className, setSwiper }: Props) {
           className={'bg-white'}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=' w-full whitespace-nowrap xs:!w-[300px] md:!w-[332px]'>
         <SectorCard
           href={`/${lang}/energy-efficiency-sectors/benefits-sector`}
           icon={<EnergyIcon className={'text-black group-hover:text-white'} />}
@@ -55,7 +53,7 @@ export default function Slider({ className, setSwiper }: Props) {
           className={'bg-white'}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=' w-full whitespace-nowrap xs:!w-[300px] md:!w-[332px]'>
         <SectorCard
           href={`/${lang}/energy-efficiency-sectors/industry-sector`}
           icon={<FactoryIcon className={'text-black group-hover:text-white'} />}
@@ -63,7 +61,7 @@ export default function Slider({ className, setSwiper }: Props) {
           className={'bg-white'}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=' w-full whitespace-nowrap xs:!w-[300px] md:!w-[332px]'>
         <SectorCard
           href={`/${lang}/energy-efficiency-sectors/industry-sector`}
           icon={

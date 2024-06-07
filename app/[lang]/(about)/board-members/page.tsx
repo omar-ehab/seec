@@ -48,7 +48,11 @@ export default function BoardMembersPage({ params: { lang } }: Props) {
         <SubLinks lang={lang} activeTab='board-members' />
       </PageHeader>
       <section className={'relative overflow-hidden'}>
-        <Image src={PatternImage} alt='' className={'absolute inset-0 z-0'} />
+        <Image
+          src={PatternImage}
+          alt=''
+          className={'absolute inset-0 z-0 h-full w-full'}
+        />
         <div className={'container relative z-10 pt-16'}>
           <div className={'mb-16 flex w-full items-center justify-center'}>
             <MemberCard

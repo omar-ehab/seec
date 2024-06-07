@@ -20,8 +20,10 @@ export default function OtherSectors() {
       </div>
       <div className={'container'}>
         <div className={'mb-12 flex items-center justify-between pt-10'}>
-          <h2 className={'text-4xl font-bold text-black'}>قطاعات آخرى</h2>
-          <div className={'flex items-center gap-6'}>
+          <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
+            قطاعات آخرى
+          </h2>
+          <div className={'hidden items-center gap-6 xs:flex'}>
             <div className={'flex items-center gap-4'}>
               <button
                 onClick={() => {
@@ -51,8 +53,11 @@ export default function OtherSectors() {
           </div>
         </div>
       </div>
-      <div className={'pb-24'}>
-        <Slider setSwiper={setSwiper} />
+      <div className={'overflow-x-hidden pb-24'}>
+        <Slider
+          setSwiper={setSwiper}
+          className='!container !overflow-visible'
+        />
       </div>
     </section>
   );

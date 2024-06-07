@@ -33,28 +33,37 @@ export default function EnergyServicesCompaniesPage({
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <div
-        className={'relative overflow-hidden bg-[#F7F8F7] px-20 pb-20 pt-16'}
-      >
-        <Building2Icon
-          className={'absolute -bottom-16 left-0 z-0 size-80 opacity-25'}
-        />
-        <div className={'grid grid-cols-2'}>
-          <div className={'mb-6'}>
-            <h3 className={'mb-4 text-2xl font-medium text-black'}>
-              شركات خدمات الطاقة
-            </h3>
-            <p className={'mb-8 max-w-[600px] text-sub_p'}>
-              يشجع المركز على الاستثمار في قطاع شركات خدمات الطاقة ويقوم بترخيص
-              ومتابعة مقدمي خدمات كفاءة الطاقة، ويوفر دعمًا تقنيًا وتحليليًا
-              لتحسين الأداء الطاقي، مما يزيد من كفاءة الاستخدام ويقلل من الهدر.
-            </p>
+      <div className={'overflow-hidden bg-[#F7F8F7] pt-16'}>
+        <div className='container relative'>
+          <Building2Icon
+            className={
+              'absolute -bottom-20 end-4 left-0 z-0 size-96 scale-110 opacity-5 md:opacity-25'
+            }
+          />
+          <div className={'grid md:grid-cols-2'}>
+            <div className={'mb-6'}>
+              <h3 className={'mb-4 text-2xl font-medium text-black'}>
+                شركات خدمات الطاقة
+              </h3>
+              <p className={'mb-8 max-w-[600px] text-sub_p'}>
+                يشجع المركز على الاستثمار في قطاع شركات خدمات الطاقة ويقوم
+                بترخيص ومتابعة مقدمي خدمات كفاءة الطاقة، ويوفر دعمًا تقنيًا
+                وتحليليًا لتحسين الأداء الطاقي، مما يزيد من كفاءة الاستخدام
+                ويقلل من الهدر.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <section className={'container mt-16 bg-white'}>
-        <h4 className={'mb-8 text-2xl font-medium text-black'}>المبادرات</h4>
-        <div className={'flex flex-col gap-16'}>
+        <h4
+          className={
+            'mx-auto mb-8 max-w-[1052px] text-2xl font-medium text-black'
+          }
+        >
+          المبادرات
+        </h4>
+        <div className={'mx-auto flex max-w-[1052px] flex-col gap-16'}>
           <InitiativeCard
             title={'تطوير خدمات القياس والتحقق في القطاع الحكومي'}
             description={

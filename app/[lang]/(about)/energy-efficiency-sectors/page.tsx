@@ -45,7 +45,7 @@ export default function EnergyEfficiencySectorsPage({
           </p>
         </div>
         <div
-          className={'grid w-full gap-4 xs:grid-cols-2 md:gap-8 lg:w-[900px]'}
+          className={'grid w-full max-w-[694px] gap-4 xs:grid-cols-2 md:gap-8'}
         >
           <SectorCard
             href={`/${lang}/energy-efficiency-sectors/buildings-sector`}

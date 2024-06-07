@@ -31,36 +31,45 @@ export default function BenefitsSectorPage({ params: { lang } }: Props) {
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <div
-        className={'relative overflow-hidden bg-[#F7F8F7] px-20 pb-20 pt-16'}
-      >
-        <EnergyIcon
-          className={'absolute -bottom-16 left-0 z-0 size-96 opacity-25'}
-        />
-        <div className={'grid grid-cols-2'}>
-          <div className={'mb-6'}>
-            <h3 className={'mb-4 text-2xl font-medium text-black'}>
-              قطاع المنافع
-            </h3>
-            <p className={'mb-8 max-w-[600px] text-sub_p'}>
-              مثـل قطـاع المنافع نحو 39% مـن اسـتهلاك الطاقة الأولية في المملكة،
-              ويعمل المركز على رفع وتحسين كفاءة استهلاك الطاقة في قطاع المنافع
-              عبر وضع السياسات والأنظمة والإجراءات اللازمة بالتعاون مع
-            </p>
-            <p className={'max-w-[600px] text-sub_p'}>
-              الجهات ذات العلاقة في قطاعات:
-            </p>
-            <ul className={'text-sub_p'}>
-              <li>- توليد الكهرباء بالإضافة إلى التوليد المزدوج</li>
-              <li>- تحلية المياه.</li>
-              <li>- نقل وتوزيع الكهرباء.</li>
-            </ul>
+      <div className={'overflow-hidden bg-[#F7F8F7] pt-16'}>
+        <div className='container relative'>
+          <EnergyIcon
+            className={
+              '-bottom-26 absolute end-4 left-0 z-0 size-96 scale-110 opacity-5 md:opacity-25'
+            }
+          />
+          <div className={'grid md:grid-cols-2'}>
+            <div className={'mb-6'}>
+              <h3 className={'mb-4 text-2xl font-medium text-black'}>
+                قطاع المنافع
+              </h3>
+              <p className={'mb-8 max-w-[600px] text-sub_p'}>
+                مثـل قطـاع المنافع نحو 39% مـن اسـتهلاك الطاقة الأولية في
+                المملكة، ويعمل المركز على رفع وتحسين كفاءة استهلاك الطاقة في
+                قطاع المنافع عبر وضع السياسات والأنظمة والإجراءات اللازمة
+                بالتعاون مع
+              </p>
+              <p className={'max-w-[600px] text-sub_p'}>
+                الجهات ذات العلاقة في قطاعات:
+              </p>
+              <ul className={'text-sub_p'}>
+                <li>- توليد الكهرباء بالإضافة إلى التوليد المزدوج</li>
+                <li>- تحلية المياه.</li>
+                <li>- نقل وتوزيع الكهرباء.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <section className={'container mt-16 bg-white'}>
-        <h4 className={'mb-8 text-2xl font-medium text-black'}>المبادرات</h4>
-        <div className={'flex flex-col gap-16'}>
+        <h4
+          className={
+            'mx-auto mb-8 max-w-[1052px] text-2xl font-medium text-black'
+          }
+        >
+          المبادرات
+        </h4>
+        <div className={'mx-auto flex max-w-[1052px] flex-col gap-16'}>
           <InitiativeCard
             title={'تحسين كفاءة الطاقة في قطاع المنافع'}
             description={
