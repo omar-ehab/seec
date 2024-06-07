@@ -33,11 +33,9 @@ export default function SignelReportPage({
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <div
-        className={'relative overflow-hidden bg-[#F7F8F7] px-20 pb-36 pt-16'}
-      >
+      <div className={'relative overflow-hidden bg-[#F7F8F7] pb-36 pt-16'}>
         <DoubleSquareMonoColor className={'absolute bottom-0 left-0 z-0'} />
-        <div className={'grid grid-cols-2'}>
+        <div className={'container grid md:grid-cols-2'}>
           <div className={'mb-6'}>
             <h3 className={'mb-4 text-2xl font-medium text-black'}>
               التقرير السنوي لعام 2024
@@ -63,13 +61,17 @@ export default function SignelReportPage({
           </div>
         </div>
       </div>
-      <div className={'bg-white px-20 pb-24'}>
+      <div className={' container bg-white pb-24'}>
         <div
           className={
-            'z-20 flex w-full -translate-y-1/2 items-center justify-between rounded-2xl bg-white p-6 shadow-[0_1px_24px_0px_rgba(32,32,33,0.1)]'
+            'z-20 flex w-full -translate-y-[76px] items-center justify-between rounded-2xl bg-white p-6 shadow-[0_1px_24px_0px_rgba(32,32,33,0.1)]'
           }
         >
-          <div className={'flex w-full items-center gap-6 xl:justify-between'}>
+          <div
+            className={
+              'flex w-full flex-wrap items-center gap-6 sm:justify-normal xl:justify-between'
+            }
+          >
             <InfoCard
               icon={<UserMultipleIcon />}
               title={'الفئة المستهدفة'}
@@ -82,7 +84,7 @@ export default function SignelReportPage({
               value={'11/08/1440'}
               className={'min-w-[180px]'}
             />
-            <Separator className={'h-12 w-[1px]'} />
+            <Separator className={'hidden h-12 w-[1px] xl:block'} />
             <InfoCard
               icon={<CallIcon size={26} />}
               title={'رقم الهاتف'}
@@ -101,7 +103,11 @@ export default function SignelReportPage({
           <h4 className={'mb-8 text-2xl font-medium text-black'}>
             أهم الأرقام بالتقرير
           </h4>
-          <div className={'grid grid-cols-4 gap-6'}>
+          <div
+            className={
+              'grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] gap-6 md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'
+            }
+          >
             <NumberCard
               title={'تنفيذ'}
               number={9}

@@ -12,14 +12,14 @@ export default function SectorCard({ href, icon, title, className }: Props) {
     <Link
       href={href}
       className={cn(
-        'home__services__slide-gradient group flex flex-col items-center justify-center gap-9 rounded-2xl border-2 border-[#D7D7D7] px-6 py-14 hover:border-white',
+        'home__services__slide-gradient group flex flex-col items-center justify-center gap-4 rounded-xl border-2 border-[#D7D7D7] p-4 hover:border-white xs:px-6 xs:py-6 sm:gap-9 sm:rounded-2xl sm:py-14',
         className
       )}
     >
       {icon}
       <p
         className={
-          'mb-1 text-center text-2xl font-medium text-black group-hover:text-white'
+          'mb-1 text-center font-medium text-black group-hover:text-white sm:text-2xl'
         }
       >
         {title}

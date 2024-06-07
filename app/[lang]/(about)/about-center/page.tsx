@@ -52,14 +52,14 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
             <div></div>
             <div
               className={
-                'col-span-2 mb-6 flex items-center gap-4 md:gap-6 lg:col-span-1 '
+                'col-span-2 flex items-center gap-3 md:mb-6 md:gap-6 lg:col-span-1'
               }
             >
               <Link
                 href={`/${lang}/contact-us`}
                 className={cn(
                   buttonVariants({ variant: 'default' }),
-                  'rounded-full bg-primary px-6 py-3 text-white'
+                  'rounded-full bg-primary px-3 py-2 text-white md:px-6 md:py-3'
                 )}
               >
                 تواصل معنا
@@ -77,10 +77,10 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
           </div>
         </div>
       </div>
-      <div className={'container flex flex-col gap-6 bg-white pb-24'}>
+      <div className={'container flex flex-col bg-white pb-24'}>
         <div
           className={
-            'flex h-[540px] w-full -translate-y-1/4 overflow-hidden rounded-3xl bg-white shadow-[0_1px_24px_0px_rgba(32,32,33,0.1)]'
+            'z-20 -mt-[135px] mb-16 flex h-80 w-full overflow-hidden rounded-3xl bg-white shadow-[0_1px_24px_0px_rgba(32,32,33,0.1)] md:h-[540px]'
           }
         >
           <Image
@@ -91,7 +91,7 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
           />
         </div>
         <div>
-          <h3 className={'mb-8 text-2xl font-medium text-black'}>
+          <h3 className={'mb-8 text-xl font-medium text-black md:text-2xl'}>
             تأسيس المركز
           </h3>
           <ul className={'flex flex-col gap-12 border-r-2 border-[#D7DAD7]'}>
@@ -110,7 +110,9 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                     <TickIcon size={20} />
                   </span>
                 </span>
-                <span className={'text-2xl font-medium text-black'}>2010</span>
+                <span className={'text-xl font-medium text-black md:text-2xl'}>
+                  2010
+                </span>
               </div>
               <ul>
                 <li className={'flex items-center gap-2'}>
@@ -143,7 +145,9 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                     <TickIcon size={20} />
                   </span>
                 </span>
-                <span className={'text-2xl font-medium text-black'}>2012</span>
+                <span className={'text-xl font-medium text-black md:text-2xl'}>
+                  2012
+                </span>
               </div>
               <ul>
                 <li className={'flex items-center gap-2'}>
@@ -189,7 +193,9 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                     <TickIcon size={20} />
                   </span>
                 </span>
-                <span className={'text-2xl font-medium text-black'}>2013</span>
+                <span className={'text-xl font-medium text-black md:text-2xl'}>
+                  2013
+                </span>
               </div>
               <ul>
                 <li className={'flex items-center gap-2'}>
@@ -236,7 +242,9 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                     <TickIcon size={20} />
                   </span>
                 </span>
-                <span className={'text-2xl font-medium text-black'}>2018</span>
+                <span className={'text-xl font-medium text-black md:text-2xl'}>
+                  2018
+                </span>
               </div>
               <ul>
                 <li className={'flex items-center gap-2'}>
@@ -270,7 +278,9 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                     <TickIcon size={20} />
                   </span>
                 </span>
-                <span className={'text-2xl font-medium text-black'}>2020</span>
+                <span className={'text-xl font-medium text-black md:text-2xl'}>
+                  2020
+                </span>
               </div>
               <ul>
                 <li className={'flex items-center gap-2'}>
@@ -304,7 +314,9 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                     }
                   ></span>
                 </span>
-                <span className={'text-2xl font-medium text-black'}>2030</span>
+                <span className={'text-xl font-medium text-black md:text-2xl'}>
+                  2030
+                </span>
               </div>
             </li>
           </ul>

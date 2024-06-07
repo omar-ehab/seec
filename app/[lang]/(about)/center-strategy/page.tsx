@@ -31,7 +31,7 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
       </PageHeader>
       <div className={'relative overflow-hidden bg-[#F7F8F7] pb-56 pt-16'}>
         <div className={'container'}>
-          <div className={'grid grid-cols-12 gap-4'}>
+          <div className={'grid grid-cols-12 gap-6'}>
             <div className='col-span-12 md:col-span-6'>
               <VisionIcon className={'mb-4'} />
               <h2
@@ -39,7 +39,7 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
               >
                 رؤيتنا
               </h2>
-              <p className={'max-w-[400px] text-sm text-black/50'}>
+              <p className={'text-sm text-black/50 md:max-w-[400px]'}>
                 أن يكون المركزُ مرجعاً دولياً في مجال كفاءة الطاقة، وأنموذجاً
                 للحفاظ على الموارد الطبيعية لتعزيز الاستدامة والرفاهية
                 الاقتصادية والاجتماعية بحلول عام 2030م.
@@ -52,7 +52,7 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
               >
                 رسالتنا
               </h2>
-              <p className={'max-w-[400px] text-sm text-black/50'}>
+              <p className={'text-sm text-black/50 md:max-w-[400px]'}>
                 رفع كفاءة إنتاج واستهلاك الطاقة وحسن إدارتها من خلال العمل مع
                 جميع الشركاء المحليين والدوليين من القطاعين الحكومي والخاص،
                 وتطوير المعرفة والقدرات في مجال كفاءة الطاقة، وتطبيق أفضل
@@ -62,20 +62,22 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
           </div>
         </div>
       </div>
-      <div className={'container flex flex-col gap-6 bg-white pb-24'}>
+      <div className={'container flex flex-col bg-white pb-24'}>
         <div
           className={
-            'flex w-full -translate-y-1/4 overflow-hidden rounded-3xl bg-white p-16 shadow-[0_4px_16px_0px_rgba(0,0,0,.15)]'
+            'z-20 -mt-[173px] mb-16 flex w-full overflow-hidden rounded-3xl bg-white p-8 shadow-[0_4px_16px_0px_rgba(0,0,0,.15)] xl:p-16'
           }
         >
-          <div className={'grid grid-cols-12 gap-10'}>
+          <div className={'grid gap-8 md:grid-cols-12 xl:gap-10'}>
             <div
               className={
-                'col-span-full grid grid-cols-1 gap-4 md:gap-6 lg:col-span-7 xl:col-span-6'
+                'col-span-full grid grid-cols-1 gap-4 md:gap-6 lg:col-span-6'
               }
             >
               <div className={'w-full'}>
-                <h3 className={'mb-12 text-3xl font-bold text-black'}>
+                <h3
+                  className={'mb-12 text-2xl font-bold text-black md:text-3xl'}
+                >
                   قيم المركز
                 </h3>
                 <ul className={'flex flex-col gap-8'}>
@@ -121,9 +123,7 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                 </ul>
               </div>
             </div>
-            <div
-              className={'relative hidden lg:col-span-5 lg:block xl:col-span-6'}
-            >
+            <div className={'relative hidden lg:col-span-6 lg:block'}>
               <div
                 className={'relative z-10 h-full'}
                 style={{
@@ -149,127 +149,167 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
           <h3 className={'mb-8 text-2xl font-medium text-black'}>
             أهداف المركز
           </h3>
-          <div className={'grid grid-cols-3'}>
-            <div className={'flex flex-col justify-start gap-4'}>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  1
-                </span>
-                <p className={'text-black'}>تحسين كفاءة إنتاج الطاقة</p>
-              </div>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  2
-                </span>
-                <p className={'text-black'}>تحسين كفاءة استهلاك الطاقة</p>
-              </div>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  3
-                </span>
-                <p className={'text-black'}>
-                  {' '}
-                  ضمان الالتزام بلوائح ومعايير كفاءة الطاقة
-                </p>
-              </div>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  4
-                </span>
-                <p className={'text-black'}>
-                  تشجيع الاستثمار ودعم المحتوى المحلي
-                </p>
-              </div>
+          <div className={'sm:[column-count:2]  xl:[column-count:3] '}>
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                1
+              </span>
+              <p className={'text-black'}>تحسين كفاءة إنتاج الطاقة</p>
             </div>
-            <div className={'flex flex-col justify-start gap-4'}>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  5
-                </span>
-                <p className={'text-black'}>تنمية القدرات البشرية</p>
-              </div>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  6
-                </span>
-                <p className={'text-black'}>نشر الوعي في كفاءة الطاقة</p>
-              </div>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  7
-                </span>
-                <p className={'text-black'}>تحقيق التميز المؤسسي</p>
-              </div>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  8
-                </span>
-                <p className={'text-black'}>تعزيز التحول الرقمي</p>
-              </div>
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                2
+              </span>
+              <p className={'text-black'}>تحسين كفاءة استهلاك الطاقة</p>
             </div>
-            <div className={'flex flex-col justify-start gap-4'}>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  9
-                </span>
-                <p className={'text-black'}>تعزيز الارتباط الوظيفي</p>
-              </div>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  10
-                </span>
-                <p className={'text-black'}>ضمان بيئة سيبرانية آمنة</p>
-              </div>
-              <div className={'flex items-center gap-4'}>
-                <span
-                  className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
-                  }
-                >
-                  11
-                </span>
-                <p className={'text-black'}>رفع كفاءة الإنفاق والأداء المالي</p>
-              </div>
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                3
+              </span>
+              <p className={'text-black'}>
+                {' '}
+                ضمان الالتزام بلوائح ومعايير كفاءة الطاقة
+              </p>
+            </div>
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                4
+              </span>
+              <p className={'text-black'}>
+                تشجيع الاستثمار ودعم المحتوى المحلي
+              </p>
+            </div>
+
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                5
+              </span>
+              <p className={'text-black'}>تنمية القدرات البشرية</p>
+            </div>
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                6
+              </span>
+              <p className={'text-black'}>نشر الوعي في كفاءة الطاقة</p>
+            </div>
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                7
+              </span>
+              <p className={'text-black'}>تحقيق التميز المؤسسي</p>
+            </div>
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                8
+              </span>
+              <p className={'text-black'}>تعزيز التحول الرقمي</p>
+            </div>
+
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                9
+              </span>
+              <p className={'text-black'}>تعزيز الارتباط الوظيفي</p>
+            </div>
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                10
+              </span>
+              <p className={'text-black'}>ضمان بيئة سيبرانية آمنة</p>
+            </div>
+            <div
+              className={
+                'flex h-6 items-center gap-4 py-6 [break-inside:avoid]'
+              }
+            >
+              <span
+                className={
+                  'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                }
+              >
+                11
+              </span>
+              <p className={'text-black'}>رفع كفاءة الإنفاق والأداء المالي</p>
             </div>
           </div>
         </div>
