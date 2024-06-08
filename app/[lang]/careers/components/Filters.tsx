@@ -9,47 +9,61 @@ export default function Filters() {
   const params = useSearchParams();
 
   return (
-    <ul className={'text-sub_p flex items-center gap-4'}>
-      <li>
+    <ul
+      className={'flex flex-wrap items-center justify-stretch gap-4 text-sub_p'}
+    >
+      <li className='grow xs:grow-0'>
         <Link
           href={pathname}
-          className={cn('text-sub_p flex items-center hover:text-primary', {
-            'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
-              params.get('type') === null,
-          })}
+          className={cn(
+            'flex items-center justify-center text-sub_p hover:text-primary',
+            {
+              'justify-center rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
+                params.get('type') === null,
+            }
+          )}
         >
           الكل
         </Link>
       </li>
-      <li>
+      <li className='grow xs:grow-0'>
         <Link
           href={`${pathname}?type=development`}
-          className={cn('text-sub_p flex items-center hover:text-primary', {
-            'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
-              params.get('type') === 'development',
-          })}
+          className={cn(
+            'flex items-center justify-center text-sub_p hover:text-primary',
+            {
+              'justify-center rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
+                params.get('type') === 'development',
+            }
+          )}
         >
           التطوير
         </Link>
       </li>
-      <li>
+      <li className='grow xs:grow-0'>
         <Link
           href={`${pathname}?type=design`}
-          className={cn('text-sub_p flex items-center hover:text-primary', {
-            'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
-              params.get('type') === 'design',
-          })}
+          className={cn(
+            'flex items-center justify-center text-sub_p hover:text-primary',
+            {
+              'justify-center rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
+                params.get('type') === 'design',
+            }
+          )}
         >
           التصميم
         </Link>
       </li>
-      <li>
+      <li className='grow xs:grow-0'>
         <Link
           href={`${pathname}?type=hr`}
-          className={cn('text-sub_p flex items-center hover:text-primary', {
-            'rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
-              params.get('type') === 'hr',
-          })}
+          className={cn(
+            'flex items-center justify-center text-sub_p hover:text-primary',
+            {
+              'justify-center rounded-full bg-primary/10 px-4 py-2 font-medium text-primary':
+                params.get('type') === 'hr',
+            }
+          )}
         >
           الموارد البشرية
         </Link>

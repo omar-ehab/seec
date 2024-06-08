@@ -22,13 +22,13 @@ export default function SubFilters({ lang }: { lang: LangType }) {
     return (
       <ul
         className={
-          'text-sub_p flex items-center gap-2 border-b border-[#D7DAD7] pb-3 pt-2'
+          'flex flex-wrap items-center justify-start gap-y-4 border-b border-[#D7DAD7] pt-2 text-sub_p'
         }
       >
-        <li>
+        <li className='grow lg:grow-0'>
           <Link
             href={navigationUrl(null)}
-            className={cn('px-4 pb-3 hover:text-black', {
+            className={cn('block px-4 pb-3 text-center hover:text-black', {
               'border-b-2 border-primary font-medium text-black':
                 pathname === `/${lang}/rules` &&
                 params.get('sub_type') === null,
@@ -37,10 +37,10 @@ export default function SubFilters({ lang }: { lang: LangType }) {
             كل الأنظمة
           </Link>
         </li>
-        <li>
+        <li className='grow lg:grow-0'>
           <Link
             href={navigationUrl('manufacturing')}
-            className={cn('px-4 pb-3 hover:text-black', {
+            className={cn('block px-4 pb-3 hover:text-black lg:text-center', {
               'border-b-2 border-primary font-medium text-black':
                 pathname === `/${lang}/rules` &&
                 params.get('sub_type') === 'manufacturing',
@@ -49,10 +49,10 @@ export default function SubFilters({ lang }: { lang: LangType }) {
             الصناعة
           </Link>
         </li>
-        <li>
+        <li className='grow lg:grow-0'>
           <Link
             href={navigationUrl('buildings')}
-            className={cn('px-4 pb-3 hover:text-black', {
+            className={cn('block px-4 pb-3 text-center hover:text-black', {
               'border-b-2 border-primary font-medium text-black':
                 pathname === `/${lang}/rules` &&
                 params.get('sub_type') === 'buildings',
@@ -61,10 +61,10 @@ export default function SubFilters({ lang }: { lang: LangType }) {
             المباني
           </Link>
         </li>
-        <li>
+        <li className='grow lg:grow-0'>
           <Link
             href={navigationUrl('transportation')}
-            className={cn('px-4 pb-3 hover:text-black', {
+            className={cn('block px-4 pb-3 text-center hover:text-black', {
               'border-b-2 border-primary font-medium text-black':
                 pathname === `/${lang}/rules` &&
                 params.get('sub_type') === 'transportation',
@@ -73,10 +73,10 @@ export default function SubFilters({ lang }: { lang: LangType }) {
             النقل
           </Link>
         </li>
-        <li>
+        <li className='grow lg:grow-0'>
           <Link
             href={navigationUrl('benefits')}
-            className={cn('px-4 pb-3 hover:text-black', {
+            className={cn('block px-4 pb-3 text-center hover:text-black', {
               'border-b-2 border-primary font-medium text-black':
                 pathname === `/${lang}/rules` &&
                 params.get('sub_type') === 'benefits',
@@ -85,10 +85,10 @@ export default function SubFilters({ lang }: { lang: LangType }) {
             المنافع
           </Link>
         </li>
-        <li>
+        <li className='grow lg:grow-0'>
           <Link
             href={navigationUrl('training_programs')}
-            className={cn('px-4 pb-3 hover:text-black', {
+            className={cn('block px-4 pb-3 text-center hover:text-black', {
               'border-b-2 border-primary font-medium text-black':
                 pathname === `/${lang}/rules` &&
                 params.get('sub_type') === 'training_programs',
@@ -97,10 +97,10 @@ export default function SubFilters({ lang }: { lang: LangType }) {
             البرامج التدريبية
           </Link>
         </li>
-        <li>
+        <li className='grow lg:grow-0'>
           <Link
             href={navigationUrl('energy_services_companies')}
-            className={cn('px-4 pb-3 hover:text-black', {
+            className={cn('block px-4 pb-3 text-center hover:text-black', {
               'border-b-2 border-primary font-medium text-black':
                 pathname === `/${lang}/rules` &&
                 params.get('sub_type') === 'energy_services_companies',

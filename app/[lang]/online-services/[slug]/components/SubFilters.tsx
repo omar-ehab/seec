@@ -22,16 +22,19 @@ export default function SubFilters({ lang }: { lang: LangType }) {
   return (
     <ul
       className={
-        'text-sub_p flex items-center gap-2 border-b border-[#D7DAD7] pb-3 pt-2'
+        'flex items-center gap-2 border-b border-[#D7DAD7] pb-3 pt-2 text-sub_p'
       }
     >
       <li>
         <Link
           href={navigationUrl(null)}
-          className={cn('px-4 pb-3 hover:text-black', {
-            'border-b-2 border-primary font-medium text-black':
-              params.get('sub_type') === null,
-          })}
+          className={cn(
+            'px-2 pb-3 text-sm hover:text-black xs:px-4 sm:text-base',
+            {
+              'border-b-2 border-primary font-medium text-black':
+                params.get('sub_type') === null,
+            }
+          )}
         >
           الخطوات
         </Link>
@@ -39,10 +42,13 @@ export default function SubFilters({ lang }: { lang: LangType }) {
       <li>
         <Link
           href={navigationUrl('manufacturing')}
-          className={cn('px-4 pb-3 hover:text-black', {
-            'border-b-2 border-primary font-medium text-black':
-              params.get('sub_type') === 'requirements',
-          })}
+          className={cn(
+            'px-2 pb-3 text-sm hover:text-black xs:px-4 sm:text-base',
+            {
+              'border-b-2 border-primary font-medium text-black':
+                params.get('sub_type') === 'requirements',
+            }
+          )}
         >
           المتطلبات
         </Link>
@@ -50,10 +56,13 @@ export default function SubFilters({ lang }: { lang: LangType }) {
       <li>
         <Link
           href={navigationUrl('buildings')}
-          className={cn('px-4 pb-3 hover:text-black', {
-            'border-b-2 border-primary font-medium text-black':
-              params.get('sub_type') === 'faq',
-          })}
+          className={cn(
+            'px-2 pb-3 text-sm hover:text-black xs:px-4 sm:text-base',
+            {
+              'border-b-2 border-primary font-medium text-black':
+                params.get('sub_type') === 'faq',
+            }
+          )}
         >
           الأسئلة الشائعة
         </Link>

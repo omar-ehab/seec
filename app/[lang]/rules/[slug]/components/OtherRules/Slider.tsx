@@ -16,34 +16,32 @@ export default function Slider({ className, setSwiper }: Props) {
   return (
     <Swiper
       spaceBetween={24}
-      slidesPerView={3.25}
-      slidesOffsetBefore={80}
-      slidesOffsetAfter={80}
+      slidesPerView={'auto'}
       className={className}
       onSwiper={(swiper) => setSwiper(swiper)}
     >
-      <SwiperSlide>
+      <SwiperSlide className='!w-full xs:!w-fit'>
         <FileCard
           category={'اللوائح'}
           title={'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'}
           link={`/${lang}/rules/slug`}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className='!w-full xs:!w-fit'>
         <FileCard
           category={'اللوائح'}
           title={'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'}
           link={`/${lang}/rules/slug`}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className='!w-full xs:!w-fit'>
         <FileCard
           category={'اللوائح'}
           title={'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'}
           link={`/${lang}/rules/slug`}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className='!w-full xs:!w-fit'>
         <FileCard
           category={'اللوائح'}
           title={'لائحة اعتماد البرامج التدريبية في مجال كفاءة الطاقة المعتمدة'}

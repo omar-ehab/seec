@@ -18,9 +18,11 @@ export default function OtherRules() {
           }
         ></span>
       </div>
-      <div className={'mb-12 flex items-center justify-between px-20 pt-10'}>
-        <h2 className={'text-4xl font-bold text-black'}>لوائح وأنظمة آخرى</h2>
-        <div className={'flex items-center gap-6'}>
+      <div className={'container mb-12 flex items-center justify-between'}>
+        <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
+          لوائح وأنظمة آخرى
+        </h2>
+        <div className={'hidden items-center gap-6 xs:flex'}>
           <div className={'flex items-center gap-4'}>
             <button
               onClick={() => {
@@ -49,8 +51,11 @@ export default function OtherRules() {
           </div>
         </div>
       </div>
-      <div className={'pb-24'}>
-        <Slider setSwiper={setSwiper} />
+      <div className={'overflow-x-hidden pb-24'}>
+        <Slider
+          setSwiper={setSwiper}
+          className='!container !overflow-visible'
+        />
       </div>
     </section>
   );

@@ -13,10 +13,15 @@ export default function InfoCard({
   className?: string;
 }) {
   return (
-    <div className={cn('flex flex-col gap-5', className)}>
+    <div
+      className={cn(
+        'flex flex-col items-center gap-5 text-center md:items-start md:text-start',
+        className
+      )}
+    >
       {icon}
-      <div className={'flex flex-col gap-2'}>
-        <p className={'text-sub_p text-sm'}>{title}</p>
+      <div className={'flex flex-col items-center gap-2 md:items-start'}>
+        <p className={'text-sm text-sub_p'}>{title}</p>
         <p className={'font-medium text-black'}>{value}</p>
       </div>
     </div>

@@ -28,7 +28,7 @@ export default function RulesPage({ params: { lang } }: Props) {
       >
         <HeaderCallToAction numberOfViews={124} />
       </PageHeader>
-      <section className={'mb-24 mt-10 container'}>
+      <section className={'container mb-24 mt-10'}>
         <div
           className={
             'mb-6 flex flex-col-reverse items-center justify-between gap-4 md:flex-row md:gap-0'
@@ -42,7 +42,7 @@ export default function RulesPage({ params: { lang } }: Props) {
         </div>
         <div
           className={
-            'grid grid-cols-1 grid-rows-[repeat(2,minmax(164px,_min-content))] gap-6 lg:grid-cols-3'
+            'red grid grid-cols-1 grid-rows-[repeat(3,minmax(164px,_min-content))] gap-6 lg:grid-cols-3'
           }
         >
           <ServiceCard

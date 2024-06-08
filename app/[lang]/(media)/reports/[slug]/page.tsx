@@ -53,7 +53,7 @@ export default function SignelReportPage({
               href={'#'}
               className={cn(
                 buttonVariants({ variant: 'default' }),
-                'rounded-full bg-primary text-white'
+                'z-30 rounded-full bg-primary text-white'
               )}
             >
               تحميل ملف التقرير
