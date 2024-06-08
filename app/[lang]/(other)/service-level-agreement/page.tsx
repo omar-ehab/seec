@@ -25,45 +25,162 @@ export default function ServiceLevelAgreementPage({ params: { lang } }: Props) {
       <section>
         <div className='container py-16'>
           <div className='[&:not(:last-child)]:mb-16'>
-            <h2 className='mb-6 text-2xl font-medium text-black'>
+            <h2 className='mb-6 text-xl font-medium text-black md:text-2xl'>
               إتفاقية مستوى الخدمة
             </h2>
-            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
-              تؤكد وزارة الموارد البشرية والتنمية الاجتماعية حرصها لتحقيق رضى
-              العملاء وذلك  بإتاحة خدمات البوابة الخارجية للوزارة والخدمات
-              الإلكترونية في جميع الأوقات كحد أقصى لهم. ونقدم هنا قائمة بخدمات
-              البوابة الخارجية والخدمات الإلكترونية التي حققت الالتزام بهذه
-              المعايير إلى جانب الزمن الأقصى لتقديم الخدمة، علماً بأن هذا الزمن
-              لا يشمل استكمال النواقص في حال لم يقدم العميل كافة المعلومات
-              المطلوبة، كما لا يشمل الزمن المستغرق في معالجة المعاملات من قبل
-              طرف ثالث كالجهات الحكومية الأخرى في حال تطلبت طبيعة المعاملات ذلك.
-              كما يجب على العملاء الالتزام بشروط ومسوغات كل خدمة كما هو موضح في
-              دليل الخدمات الإلكترونية في الوزارة. 
+
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6'>
+              تهدف اتفاقية مستوى الخدمات الالكترونية إلى توضيح مستوى الخدمات
+              المقدمة من المركز السعودي لكفاءة الطاقة، والحقوق والواجبات لكل من
+              المركز والمستفيدين من الخدمات المقدمة. وتُعد هذه الاتفاقية بمثابة
+              اتفاق بين المركز وبين المستفيدين من كافة الشرائح، ولذا بمجرد
+              الحصول على أي خدمة من الخدمات المقدمة بهذه الاتفاقية فهي تُعد
+              موافقة على جميع ما ورد في هذه الاتفاقية.
             </p>
+
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6'>
+              ويحرص المركز السعودي لكفاءة الطاقة على استمرارية الارتقاء بجودة
+              الخدمات المقدمة للمستفيدين، وبما يتوافق مع توجيهات القيادة الكريمة
+              ببذل كل ما من شأنه تحقيق رضى العملاء عبر إتاحة الخدمات الإلكترونية
+              بأسهل وأيسر الطرق، علماً بأن هذا الزمن لا يشمل استكمال النواقص في
+              حال لم يقدم المستفيد كافة المعلومات المطلوبة، كما لا يشمل الزمن
+              المستغرق في معالجة المعاملات من قبل طرف ثالث "الجهات الحكومية
+              الأخرى" في حال استدعت طبيعة المعاملات ذلك، كما يجب على العملاء
+              الالتزام بشروط ومتطلبات كل مهمة كما هو موضح في دليل الخدمات
+              الإلكترونية وسيتم تحديث وإضافة كافة الخدمات الإلكترونية تباعاً إلى
+              هذه القائمة.
+            </p>
+
+            <table className='mt-2 text-sm sm:text-base [&:not(:last-child)]:mb-8'>
+              <thead className='bg-gradient-to-b from-[#73AE281A] to-[#006F591A] font-medium '>
+                <th className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                  نوع الخدمة
+                </th>
+                <th className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                  المدة الزمنية لتنفيذ الخدمة
+                </th>
+              </thead>
+              <tbody>
+                <tr className='even:bg-[#D7DAD740]'>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    خدمة الاستفسارات
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    يومين عمل
+                  </td>
+                </tr>
+                <tr className='even:bg-[#D7DAD740]'>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    خدمة الشكاوى
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    15 يوم عمل
+                  </td>
+                </tr>
+                <tr className='even:bg-[#D7DAD740]'>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    خدمة الطلبات
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    15 يوم عمل
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table className='mt-2 text-sm sm:text-base [&:not(:last-child)]:mb-8'>
+              <thead className='bg-gradient-to-b from-[#73AE281A] to-[#006F591A] font-medium '>
+                <th className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                  القناة
+                </th>
+                <th className='py-2rmd: w-[312px] border px-4 py-2.5 text-start md:px-8'>
+                  توفر القناة
+                </th>
+                <th className='py-2rmd: w-[312px] border px-4 py-2.5 text-start md:px-8'>
+                  وقت الاستجابة
+                </th>
+              </thead>
+              <tbody>
+                <tr className='even:bg-[#D7DAD740]'>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    بوابة المركز
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    7/24
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    فوري
+                  </td>
+                </tr>
+                <tr className='even:bg-[#D7DAD740]'>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    مركز الاتصال
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    7/24
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    فوري
+                  </td>
+                </tr>
+                <tr className='even:bg-[#D7DAD740]'>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    البريد الالكتروني
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    7/24
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    يوم عمل
+                  </td>
+                </tr>
+                <tr className='even:bg-[#D7DAD740]'>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    منصة أكس
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    7/24
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    -
+                  </td>
+                </tr>
+                <tr className='even:bg-[#D7DAD740]'>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    منصة لنكدان
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    7/24
+                  </td>
+                  <td className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    -
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div className='[&:not(:last-child)]:mb-16'>
-            <h2 className='mb-6 text-2xl font-medium text-black'>
+            <h2 className='mb-6 text-xl font-medium text-black md:text-2xl'>
               ‌المساعدة والدعم
             </h2>
-            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
-              تشتمل البوابة على قسم لمساعدة ودعم جمهور المستفيدين، ويوفر هذا
-              القسم كل ما يحتاجه زائر بوابة وزارة الموارد البشرية والتنمية
-              الاجتماعية من مساعدة مع مراعاة أن يناسب أكبر عدد ممكن من الزوار،
-              ولهذا تم توفير محتوى مقروء ومواد وسائط بأشكال مختلفة، بالإضافة إلى
-              معلومات تفصيلية وروابط إلى بعض أشكال المساعدة مثل: الأسئلة
-              المتكررة، أقسام الاستفسارات المتعددة، سهولة الاستخدام، النسخة
-              الكفية،... وغيرها.
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6'>
+              تقدم بوابة المركز السعودي لكفاءة الطاقة الإلكتروني المساعدة والدعم
+              للمستفيدين بما يتناسب مع أكبر عدد من زوار الموقع، من خلال توفير
+              محتوى مقروء ووسائط متعددة، ومعلومات تفصيلية وروابط إلى بعض أشكال
+              المساعدة مثل: الأسئلة المتكررة، وسهولة الاستخدام، وقنوات التواصل،
+              والاستفسارات، والشكاوى.
             </p>
           </div>
           <div className='[&:not(:last-child)]:mb-16'>
-            <h2 className='mb-6 text-2xl font-medium text-black'>
+            <h2 className='mb-6 text-xl font-medium text-black md:text-2xl'>
               الخصوصية وسرية المعلومات
             </h2>
-            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
-              تضع بوابة وزارة الموارد البشرية والتنمية الاجتماعية سرية معلومات
-              مستخدميها وزوارها على رأس قائمة الأولويات، وتبذل إدارة البوابة كل
-              جهودها لتقديم خدمات ذات جودة عالية لكل المستفيدين من خلال وثيقة
-              الخصوصية وسرية المعلومات.
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6'>
+              يحرص المركز السعودي لكفاءة الطاقة أن تكون سرية وخصوصية معلومات
+              المستخدم على رأس قائمة الأولويات، وتعتبر سياسات الخصوصية وسرية
+              المعلومات من شروط استخدام بوابة المركز السعودي لكفاءة الطاقة.
+              للمزيد حول معلومات الخصوصية والسرية يمكنك زيارة صفحة سياسة
+              الخصوصية.
             </p>
           </div>
           <FooterCta lastUpdateDate={'12/5/2024'} />

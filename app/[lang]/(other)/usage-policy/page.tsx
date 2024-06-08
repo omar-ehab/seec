@@ -25,10 +25,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
       <section>
         <div className='container py-16'>
           <div className='[&:not(:last-child)]:mb-16'>
-            <h2 className='mb-6 text-2xl font-medium text-black'>
+            <h2 className='mb-6 text-xl font-medium text-black md:text-2xl'>
               سياسة الاستخدام وإخلاء المسؤولية
             </h2>
-            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6 '>
               هذه البوابة الإلكترونية للمركز السعودي لكفاءة الطاقة بالمملكة
               العربية السعودية متاحة لاستخدامك الشخصي، ويخضع دخولك واستخدامك
               لهذه البوابة لبنود وشروط الاستخدام هذه ولأنظمة المملكة العربية
@@ -36,7 +36,7 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
               شرط على بنود وشروط الاستخدام سواء أكنت مستخدماً مسجلاً أم لم تكن،
               وتسري هذه الموافقة اعتبارا من تاريخ أول استخدام لك لهذه البوابة.
             </p>
-            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6 '>
               ويتضمن استخدام البوابة عدداً من البنود والشروط التي تخضع لتحديثات
               وتغييرات مستمرة حسب الحاجة، ويصبح أي تعديل أو تحديث لأي من هذه
               البنود والشروط نافذًا فور اعتماده من إدارة البوابة؛ وهو ما يتطلب
@@ -49,10 +49,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
           </div>
 
           <div className='[&:not(:last-child)]:mb-16'>
-            <h2 className='mb-6 text-2xl font-medium text-black'>
+            <h2 className='mb-6 text-xl font-medium text-black md:text-2xl'>
               القيود على الاستخدام:
             </h2>
-            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6 '>
               تم إعداد وثيقة الخصوصية وسرية المعلومات لمساعدة الزوار والمستخدمين
               على تفهم طبيعة البيانات التي يتم جمعها منهم عند زيارة البوابة
               وكيفية التعامل معها. تقوم إدارة البوابة باتخاذ الإجراءات والتدابير
@@ -62,11 +62,15 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
               المعمول بها في الوزارة لحماية معلومات الزائر الشخصية:
             </p>
 
-            <div className={'flex flex-col justify-start gap-4'}>
-              <div className={'flex items-center gap-4'}>
+            <div
+              className={
+                'flex flex-col justify-start gap-4 text-sm xs:text-base'
+              }
+            >
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   1
@@ -77,10 +81,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
                   أنظمتنا.
                 </p>
               </div>
-              <div className={'flex items-center gap-4'}>
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   2
@@ -90,10 +94,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
                   تزيد عن المعايير القياسية.
                 </p>
               </div>
-              <div className={'flex items-center gap-4'}>
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   3
@@ -107,10 +111,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
           </div>
 
           <div className='[&:not(:last-child)]:mb-16'>
-            <h2 className='mb-6 text-2xl font-medium text-black'>
+            <h2 className='mb-6 text-xl font-medium text-black md:text-2xl'>
               حماية خصوصيتك:
             </h2>
-            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6 '>
               تم إعداد وثيقة الخصوصية وسرية المعلومات لمساعدة الزوار والمستخدمين
               على تفهم طبيعة البيانات التي يتم جمعها منهم عند زيارة البوابة
               وكيفية التعامل معها. تقوم إدارة البوابة باتخاذ الإجراءات والتدابير
@@ -120,11 +124,15 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
               المعمول بها في الوزارة لحماية معلومات الزائر الشخصية:
             </p>
 
-            <div className={'flex flex-col justify-start gap-4'}>
-              <div className={'flex items-center gap-4'}>
+            <div
+              className={
+                'flex flex-col justify-start gap-4 text-sm xs:text-base'
+              }
+            >
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   1
@@ -135,10 +143,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
                   أنظمتنا.
                 </p>
               </div>
-              <div className={'flex items-center gap-4'}>
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   2
@@ -148,10 +156,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
                   تزيد عن المعايير القياسية.
                 </p>
               </div>
-              <div className={'flex items-center gap-4'}>
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   3
@@ -165,10 +173,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
           </div>
 
           <div className='[&:not(:last-child)]:mb-16'>
-            <h2 className='mb-6 text-2xl font-medium text-black'>
+            <h2 className='mb-6 text-xl font-medium text-black md:text-2xl'>
               إرسال الرسائل الإلكترونية:
             </h2>
-            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6 '>
               تم إعداد وثيقة الخصوصية وسرية المعلومات لمساعدة الزوار والمستخدمين
               على تفهم طبيعة البيانات التي يتم جمعها منهم عند زيارة البوابة
               وكيفية التعامل معها. تقوم إدارة البوابة باتخاذ الإجراءات والتدابير
@@ -178,11 +186,15 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
               المعمول بها في الوزارة لحماية معلومات الزائر الشخصية:
             </p>
 
-            <div className={'flex flex-col justify-start gap-4'}>
-              <div className={'flex items-center gap-4'}>
+            <div
+              className={
+                'flex flex-col justify-start gap-4 text-sm xs:text-base'
+              }
+            >
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   1
@@ -193,10 +205,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
                   أنظمتنا.
                 </p>
               </div>
-              <div className={'flex items-center gap-4'}>
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   2
@@ -206,10 +218,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
                   تزيد عن المعايير القياسية.
                 </p>
               </div>
-              <div className={'flex items-center gap-4'}>
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   3
@@ -223,10 +235,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
           </div>
 
           <div className='[&:not(:last-child)]:mb-16'>
-            <h2 className='mb-6 text-2xl font-medium text-black'>
+            <h2 className='mb-6 text-xl font-medium text-black md:text-2xl'>
               أمن المعلومات الشخصية:
             </h2>
-            <p className='text-base font-normal text-sub_p [&:not(:last-child)]:mb-6'>
+            <p className='text-sm font-normal text-sub_p xs:text-base [&:not(:last-child)]:mb-6 '>
               تم إعداد وثيقة الخصوصية وسرية المعلومات لمساعدة الزوار والمستخدمين
               على تفهم طبيعة البيانات التي يتم جمعها منهم عند زيارة البوابة
               وكيفية التعامل معها. تقوم إدارة البوابة باتخاذ الإجراءات والتدابير
@@ -236,11 +248,15 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
               المعمول بها في الوزارة لحماية معلومات الزائر الشخصية:
             </p>
 
-            <div className={'flex flex-col justify-start gap-4'}>
-              <div className={'flex items-center gap-4'}>
+            <div
+              className={
+                'flex flex-col justify-start gap-4 text-sm xs:text-base'
+              }
+            >
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   1
@@ -251,10 +267,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
                   أنظمتنا.
                 </p>
               </div>
-              <div className={'flex items-center gap-4'}>
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   2
@@ -264,10 +280,10 @@ export default function UsagePolicyPage({ params: { lang } }: Props) {
                   تزيد عن المعايير القياسية.
                 </p>
               </div>
-              <div className={'flex items-center gap-4'}>
+              <div className={'flex items-start gap-2 xs:gap-4'}>
                 <span
                   className={
-                    'bullet-gradient flex size-8 items-center justify-center rounded-full text-sm font-medium text-black'
+                    'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium text-black xs:size-8'
                   }
                 >
                   3
