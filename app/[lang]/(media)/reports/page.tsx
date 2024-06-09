@@ -37,7 +37,7 @@ export default function ReportsPage({ params: { lang } }: Props) {
         <MainTitle />
         <div
           className={
-            'mb-14 mt-8 grid  gap-4 md:grid-cols-2 lg:grid-cols-3 xl:gap-6 2xl:grid-cols-4 '
+            'mb-14 mt-8 grid grid-rows-[repeat(3,minmax(min-content,235px))] gap-4 md:grid-cols-2 lg:grid-cols-3 xl:gap-6 2xl:grid-cols-4 '
           }
         >
           <ReportCard

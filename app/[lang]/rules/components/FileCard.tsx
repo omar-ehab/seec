@@ -15,7 +15,7 @@ export default function FileCard({ category, title, link }: Props) {
       }
     >
       <PdfIcon className={'mb-6'} />
-      <span className={'text-sub_p mb-2 text-sm group-hover:text-white/75'}>
+      <span className={'mb-2 text-sm text-sub_p group-hover:text-white/75'}>
         {category}
       </span>
       <p className={'mb-4 text-xl text-black group-hover:text-white'}>
@@ -25,14 +25,14 @@ export default function FileCard({ category, title, link }: Props) {
         <Link
           href={link}
           className={
-            'text-sub_p rounded-full bg-black/5 px-4 py-2 group-hover:bg-black/25 group-hover:text-white'
+            'rounded-full bg-black/5 px-4 py-2 text-sub_p group-hover:bg-black/25 group-hover:text-white'
           }
         >
           معاينة
         </Link>
         <button
           className={
-            'text-sub_p flex items-center gap-1 hover:text-primary group-hover:text-white'
+            'flex items-center gap-1 text-sub_p hover:text-primary group-hover:text-white'
           }
         >
           <ShareIcon />

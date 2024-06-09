@@ -36,7 +36,7 @@ export default function RulesPage({ params: { lang } }: Props) {
           </div>
           <div
             className={
-              'grid grid-cols-1 grid-rows-[repeat(3,minmax(164px,_min-content))] gap-6 lg:grid-cols-3  2xl:lg:grid-cols-4 '
+              'grid grid-cols-1 grid-rows-[repeat(3,minmax(164px,_min-content))] gap-6 md:grid-cols-2 lg:grid-cols-3  2xl:grid-cols-4 '
             }
           >
             <JobCard

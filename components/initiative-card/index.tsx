@@ -15,44 +15,25 @@ export default function InitiativeCard({
   return (
     <div
       className={
-        'about-center__list-bullet-gradient grid grid-cols-5 overflow-hidden rounded-3xl bg-white'
+        'about-center__list-bullet-gradient flex flex-col overflow-hidden rounded-3xl bg-white md:odd:flex-row-reverse  md:even:flex-row'
       }
     >
-      {isReversed ? (
-        <>
-          <div className={'col-span-2 h-[350px] w-full'}>
-            <Image
-              src={image}
-              alt={title}
-              width={500}
-              className={'h-full w-full object-cover'}
-            />
-          </div>
-          <div
-            className={'col-span-3 flex flex-col justify-center gap-4 px-12'}
-          >
-            <p className={'text-lg font-medium text-black'}>{title}</p>
-            <p className={'text-sub_p'}>{description}</p>
-          </div>
-        </>
-      ) : (
-        <>
-          <div
-            className={'col-span-3 flex flex-col justify-center gap-4 px-12'}
-          >
-            <p className={'text-lg font-medium text-black'}>{title}</p>
-            <p className={'text-sub_p'}>{description}</p>
-          </div>
-          <div className={'col-span-2 h-[350px] w-full'}>
-            <Image
-              src={image}
-              alt={title}
-              width={500}
-              className={'h-full w-full object-cover'}
-            />
-          </div>
-        </>
-      )}
+      <div className={'h-64 w-full md:h-[350px] md:w-[42%]'}>
+        <Image
+          src={image}
+          alt={title}
+          width={500}
+          className={'h-full w-full object-cover'}
+        />
+      </div>
+      <div
+        className={
+          'flex w-full flex-col justify-center gap-4 px-4 py-10 sm:p-12 md:w-[58%]'
+        }
+      >
+        <p className={'text-lg font-medium text-black'}>{title}</p>
+        <p className={'text-sm text-sub_p sm:text-base'}>{description}</p>
+      </div>
     </div>
   );
 }

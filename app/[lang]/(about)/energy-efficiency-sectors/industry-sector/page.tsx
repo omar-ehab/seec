@@ -33,39 +33,47 @@ export default function IndustrySectorPage({ params: { lang } }: Props) {
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <div
-        className={'relative overflow-hidden bg-[#F7F8F7] px-20 pb-20 pt-16'}
-      >
-        <FactoryIcon
-          className={'absolute -bottom-16 left-0 z-0 size-96 opacity-25'}
-        />
-        <div className={'grid grid-cols-2'}>
-          <div className={'mb-6'}>
-            <h3 className={'mb-4 text-2xl font-medium text-black'}>
-              قطاع الصناعة
-            </h3>
-            <p className={'mb-8 max-w-[600px] text-sub_p'}>
-              يمثـل قطـاع الصناعـة حوالـي 46% مـن الطاقـة الأوليـة المسـتهلكة
-              فـي المملكة والتي تعـادل 2.1 مليـون برميـل نفـط مكافـئ يوميـًا،
-              ويركز نطاق عمل المركز على القطاعات الفرعية الأكثر استهلاكًا ضمن
-              هذا القطاع، بهدف تحسين كفاءة استخدام الطاقة وتقليل الهدر من خلال
-              تطبيق أفضل الممارسات والمعايير.
-            </p>
-            <p className={'max-w-[600px] text-sub_p'}>
-              القطاعات الفرعية الأكثـر اسـتهلاكًا
-            </p>
-            <ul className={'text-sub_p'}>
-              <li>- البتروكيماويات</li>
-              <li>- الأسمنت</li>
-              <li>- الحديـد</li>
-              <li>- الألومنيوم</li>
-            </ul>
+      <div className={'overflow-hidden bg-[#F7F8F7] pt-16'}>
+        <div className='container relative'>
+          <FactoryIcon
+            className={
+              'absolute -bottom-16 end-4 left-0 z-0 size-96 scale-110 opacity-5 md:opacity-25'
+            }
+          />
+          <div className={'grid md:grid-cols-2'}>
+            <div className={'mb-6'}>
+              <h3 className={'mb-4 text-2xl font-medium text-black'}>
+                قطاع الصناعة
+              </h3>
+              <p className={'mb-8 max-w-[600px] text-sub_p'}>
+                يمثـل قطـاع الصناعـة حوالـي 46% مـن الطاقـة الأوليـة المسـتهلكة
+                فـي المملكة والتي تعـادل 2.1 مليـون برميـل نفـط مكافـئ يوميـًا،
+                ويركز نطاق عمل المركز على القطاعات الفرعية الأكثر استهلاكًا ضمن
+                هذا القطاع، بهدف تحسين كفاءة استخدام الطاقة وتقليل الهدر من خلال
+                تطبيق أفضل الممارسات والمعايير.
+              </p>
+              <p className={'max-w-[600px] text-sub_p'}>
+                القطاعات الفرعية الأكثـر اسـتهلاكًا
+              </p>
+              <ul className={'text-sub_p'}>
+                <li>- البتروكيماويات</li>
+                <li>- الأسمنت</li>
+                <li>- الحديـد</li>
+                <li>- الألومنيوم</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <section className={'container mt-16 bg-white'}>
-        <h4 className={'mb-8 text-2xl font-medium text-black'}>المبادرات</h4>
-        <div className={'flex flex-col gap-16'}>
+        <h4
+          className={
+            'mx-auto mb-8 max-w-[1052px] text-2xl font-medium text-black'
+          }
+        >
+          المبادرات
+        </h4>
+        <div className={'mx-auto flex max-w-[1052px] flex-col gap-16'}>
           <InitiativeCard
             title={
               'آلية مستهدفات ومتطلبات كفاءة الطاقة في قطاع الصناعة للدورة الثانية (2020- 2025م)'

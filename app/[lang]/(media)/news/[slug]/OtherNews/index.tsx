@@ -11,7 +11,20 @@ import { Swiper } from 'swiper/types';
 export default function OtherNews({ lang }: { lang: LangType }) {
   const [swiper, setSwiper] = useState<Swiper | null>(null);
   return (
-    <section className={'news relative overflow-x-hidden bg-white pt-20'}>
+    <section className={'news relative overflow-x-hidden bg-[#F7F9FA]'}>
+      <div className={'relative h-24 bg-white'}>
+        <span
+          className={'skewed-t absolute top-0 block h-full w-full bg-white'}
+        ></span>
+        <span
+          className={
+            'skewed absolute top-0 block h-full w-full bg-gradient-to-l from-[rgb(215,215,215)] to-transparent'
+          }
+        ></span>
+        <span
+          className={'skewed-b absolute top-0 block h-full w-full bg-[#F7F9FA]'}
+        ></span>
+      </div>
       <div className='container'>
         <div className={'mb-12 flex items-center justify-between'}>
           <h2 className={'text-2xl font-bold text-black md:text-4xl'}>
@@ -73,20 +86,6 @@ export default function OtherNews({ lang }: { lang: LangType }) {
             <ChevronLeftIcon className={'size-5'} />
           </Link>
         </div>
-      </div>
-
-      <div className={'relative h-24 bg-white'}>
-        <span
-          className={'skewed-t absolute top-0 block h-full w-full bg-white'}
-        ></span>
-        <span
-          className={
-            'skewed absolute top-0 block h-full w-full bg-gradient-to-l from-[rgb(215,215,215)] to-transparent'
-          }
-        ></span>
-        <span
-          className={'skewed-b absolute top-0 block h-full w-full bg-[#F8FBF5]'}
-        ></span>
       </div>
     </section>
   );

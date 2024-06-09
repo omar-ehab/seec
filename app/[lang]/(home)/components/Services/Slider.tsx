@@ -20,11 +20,10 @@ export default function Slider({ className, setSwiper }: Props) {
     <Swiper
       spaceBetween={24}
       slidesPerView={'auto'}
-      slidesOffsetAfter={width && width > 769 ? 500 : 200}
       className={className}
       onSwiper={(swiper) => setSwiper(swiper)}
     >
-      <SwiperSlide className='!w-fit'>
+      <SwiperSlide className='!w-full xs:!w-fit'>
         <Slide
           src={MomkenatImage}
           title={'ممكنات'}
@@ -33,7 +32,7 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className='!w-fit'>
+      <SwiperSlide className='!w-full xs:!w-fit'>
         <Slide
           src={Estbdalmage}
           title={'مبادرة استبدال'}
@@ -42,7 +41,7 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className='!w-fit'>
+      <SwiperSlide className='!w-full xs:!w-fit'>
         <Slide
           src={KafaaImage}
           title={'برنامج إدارة الطاقة'}
@@ -51,7 +50,7 @@ export default function Slider({ className, setSwiper }: Props) {
           }
         />
       </SwiperSlide>
-      <SwiperSlide className='!w-fit'>
+      <SwiperSlide className='!w-full xs:!w-fit'>
         <Slide
           src={Estbdalmage}
           title={'مبادرة استبدال'}

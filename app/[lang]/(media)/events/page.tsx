@@ -36,7 +36,7 @@ export default function EventsPage({ params: { lang } }: Props) {
           <Filters lang={lang} />
           <div
             className={
-              'flex w-full flex-grow items-start gap-4 xs:w-auto xs:items-center'
+              'flex w-full flex-grow items-start gap-4 xs:w-auto xs:flex-grow-0 xs:items-center'
             }
           >
             <Button

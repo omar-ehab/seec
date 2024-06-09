@@ -48,7 +48,11 @@ export default function BoardMembersPage({ params: { lang } }: Props) {
         <SubLinks lang={lang} activeTab='board-members' />
       </PageHeader>
       <section className={'relative overflow-hidden'}>
-        <Image src={PatternImage} alt='' className={'absolute inset-0 z-0'} />
+        <Image
+          src={PatternImage}
+          alt=''
+          className={'absolute inset-0 z-0 h-full w-full'}
+        />
         <div className={'container relative z-10 pt-16'}>
           <div className={'mb-16 flex w-full items-center justify-center'}>
             <MemberCard
@@ -61,7 +65,7 @@ export default function BoardMembersPage({ params: { lang } }: Props) {
           </div>
           <div
             className={
-              'mb-16 flex w-full flex-wrap items-center justify-center gap-6 px-32 lg:justify-between'
+              'mb-16 flex w-full flex-wrap items-start justify-evenly gap-x-1 gap-y-6 px-6 md:px-32'
             }
           >
             <MemberCard
@@ -86,7 +90,11 @@ export default function BoardMembersPage({ params: { lang } }: Props) {
               position='عضو - وزارة الإعلام'
             />
           </div>
-          <div className={'grid w-full grid-cols-3 gap-x-6 gap-y-16 pb-28'}>
+          <div
+            className={
+              'grid w-full grid-cols-2 items-start gap-x-6 gap-y-16 pb-28 sm:grid-cols-3'
+            }
+          >
             <MemberCard
               image={FifthImage}
               size='sm'

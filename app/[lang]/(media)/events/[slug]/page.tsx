@@ -40,17 +40,17 @@ export default function SingleEventPage({ params: { lang } }: Props) {
         </h2>
         <p className={'mt-2 text-xl text-sub_p'}>شعبان 1444</p>
         <div className={'mt-4 flex flex-col gap-8'}>
-          <p className={'text-sub_p'}>
+          <p className={'sx:text-base text-sm text-sub_p'}>
             وقع المركز السعودي للاعتماد اتفاقية تعاون مع المركز السعودي لكفاءة
             الطاقة؛ بهدف تعزيز العمل في العديد من المجالات المشتركة بي الطرفين،
             ووضع برامج التعاون والتطوير لتحقيق المنافع المشتركة.
           </p>
-          <p className={'text-sub_p'}>
+          <p className={'sx:text-base text-sm text-sub_p'}>
             ومثّل الطرفين في توقيع الاتفاقية المدير التنفيذي للمركز السعودي
             للاعتماد الدكتور عادل القعيّد، ومدير عام المركز السعودي لكفاءة
             الطاقة ناصر بن عبد الله الغامدي.
           </p>
-          <p className={'text-sub_p'}>
+          <p className={'sx:text-base text-sm text-sub_p'}>
             وتأتي اتفاقية التعاون في العديد من المجالات منها: تحقيق الكفاية في
             تلبية متطلبات البنية التحتية لنظام إدارة الطاقة، والاستعانة بجهات
             تقويم المطابقة المعتمدة للقيام بالأعمال التي تخص الحصول على شهادات

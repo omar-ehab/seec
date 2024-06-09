@@ -30,7 +30,11 @@ export default function EnergyEfficiencySectorsPage({
       </PageHeader>
       <section className={'container mt-16 flex flex-col items-center gap-12'}>
         <div className={'max-w-[1060px]'}>
-          <h2 className={'mb-4 text-center text-2xl font-medium text-black'}>
+          <h2
+            className={
+              'mb-4 text-center text-xl font-medium text-black md:text-2xl'
+            }
+          >
             ممكنات كفاءة الطاقة
           </h2>
           <p className={'text-center text-sub_p'}>
@@ -41,7 +45,9 @@ export default function EnergyEfficiencySectorsPage({
             الاقتصادي والاجتماعي للمجتمعات.
           </p>
         </div>
-        <div className={'grid w-full grid-cols-2 gap-8 lg:w-[900px]'}>
+        <div
+          className={'grid w-full max-w-[694px] gap-4 xs:grid-cols-2 md:gap-8'}
+        >
           <EnablerCard
             href={`/${lang}/energy-efficiency-enablers/energy-services-companies`}
             icon={

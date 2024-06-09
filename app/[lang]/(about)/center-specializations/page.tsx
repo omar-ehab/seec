@@ -24,20 +24,28 @@ export default function CenterSpecializationsPage({ params: { lang } }: Props) {
       >
         <SubLinks lang={lang} activeTab='center-specializations' />
       </PageHeader>
-      <section className={'container px-32 py-8'}>
-        <h2 className={'mb-8 text-center text-3xl font-bold'}>
+      <section className={'container py-8 xl:px-32'}>
+        <h2
+          className={
+            'mb-20 text-center text-2xl font-bold sm:mb-28 md:text-3xl lg:mb-12'
+          }
+        >
           اختصاصات المركز
         </h2>
         <div
           className={
-            'bullet-gradient grid grid-cols-3 gap-6 rounded-3xl px-12 py-6'
+            'bullet-gradient mx-auto flex max-w-[1052px] grid-cols-9 flex-col-reverse gap-0 rounded-3xl p-4 xs:px-8 xs:py-6 lg:grid lg:gap-6 xl:px-12 [&:not(:last-child)]:mb-20 sm:[&:not(:last-child)]:mb-32 lg:[&:not(:last-child)]:mb-16'
           }
         >
-          <div className={'col-span-2 flex h-full flex-col justify-center'}>
-            <p className={'mb-4 text-2xl font-medium text-black'}>
+          <div
+            className={
+              'col-span-5 flex h-full flex-col justify-center xl:col-span-6'
+            }
+          >
+            <p className={'text-lx mb-4 font-medium text-black md:text-2xl'}>
               اللوائح والتدقيق
             </p>
-            <ul className={'text-sub_p'}>
+            <ul className={'text-sm text-sub_p xs:text-base'}>
               <li>
                 - إصدار اللوائح الفنية والمعايير والإجراءات التي تحقق كفاءة
                 الطاقة.
@@ -55,23 +63,35 @@ export default function CenterSpecializationsPage({ params: { lang } }: Props) {
               </li>
             </ul>
           </div>
-          <div className={'col-span-1'}>
+          <div
+            className={
+              '-mt-[85px] flex justify-center *:h-40 *:w-40 xs:block sm:-mt-[150px] sm:*:h-auto sm:*:w-auto lg:col-span-4 lg:mt-0 xl:col-span-3'
+            }
+          >
             <CertificateImage />
           </div>
         </div>
         <div
           className={
-            'bullet-gradient my-16 grid grid-cols-3 gap-6 rounded-3xl px-12 py-6'
+            'bullet-gradient mx-auto flex max-w-[1052px] grid-cols-9 flex-col gap-0 rounded-3xl p-4 xs:px-8 xs:py-6 lg:grid lg:gap-6 xl:px-12 [&:not(:last-child)]:mb-20 sm:[&:not(:last-child)]:mb-32 lg:[&:not(:last-child)]:mb-16'
           }
         >
-          <div className={'col-span-1'}>
+          <div
+            className={
+              '-mt-[85px] flex justify-center *:h-40 *:w-40 xs:block sm:-mt-[150px] sm:*:h-auto sm:*:w-auto lg:col-span-4 lg:mt-0 xl:col-span-3'
+            }
+          >
             <SeveralServices />
           </div>
-          <div className={'col-span-2 flex h-full flex-col justify-center'}>
-            <p className={'mb-4 text-2xl font-medium text-black'}>
+          <div
+            className={
+              'col-span-5 flex h-full flex-col justify-center xl:col-span-6'
+            }
+          >
+            <p className={'text-lx mb-4 font-medium text-black md:text-2xl'}>
               البرامج والخدمات
             </p>
-            <ul className={'text-sub_p'}>
+            <ul className={'text-sm text-sub_p xs:text-base'}>
               <li>- وضع برامج وطنية لكفاءة الطاقة وتحديد المؤشرات والاهداف.</li>
               <li>- اقتراح مشاريع الأنظمة الخاصة بكفاءة الطاقة.</li>
               <li>
@@ -91,14 +111,18 @@ export default function CenterSpecializationsPage({ params: { lang } }: Props) {
         </div>
         <div
           className={
-            'bullet-gradient grid grid-cols-3 gap-6 rounded-3xl px-12 py-6'
+            'bullet-gradient mx-auto flex max-w-[1052px] grid-cols-9 flex-col-reverse gap-0 rounded-3xl p-4 xs:px-8 xs:py-6 lg:grid lg:gap-6 xl:px-12 [&:not(:last-child)]:mb-20 sm:[&:not(:last-child)]:mb-32 lg:[&:not(:last-child)]:mb-16'
           }
         >
-          <div className={'col-span-2 flex h-full flex-col justify-center'}>
-            <p className={'mb-4 text-2xl font-medium text-black'}>
+          <div
+            className={
+              'col-span-5 flex h-full flex-col justify-center xl:col-span-6'
+            }
+          >
+            <p className={'text-lx mb-4 font-medium text-black md:text-2xl'}>
               المعلومات والاتصال
             </p>
-            <ul className={'text-sub_p'}>
+            <ul className={'text-sm text-sub_p xs:text-base'}>
               <li>
                 - الحصول على المعلومات والوثائق المتعلقة بكفاءة الطاقة وإعداد
                 تقارير دورية بذلك.
@@ -109,7 +133,11 @@ export default function CenterSpecializationsPage({ params: { lang } }: Props) {
               </li>
             </ul>
           </div>
-          <div className={'col-span-1'}>
+          <div
+            className={
+              '-mt-[85px] flex justify-center *:h-40 *:w-40 xs:block sm:-mt-[150px] sm:*:h-auto sm:*:w-auto lg:col-span-4 lg:mt-0 xl:col-span-3'
+            }
+          >
             <ContractImage />
           </div>
         </div>

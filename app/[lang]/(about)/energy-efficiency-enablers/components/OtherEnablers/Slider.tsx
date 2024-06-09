@@ -20,13 +20,11 @@ export default function Slider({ className, setSwiper }: Props) {
   return (
     <Swiper
       spaceBetween={24}
-      slidesPerView={3.25}
-      slidesOffsetBefore={80}
-      slidesOffsetAfter={80}
+      slidesPerView={'auto'}
       className={className}
       onSwiper={(swiper) => setSwiper(swiper)}
     >
-      <SwiperSlide>
+      <SwiperSlide className=' w-full whitespace-nowrap xs:!w-[300px] md:!w-[332px]'>
         <EnablerCard
           href={`/${lang}/energy-efficiency-enablers/energy-services-companies`}
           icon={
@@ -36,7 +34,7 @@ export default function Slider({ className, setSwiper }: Props) {
           className={'bg-white'}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=' w-full whitespace-nowrap xs:!w-[300px] md:!w-[332px]'>
         <EnablerCard
           href={`/${lang}/energy-efficiency-enablers/human-capabilities-development`}
           icon={<UserIdIcon className={'text-black group-hover:text-white'} />}
@@ -44,7 +42,7 @@ export default function Slider({ className, setSwiper }: Props) {
           className={'bg-white'}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=' w-full whitespace-nowrap xs:!w-[300px] md:!w-[332px]'>
         <EnablerCard
           href={`/${lang}/energy-efficiency-enablers/awareness`}
           icon={
@@ -54,7 +52,7 @@ export default function Slider({ className, setSwiper }: Props) {
           className={'bg-white'}
         />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=' w-full whitespace-nowrap xs:!w-[300px] md:!w-[332px]'>
         <EnablerCard
           href={`/${lang}/energy-efficiency-enablers/inspection-monitoring-certification`}
           icon={

@@ -22,7 +22,7 @@ export default function SubFilters({ lang }: { lang: LangType }) {
     return (
       <ul
         className={
-          'text-sub_p flex items-center gap-2 border-b border-[#D7DAD7] pb-3 pt-2'
+          'flex items-center gap-2 border-b border-[#D7DAD7] pb-3 pt-2 text-sub_p'
         }
       >
         <li>
