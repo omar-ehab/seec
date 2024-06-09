@@ -91,7 +91,6 @@ export default function IndustrySectorPage({ params: { lang } }: Props) {
               'تهدف المبادرة إلى التحقق والمتابعة مع الشركات الصناعية غير الملتزمة بمستهدفات كفاءة الطاقة للدورة الأولى 2014-2019م للتأكد من إغلاقها للفجوة في سنة الهدف 2019 م.'
             }
             image={SecondImage}
-            isReversed
           />
           <InitiativeCard
             title={'برنامج إدارة الطاقة'}

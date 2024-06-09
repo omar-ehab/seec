@@ -78,7 +78,6 @@ export default function InspectionMonitoringCertificationPage({
               'التأكـــد مـــن التـــزام الأسـواق والمستودعات والمصانع المحليـــة بطاقــات كفـاءة الطاقـــة حيـــث تـــم تنفيــذ كافـة الجـــولات الرقابيـــة حســـب الخطـــة الســـنوية.'
             }
             image={FirstImage}
-            isReversed
           />
           <InitiativeCard
             title={'تطوير نظام إدارة العينات الإلكتروني- مرحلة(3)'}
@@ -94,7 +93,6 @@ export default function InspectionMonitoringCertificationPage({
               'والاشـتراطات البيئيـة المناسـبة.'
             }
             image={FirstImage}
-            isReversed
           />
         </div>
       </section>

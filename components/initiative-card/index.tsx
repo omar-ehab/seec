@@ -4,14 +4,8 @@ type Props = {
   title: string;
   description: string;
   image: any;
-  isReversed?: boolean;
 };
-export default function InitiativeCard({
-  title,
-  description,
-  image,
-  isReversed = false,
-}: Props) {
+export default function InitiativeCard({ title, description, image }: Props) {
   return (
     <div
       className={
