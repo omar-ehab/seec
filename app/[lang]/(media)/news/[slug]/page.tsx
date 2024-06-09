@@ -29,7 +29,7 @@ export default function SingleNewsPage({ params: { lang } }: Props) {
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
       <section className={'container mb-20 mt-10'}>
-        <div className={'h-[420px] w-full overflow-hidden rounded-xl'}>
+        <div className={'h-64 w-full overflow-hidden rounded-xl md:h-[420px]'}>
           <Image
             src={FirstImage}
             alt={'first image'}
