@@ -77,7 +77,6 @@ export default function EnergyServicesCompaniesPage({
               'تقديم خدمات فنية لمشاريع إعادة تأهيل القطاع الحكومي، ومراجعة برامج مشاريع إعادة تأهيل المباني الحكومية ومصابيح إنارة الطرق.'
             }
             image={FirstImage}
-            isReversed
           />
           <InitiativeCard
             title={'المنصة الإلكترونية لفرص مشاريع كفاءة الطاقة'}
@@ -92,7 +91,6 @@ export default function EnergyServicesCompaniesPage({
               'تعزيز مشاريع كفاءة الطاقة في القطاع السكني بجودة عالية وبتكلفة مناسبة وبنطاق جغرافي أوسع، وذلك من خلال تطوير القدرات البشرية اللازمة للعمل كمدقق طاقة مرخص.'
             }
             image={FirstImage}
-            isReversed
           />
         </div>
       </section>

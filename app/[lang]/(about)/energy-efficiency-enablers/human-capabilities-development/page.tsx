@@ -77,7 +77,6 @@ export default function EnergyServicesCompaniesPage({
               'تطوير وتنمية مهارات القدرات المحلية في مجال إدارة كفاءة الطاقة من خلال اعتماد البرامج التدريبية في مجال كفاءة الطاقة وتدقيقها بهدف تعزيز المعرفـة فـي مجـال كفـاءة الطاقـة.'
             }
             image={FirstImage}
-            isReversed
           />
         </div>
       </section>
