@@ -6,11 +6,11 @@ import SearchInput from '@/app/[lang]/(media)/media-library/components/SearchInp
 import Pagination from '@/components/pagination';
 import Image from 'next/image';
 import FirstImage from '@/app/[lang]/(media)/media-library/images/1.png';
-// import SecondImage from '@/app/[lang]/(media)/media-library/images/2.png';
-// import ThirdImage from '@/app/[lang]/(media)/media-library/images/3.png';
-// import FourthImage from '@/app/[lang]/(media)/media-library/images/4.png';
-// import FifthImage from '@/app/[lang]/(media)/media-library/images/5.png';
-// import SixthImage from '@/app/[lang]/(media)/media-library/images/6.png';
+import SecondImage from '@/app/[lang]/(media)/media-library/images/2.png';
+import ThirdImage from '@/app/[lang]/(media)/media-library/images/3.png';
+import FourthImage from '@/app/[lang]/(media)/media-library/images/4.png';
+import FifthImage from '@/app/[lang]/(media)/media-library/images/5.png';
+import SixthImage from '@/app/[lang]/(media)/media-library/images/6.png';
 import { Button } from '@/components/ui/button';
 import ImageIcon from '@/components/icons/ImageIcon';
 
@@ -41,9 +41,17 @@ export default function MediaLibraryPage({ params: { lang } }: Props) {
           <Filters lang={lang} />
           <SearchInput />
         </div>
-        <div className={'mb-14'}>
+        <div
+          className={
+            'mb-14 xs:gap-4 xs:[column-count:2]  md:[column-count:3] lg:gap-6'
+          }
+        >
           {/*TODO:: here is image component example*/}
-          <div className={'relative overflow-hidden rounded-2xl'}>
+          <div
+            className={
+              'relative overflow-hidden rounded-2xl [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-6 '
+            }
+          >
             <span className={'absolute inset-0 z-10 bg-black/15'}></span>
             <Button
               variant={'outline'}
@@ -57,6 +65,112 @@ export default function MediaLibraryPage({ params: { lang } }: Props) {
             <Image
               src={FirstImage}
               alt={'first image'}
+              className={'h-full w-full object-cover'}
+            />
+          </div>
+
+          <div
+            className={
+              'relative overflow-hidden rounded-2xl [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-6 '
+            }
+          >
+            <span className={'absolute inset-0 z-10 bg-black/15'}></span>
+            <Button
+              variant={'outline'}
+              className={
+                'absolute start-4 top-4 z-20 flex items-center gap-1 border-none bg-black/70 px-1 text-white hover:bg-black/60 hover:text-white'
+              }
+            >
+              <ImageIcon className={'text-white'} />
+              <span className={'text-base font-normal'}>3</span>
+            </Button>
+            <Image
+              src={SecondImage}
+              alt={'Second Image'}
+              className={'h-full w-full object-cover'}
+            />
+          </div>
+          <div
+            className={
+              'relative overflow-hidden rounded-2xl [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-6 '
+            }
+          >
+            <span className={'absolute inset-0 z-10 bg-black/15'}></span>
+            <Button
+              variant={'outline'}
+              className={
+                'absolute start-4 top-4 z-20 flex items-center gap-1 border-none bg-black/70 px-1 text-white hover:bg-black/60 hover:text-white'
+              }
+            >
+              <ImageIcon className={'text-white'} />
+              <span className={'text-base font-normal'}>3</span>
+            </Button>
+            <Image
+              src={ThirdImage}
+              alt={'Third Image'}
+              className={'h-full w-full object-cover'}
+            />
+          </div>
+          <div
+            className={
+              'relative overflow-hidden rounded-2xl [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-6 '
+            }
+          >
+            <span className={'absolute inset-0 z-10 bg-black/15'}></span>
+            <Button
+              variant={'outline'}
+              className={
+                'absolute start-4 top-4 z-20 flex items-center gap-1 border-none bg-black/70 px-1 text-white hover:bg-black/60 hover:text-white'
+              }
+            >
+              <ImageIcon className={'text-white'} />
+              <span className={'text-base font-normal'}>3</span>
+            </Button>
+            <Image
+              src={FourthImage}
+              alt={'Fourth Image'}
+              className={'h-full w-full object-cover'}
+            />
+          </div>
+          <div
+            className={
+              'relative overflow-hidden rounded-2xl [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-6 '
+            }
+          >
+            <span className={'absolute inset-0 z-10 bg-black/15'}></span>
+            <Button
+              variant={'outline'}
+              className={
+                'absolute start-4 top-4 z-20 flex items-center gap-1 border-none bg-black/70 px-1 text-white hover:bg-black/60 hover:text-white'
+              }
+            >
+              <ImageIcon className={'text-white'} />
+              <span className={'text-base font-normal'}>3</span>
+            </Button>
+            <Image
+              src={FifthImage}
+              alt={'Fifth Image'}
+              className={'h-full w-full object-cover'}
+            />
+          </div>
+          <div
+            className={
+              'relative overflow-hidden rounded-2xl [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-6 '
+            }
+          >
+            <span className={'absolute inset-0 z-10 bg-black/15'}></span>
+            <Button
+              variant={'outline'}
+              className={
+                'absolute start-4 top-4 z-20 flex items-center gap-1 border-none bg-black/70 px-1 text-white hover:bg-black/60 hover:text-white'
+              }
+            >
+              <ImageIcon className={'text-white'} />
+              <span className={'text-base font-normal'}>3</span>
+            </Button>
+            <Image
+              src={SixthImage}
+              alt={'Sixth Image'}
               className={'h-full w-full object-cover'}
             />
           </div>
