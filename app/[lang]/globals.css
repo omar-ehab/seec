@@ -71,6 +71,10 @@
     margin: 0;
   }
 
+  .normal_top_skew {
+    clip-path: polygon(100% 30%, 0% 100%, 100% 100%);
+  }
+
   .skewed {
     clip-path: polygon(100% 0, 0 70%, 0 100%);
   }
