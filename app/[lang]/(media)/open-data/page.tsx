@@ -1,7 +1,6 @@
 import Navbar from '@/components/navbar';
 import PageHeader from '@/components/page-header/PageHeader';
 import SubLinks from '@/app/[lang]/(media)/components/SubLinks';
-import DoubleSquareMonoColor from '@/components/shapes/DoubleSquareMonoColor';
 import UserStarIcon from '@/components/icons/UserStarIcon';
 import EvChargerIcon from '@/components/icons/EvChargerIcon';
 import CheckMarkCircleIcon from '@/components/icons/CheckMarkCircleIcon';
@@ -32,7 +31,6 @@ export default function OpenDataPage({ params: { lang } }: Props) {
         <SubLinks lang={lang} activeTab='open-data' />
       </PageHeader>
       <div className={'relative overflow-hidden bg-[#F7F8F7] pt-16'}>
-        <DoubleSquareMonoColor className={'absolute bottom-0 left-0 z-10'} />
         <div className={'container relative z-30 pb-20'}>
           <div className={' mb-6'}>
             <h3 className={'mb-4 text-xl font-medium text-black md:text-2xl'}>

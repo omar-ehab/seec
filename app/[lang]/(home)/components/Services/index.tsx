@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import { Swiper } from 'swiper/types';
 
-export default function Services() {
+export default function Services({ lang }: { lang: LangType }) {
   const [swiper, setSwiper] = useState<Swiper | null>(null);
   return (
     <section className={'relative overflow-x-hidden bg-[#F7F9FA] pt-20'}>
@@ -46,7 +46,7 @@ export default function Services() {
               </button>
             </div>
             <Link
-              href={'#'}
+              href={`/${lang}/online-services`}
               className={cn(
                 buttonVariants({
                   variant: 'outline',

@@ -44,21 +44,23 @@ export default function ServiceLevelAgreementPage({ params: { lang } }: Props) {
               ببذل كل ما من شأنه تحقيق رضى العملاء عبر إتاحة الخدمات الإلكترونية
               بأسهل وأيسر الطرق، علماً بأن هذا الزمن لا يشمل استكمال النواقص في
               حال لم يقدم المستفيد كافة المعلومات المطلوبة، كما لا يشمل الزمن
-              المستغرق في معالجة المعاملات من قبل طرف ثالث "الجهات الحكومية
-              الأخرى" في حال استدعت طبيعة المعاملات ذلك، كما يجب على العملاء
-              الالتزام بشروط ومتطلبات كل مهمة كما هو موضح في دليل الخدمات
-              الإلكترونية وسيتم تحديث وإضافة كافة الخدمات الإلكترونية تباعاً إلى
-              هذه القائمة.
+              المستغرق في معالجة المعاملات من قبل طرف ثالث &quot;الجهات الحكومية
+              الأخرى&quot; في حال استدعت طبيعة المعاملات ذلك، كما يجب على
+              العملاء الالتزام بشروط ومتطلبات كل مهمة كما هو موضح في دليل
+              الخدمات الإلكترونية وسيتم تحديث وإضافة كافة الخدمات الإلكترونية
+              تباعاً إلى هذه القائمة.
             </p>
 
             <table className='mt-2 text-sm sm:text-base [&:not(:last-child)]:mb-8'>
               <thead className='bg-gradient-to-b from-[#73AE281A] to-[#006F591A] font-medium '>
-                <th className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
-                  نوع الخدمة
-                </th>
-                <th className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
-                  المدة الزمنية لتنفيذ الخدمة
-                </th>
+                <tr>
+                  <th className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    نوع الخدمة
+                  </th>
+                  <th className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    المدة الزمنية لتنفيذ الخدمة
+                  </th>
+                </tr>
               </thead>
               <tbody>
                 <tr className='even:bg-[#D7DAD740]'>
@@ -90,15 +92,17 @@ export default function ServiceLevelAgreementPage({ params: { lang } }: Props) {
 
             <table className='mt-2 text-sm sm:text-base [&:not(:last-child)]:mb-8'>
               <thead className='bg-gradient-to-b from-[#73AE281A] to-[#006F591A] font-medium '>
-                <th className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
-                  القناة
-                </th>
-                <th className='py-2rmd: w-[312px] border px-4 py-2.5 text-start md:px-8'>
-                  توفر القناة
-                </th>
-                <th className='py-2rmd: w-[312px] border px-4 py-2.5 text-start md:px-8'>
-                  وقت الاستجابة
-                </th>
+                <tr>
+                  <th className='w-[312px] border px-4 py-2 text-start md:px-8 md:py-2.5'>
+                    القناة
+                  </th>
+                  <th className='py-2rmd: w-[312px] border px-4 py-2.5 text-start md:px-8'>
+                    توفر القناة
+                  </th>
+                  <th className='py-2rmd: w-[312px] border px-4 py-2.5 text-start md:px-8'>
+                    وقت الاستجابة
+                  </th>
+                </tr>
               </thead>
               <tbody>
                 <tr className='even:bg-[#D7DAD740]'>

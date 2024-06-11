@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
 import ChevronLeftIcon from '@/components/icons/ChevronLeftIcon';
 
-export default function MissionAndVision() {
+export default function MissionAndVision({ lang }: { lang: LangType }) {
   return (
     <section className='relative w-full bg-[#F8FBF3] pt-24'>
       <div className='container'>
@@ -64,7 +64,7 @@ export default function MissionAndVision() {
             </div>
           </div>
           <Link
-            href={'#'}
+            href={`/${lang}/center-strategy`}
             className={cn(
               buttonVariants({
                 variant: 'outline',

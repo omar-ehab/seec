@@ -3,9 +3,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Slide from '@/app/[lang]/(home)/components/News/Slide';
-import MomkenatImage from '@/public/momkenat.png';
-import Estbdalmage from '@/public/estbdal.png';
-import KafaaImage from '@/public/kafaa.png';
+import FirstImage from './1.png';
+import SecondImage from './2.jpg';
+import ThirdImage from './3.jpg';
+import FourthImage from './4.jpg';
 import { Dispatch, SetStateAction } from 'react';
 import { Swiper as SwiperType } from 'swiper/types';
 import { useWindowSize } from '@uidotdev/usehooks';
@@ -31,7 +32,7 @@ export default function Slider({ className, setSwiper }: Props) {
         }
       >
         <Slide
-          src={MomkenatImage}
+          src={FirstImage}
           title={
             ' وقع مدير عام المركز اتفاقية تعاون لتعزيز العمل في العديد من المجالات'
           }
@@ -43,7 +44,7 @@ export default function Slider({ className, setSwiper }: Props) {
         }
       >
         <Slide
-          src={Estbdalmage}
+          src={SecondImage}
           title={
             ' وقع مدير عام المركز اتفاقية تعاون لتعزيز العمل في العديد من المجالات'
           }
@@ -55,7 +56,7 @@ export default function Slider({ className, setSwiper }: Props) {
         }
       >
         <Slide
-          src={KafaaImage}
+          src={ThirdImage}
           title={
             ' وقع مدير عام المركز اتفاقية تعاون لتعزيز العمل في العديد من المجالات'
           }
@@ -67,7 +68,7 @@ export default function Slider({ className, setSwiper }: Props) {
         }
       >
         <Slide
-          src={MomkenatImage}
+          src={FourthImage}
           title={
             ' وقع مدير عام المركز اتفاقية تعاون لتعزيز العمل في العديد من المجالات'
           }
@@ -79,7 +80,7 @@ export default function Slider({ className, setSwiper }: Props) {
         }
       >
         <Slide
-          src={MomkenatImage}
+          src={FirstImage}
           title={
             ' وقع مدير عام المركز اتفاقية تعاون لتعزيز العمل في العديد من المجالات'
           }
@@ -91,7 +92,7 @@ export default function Slider({ className, setSwiper }: Props) {
         }
       >
         <Slide
-          src={Estbdalmage}
+          src={SecondImage}
           title={
             ' وقع مدير عام المركز اتفاقية تعاون لتعزيز العمل في العديد من المجالات'
           }
@@ -103,7 +104,7 @@ export default function Slider({ className, setSwiper }: Props) {
         }
       >
         <Slide
-          src={KafaaImage}
+          src={ThirdImage}
           title={
             ' وقع مدير عام المركز اتفاقية تعاون لتعزيز العمل في العديد من المجالات'
           }
@@ -115,7 +116,7 @@ export default function Slider({ className, setSwiper }: Props) {
         }
       >
         <Slide
-          src={MomkenatImage}
+          src={FourthImage}
           title={
             ' وقع مدير عام المركز اتفاقية تعاون لتعزيز العمل في العديد من المجالات'
           }

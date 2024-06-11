@@ -6,7 +6,6 @@ import Services from '@/app/[lang]/(home)/components/Services';
 import News from '@/app/[lang]/(home)/components/News';
 import Partners from '@/app/[lang]/(home)/components/Partners';
 
-
 type Props = {
   params: {
     lang: LangType;
@@ -16,11 +15,11 @@ export default function Home({ params: { lang } }: Props) {
   return (
     <>
       <Header lang={lang} />
-      <MissionAndVision />
+      <MissionAndVision lang={lang} />
       <CenterValues />
       <Numbers />
-      <Services />
-      <News />
+      <Services lang={lang} />
+      <News lang={lang} />
       <Partners />
     </>
   );
