@@ -10,6 +10,7 @@ import RoundedPolygonFilter from '@/components/svg-filters/RoundedPolygonFilter'
 import { cn } from '@/lib/utils';
 import React from 'react';
 import FooterCta from '@/components/footer-cta';
+import DoubleSquareMonoColor from '@/components/shapes/DoubleSquareMonoColor';
 
 type Props = {
   params: {
@@ -31,6 +32,7 @@ export default function OpenDataPage({ params: { lang } }: Props) {
         <SubLinks lang={lang} activeTab='open-data' />
       </PageHeader>
       <div className={'relative overflow-hidden bg-[#F7F8F7] pt-16'}>
+        <DoubleSquareMonoColor className={'absolute bottom-0 left-0 z-0'} />
         <div className={'container relative z-30 pb-20'}>
           <div className={' mb-6'}>
             <h3 className={'mb-4 text-xl font-medium text-black md:text-2xl'}>
@@ -77,21 +79,6 @@ export default function OpenDataPage({ params: { lang } }: Props) {
               </p>
             </div>
           </div>
-        </div>
-        <div className={'relative z-10 h-24 w-full bg-[#F4F9F7]'}>
-          <span
-            className={
-              'skewed-t absolute top-0 block h-full w-full bg-[#F7F8F7]'
-            }
-          ></span>
-          <span
-            className={
-              'skewed absolute top-0 block h-full w-full bg-gradient-to-l from-[rgb(215,215,215)] to-transparent'
-            }
-          ></span>
-          <span
-            className={'skewed-b absolute top-0 block h-full w-full bg-white'}
-          ></span>
         </div>
       </div>
       <section className={'py-20'}>

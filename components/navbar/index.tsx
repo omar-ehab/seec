@@ -19,6 +19,15 @@ const isAboutCenterActive = (lang: LangType, pathname: string) =>
   pathname === `/${lang}/energy-efficiency-sectors` ||
   pathname === `/${lang}/energy-efficiency-enablers`;
 
+const isMediaCenterActive = (lang: LangType, pathname: string) =>
+  pathname === `/${lang}/news` ||
+  pathname === `/${lang}/events` ||
+  pathname === `/${lang}/reports` ||
+  pathname === `/${lang}/media-library` ||
+  pathname === `/${lang}/open-data` ||
+  pathname === `/${lang}/statistics` ||
+  pathname === `/${lang}/visual-identity`;
+
 type Props = {
   lang: LangType;
   className?: string;
@@ -66,7 +75,7 @@ export default function Navbar({ lang, className }: Props) {
         role='navigation'
         aria-label='Main Navigation'
       >
-        <div className='container grid h-full items-center justify-between xl:grid-cols-[115px,75px,170px,141px,122px,137px,77px,92px,1fr,196px]'>
+        <div className='container grid h-full items-center justify-between xl:grid-cols-[115px,75px,170px,141px,125px,137px,77px,92px,1fr,196px]'>
           <Link href={`/${lang}`}>
             <Image
               priority
@@ -203,7 +212,16 @@ export default function Navbar({ lang, className }: Props) {
                     }}
                   />
                 ) : null}
-                <span className={'relative z-10'}>المركز الإعلامي</span>
+                <span
+                  className={cn({
+                    'relative z-10 font-medium text-black': isMediaCenterActive(
+                      lang,
+                      pathname
+                    ),
+                  })}
+                >
+                  المركز الإعلامي
+                </span>
                 <ArrowDownIcon
                   size={16}
                   className={cn('mt-2 transition-transform', {
@@ -258,7 +276,7 @@ export default function Navbar({ lang, className }: Props) {
       >
         <div
           className={
-            'container grid h-full grid-cols-[115px,75px,145px,141px,122px,137px,77px,92px,1fr,196px]'
+            'container grid h-full grid-cols-[115px,75px,145px,141px,125px,137px,77px,92px,1fr,196px]'
           }
         >
           <ul
@@ -387,6 +405,8 @@ export default function Navbar({ lang, className }: Props) {
                         'text-white hover:bg-primary': isTransparent,
                         'text-black hover:bg-primary/5 hover:text-primary':
                           !isTransparent,
+                        'bg-primary/5 font-medium text-black text-primary':
+                          pathname === `/${lang}/news`,
                       }
                     )}
                   >
@@ -402,6 +422,8 @@ export default function Navbar({ lang, className }: Props) {
                         'text-white hover:bg-primary': isTransparent,
                         'text-black hover:bg-primary/5 hover:text-primary':
                           !isTransparent,
+                        'bg-primary/5 font-medium text-black text-primary':
+                          pathname === `/${lang}/events`,
                       }
                     )}
                   >
@@ -417,6 +439,8 @@ export default function Navbar({ lang, className }: Props) {
                         'text-white hover:bg-primary': isTransparent,
                         'text-black hover:bg-primary/5 hover:text-primary':
                           !isTransparent,
+                        'bg-primary/5 font-medium text-black text-primary':
+                          pathname === `/${lang}/reports`,
                       }
                     )}
                   >
@@ -432,6 +456,8 @@ export default function Navbar({ lang, className }: Props) {
                         'text-white hover:bg-primary': isTransparent,
                         'text-black hover:bg-primary/5 hover:text-primary':
                           !isTransparent,
+                        'bg-primary/5 font-medium text-black text-primary':
+                          pathname === `/${lang}/media-library`,
                       }
                     )}
                   >
@@ -447,6 +473,8 @@ export default function Navbar({ lang, className }: Props) {
                         'text-white hover:bg-primary': isTransparent,
                         'text-black hover:bg-primary/5 hover:text-primary':
                           !isTransparent,
+                        'bg-primary/5 font-medium text-black text-primary':
+                          pathname === `/${lang}/open-data`,
                       }
                     )}
                   >
@@ -462,6 +490,8 @@ export default function Navbar({ lang, className }: Props) {
                         'text-white hover:bg-primary': isTransparent,
                         'text-black hover:bg-primary/5 hover:text-primary':
                           !isTransparent,
+                        'bg-primary/5 font-medium text-black text-primary':
+                          pathname === `/${lang}/statistics`,
                       }
                     )}
                   >
@@ -477,6 +507,8 @@ export default function Navbar({ lang, className }: Props) {
                         'text-white hover:bg-primary': isTransparent,
                         'text-black hover:bg-primary/5 hover:text-primary':
                           !isTransparent,
+                        'bg-primary/5 font-medium text-black text-primary':
+                          pathname === `/${lang}/visual-identity`,
                       }
                     )}
                   >

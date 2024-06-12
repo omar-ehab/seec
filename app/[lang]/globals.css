@@ -75,6 +75,10 @@
     clip-path: polygon(100% 30%, 0% 100%, 100% 100%);
   }
 
+  .normal_bottom_skew {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+  }
+
   .skewed {
     clip-path: polygon(100% 0, 0 70%, 0 100%);
   }

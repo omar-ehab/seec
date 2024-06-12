@@ -49,7 +49,7 @@ export default function ContactInfo() {
           <div>
             <p className={'text-sm text-[#D7DAD7]'}>الموقع الجغرافي</p>
             <p className={'text-lg text-white md:text-xl'}>
-              الرياض-الميدنة الرقمية
+              الرياض-المدينة الرقمية
             </p>
           </div>
         </div>

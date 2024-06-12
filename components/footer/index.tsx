@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Subscribe from '@/components/footer/Subscribe';
 import Link from 'next/link';
@@ -11,13 +12,19 @@ import RotateRightIcon from '@/components/icons/RotateRightIcon';
 import Vision2030Image from '@/public/vision_2030.png';
 import { Separator } from '@/components/ui/separator';
 import FooterBg from './FooterBg';
+import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
 
 export default function Footer({ lang }: { lang: LangType }) {
+  const pathname = usePathname();
   return (
     <footer className={'-mt-24 overflow-hidden'}>
       <div className={'relative z-50 h-24 translate-y-24 bg-transparent'}>
         <span
-          className={'skewed-t z-10 block h-full w-full scale-105 bg-[#F8FBF3]'}
+          className={cn('skewed-t z-10 block h-full w-full scale-105', {
+            'bg-[#FFF]': pathname !== `/${lang}`,
+            'bg-[#F8FBF3]': pathname === `/${lang}`,
+          })}
         ></span>
         <span
           className={
@@ -142,7 +149,7 @@ export default function Footer({ lang }: { lang: LangType }) {
                 </div>
                 <div className={'mb-4'}>
                   <p className={'text-sm text-[#D7DAD7]'}>الموقع الجغرافي</p>
-                  <p className={'text-white'}>الرياض-الميدنة الرقمية</p>
+                  <p className={'text-white'}>الرياض-المدينة الرقمية</p>
                 </div>
                 <div className={'mb-8'}>
                   <p className={'mb-2 text-sm text-[#D7DAD7]'}>تابعنا على</p>
