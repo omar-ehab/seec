@@ -4,10 +4,12 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
 import ChevronLeftIcon from '@/components/icons/ChevronLeftIcon';
+import SquarePatterns from '@/components/shapes/SquarePatterns';
 
 export default function MissionAndVision({ lang }: { lang: LangType }) {
   return (
     <section className='relative w-full bg-[#F8FBF3] pt-24'>
+      <SquarePatterns className={'absolute bottom-10 left-0 z-0'} />
       <div className='container'>
         <div className={'grid grid-cols-3 gap-4'}>
           <div className='col-span-3 md:col-span-1'>
@@ -39,7 +41,7 @@ export default function MissionAndVision({ lang }: { lang: LangType }) {
               قيمنا
             </h2>
             <div className={'text-sm text-black/50'}>
-              <ul className='grid grid-cols-[repeat(2,minmax(max-content,_1fr))]'>
+              <ul className='grid grid-cols-[repeat(3,minmax(max-content,_1fr))]'>
                 <li className='block'>
                   <span className='flex items-center gap-2 before:block before:h-2 before:w-2 before:bg-amber-600 before:bg-gradient-to-b before:from-[#999] before:to-[#595A5C]'>
                     الكـــفــــــاءة
@@ -50,6 +52,7 @@ export default function MissionAndVision({ lang }: { lang: LangType }) {
                     التكـــامل مع الشركاء
                   </span>
                 </li>
+                <li></li>
                 <li className='block'>
                   <span className='flex items-center gap-2 before:block before:h-2 before:w-2 before:bg-amber-600 before:bg-gradient-to-b before:from-[#999] before:to-[#595A5C]'>
                     المسـؤلـيـة
@@ -60,6 +63,7 @@ export default function MissionAndVision({ lang }: { lang: LangType }) {
                     العمــل بـروح الفـريـق
                   </span>
                 </li>
+                <li></li>
               </ul>
             </div>
           </div>

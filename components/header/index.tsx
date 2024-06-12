@@ -8,7 +8,7 @@ export default function Header({ lang }: Props) {
   return (
     <header className='relative h-[100dvh]'>
       <Navbar lang={lang} />
-      <Slider />
+      <Slider lang={lang} />
     </header>
   );
 }
