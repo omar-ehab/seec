@@ -14,7 +14,7 @@ import InfoCard from '@/app/[lang]/(media)/reports/[slug]/InfoCard';
 import FooterCta from '@/components/footer-cta';
 import NumberCard from '@/app/[lang]/(media)/reports/[slug]/NumberCard';
 
-export default function SignelReportPage({
+export default function SingleReportPage({
   params: { lang },
 }: {
   params: { slug: string; lang: LangType };
