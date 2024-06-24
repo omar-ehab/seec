@@ -6,7 +6,7 @@ export default function CommentCta({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-between gap-6 rounded-2xl bg-primary/10 px-4 py-6 xs:flex-row xs:gap-4 md:p-6',
+        'flex flex-col items-center justify-between gap-6 rounded-2xl bg-primary/10 px-4 py-6 xs:flex-row xs:gap-4 md:py-4',
         className
       )}
     >
