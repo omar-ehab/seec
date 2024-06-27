@@ -4,7 +4,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
-export default function SubFilters({ lang }: { lang: LangType }) {
+export default function SubFilters() {
   const pathname = usePathname();
   const params = useSearchParams();
 
@@ -41,7 +41,7 @@ export default function SubFilters({ lang }: { lang: LangType }) {
       </li>
       <li>
         <Link
-          href={navigationUrl('manufacturing')}
+          href={navigationUrl('requirements')}
           className={cn(
             'px-2 pb-3 text-sm hover:text-black xs:px-4 sm:text-base',
             {
@@ -55,7 +55,7 @@ export default function SubFilters({ lang }: { lang: LangType }) {
       </li>
       <li>
         <Link
-          href={navigationUrl('buildings')}
+          href={navigationUrl('faq')}
           className={cn(
             'px-2 pb-3 text-sm hover:text-black xs:px-4 sm:text-base',
             {
