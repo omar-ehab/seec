@@ -2,8 +2,6 @@ import Navbar from '@/components/navbar';
 import PageHeader from '@/components/page-header/PageHeader';
 import HeaderCallToAction from '@/components/page-header/HeaderCallToAction';
 import DoubleSquareMonoColor from '@/components/shapes/DoubleSquareMonoColor';
-import { cn } from '@/lib/utils';
-import { Button, buttonVariants } from '@/components/ui/button';
 import InfoCard from '@/app/[lang]/(media)/reports/[slug]/InfoCard';
 import CalenderIcon from '@/components/icons/colored/CalenderIcon';
 import { Separator } from '@/components/ui/separator';
@@ -11,6 +9,7 @@ import CallIcon from '@/components/icons/CallIcon';
 import MailIcon from '@/components/icons/MailIcon';
 import FooterCta from '@/components/footer-cta';
 import FlashIcon from '@/components/icons/FlashIcon';
+import FeedbackDialog from '@/app/[lang]/(other)/development-and-sharing/[slug]/components/FeedbackDialog';
 
 type Props = {
   params: {
@@ -46,14 +45,7 @@ export default function SingleDevelopmentAndSharingPage({ params: { lang } }: Pr
           </div>
           <div></div>
           <div className={'flex items-center gap-6'}>
-            <Button
-              className={cn(
-                buttonVariants({ variant: 'default' }),
-                'z-30 rounded-full bg-primary text-white',
-              )}
-            >
-              شاركنا برأيك
-            </Button>
+            <FeedbackDialog />
           </div>
         </div>
       </div>
