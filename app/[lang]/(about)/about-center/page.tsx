@@ -3,10 +3,8 @@ import PageHeader from '@/components/page-header/PageHeader';
 import SubLinks from '@/app/[lang]/(about)/components/SubLinks';
 import DoubleSquareMonoColor from '@/components/shapes/DoubleSquareMonoColor';
 import CommentCta from '@/components/comment-cta';
-import { Button, buttonVariants } from '@/components/ui/button';
-import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import { cn } from '@/lib/utils';
 import AboutCenterImage from '@/public/about-image.png';
 import TickIcon from '@/components/icons/TickIcon';
 
@@ -50,30 +48,6 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
               </p>
             </div>
             <div></div>
-            <div
-              className={
-                'col-span-2 flex items-center gap-3 md:mb-6 md:gap-6 lg:col-span-1'
-              }
-            >
-              <Link
-                href={`/${lang}/contact-us`}
-                className={cn(
-                  buttonVariants({ variant: 'default' }),
-                  'rounded-full bg-primary px-3 py-2 text-white md:px-6 md:py-3'
-                )}
-              >
-                تواصل معنا
-              </Link>
-              <Link
-                href={'#'}
-                className={cn(
-                  buttonVariants({ variant: 'outline' }),
-                  'rounded-full border-[#73AE28] px-6 py-3 text-[#73AE28] hover:text-[#73AE28] '
-                )}
-              >
-                ملف توضيحي عن المركز
-              </Link>
-            </div>
           </div>
         </div>
       </div>

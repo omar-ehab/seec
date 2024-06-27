@@ -121,7 +121,7 @@ export default function ServicePage({
           </div>
         </div>
         <div>
-          <SubFilters lang={lang} />
+          <SubFilters />
           <SubPage />
           <div className={'mt-24'}>
             <p className={'mb-8'}>
