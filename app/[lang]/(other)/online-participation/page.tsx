@@ -5,6 +5,7 @@ import FooterCta from '@/components/footer-cta';
 import Share7Icon from '@/components/icons/colored/Share7Icon';
 import BookIcon from '@/components/icons/colored/BookIcon';
 import HotspotIcon from '@/components/icons/colored/HotspotIcon';
+import Link from 'next/link';
 
 type Props = {
   params: {
@@ -46,24 +47,24 @@ export default function OnlineParticipationPage({ params: { lang } }: Props) {
           </div>
 
           <div className='grid gap-4 sm:grid-cols-2 sm:gap-6 md:grid-cols-3'>
-            <div className='flex min-w-max flex-col items-center gap-4 rounded-2xl border p-6 sm:items-stretch sm:gap-6'>
+            <Link href={`/${lang}/development-and-sharing`} className='flex min-w-max flex-col items-center gap-4 rounded-2xl border p-6 sm:items-stretch sm:gap-6'>
               <div className='h-8 w-8'>
                 <Share7Icon />
               </div>
               <p className='text-black'>التطوير ومشاركة الأفكار</p>
-            </div>
-            <div className='flex min-w-max flex-col items-center gap-4 rounded-2xl border p-6 sm:items-stretch sm:gap-6'>
+            </Link>
+            <Link href={`/${lang}/open-data`} className='flex min-w-max flex-col items-center gap-4 rounded-2xl border p-6 sm:items-stretch sm:gap-6'>
               <div className='h-8 w-8'>
                 <BookIcon />
               </div>
               <p className='text-black'>البيانات المفتوحة</p>
-            </div>
-            <div className='flex min-w-max flex-col items-center gap-4 rounded-2xl border p-6 sm:items-stretch sm:gap-6'>
+            </Link>
+            <Link href={`/${lang}/communication-channels`} className='flex min-w-max flex-col items-center gap-4 rounded-2xl border p-6 sm:items-stretch sm:gap-6'>
               <div className='h-8 w-8'>
                 <HotspotIcon />
               </div>
               <p className='text-black'>قنوات التواصل</p>
-            </div>
+            </Link>
           </div>
           <FooterCta lastUpdateDate={'12/5/2024'} />
         </div>

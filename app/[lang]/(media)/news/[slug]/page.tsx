@@ -28,7 +28,7 @@ export default function SingleNewsPage({ params: { lang } }: Props) {
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <section className={'container mb-20 mt-10'}>
+      <section className={'container max-w-[850px] mb-20 mt-10'}>
         <div className={'h-64 w-full overflow-hidden rounded-xl md:h-[420px]'}>
           <Image
             src={FirstImage}
@@ -81,8 +81,10 @@ export default function SingleNewsPage({ params: { lang } }: Props) {
             الوطنية التي يمتلكها الطرفان.
           </p>
         </div>
-        <FooterCta lastUpdateDate={'12/5/2024'} />
       </section>
+      <div className="container">
+        <FooterCta lastUpdateDate={'12/5/2024'} className={'mb-20'} />
+      </div>
       <OtherNews lang={lang} />
     </>
   );

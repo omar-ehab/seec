@@ -26,7 +26,7 @@ export default function SingleEventPage({ params: { lang } }: Props) {
       >
         <HeaderCallToAction numberOfViews={124} rate={4.5} />
       </PageHeader>
-      <section className={'container mb-20 mt-10'}>
+      <section className={'container max-w-[850px] mb-20 mt-10'}>
         <div className={'h-[420px] w-full overflow-hidden rounded-xl'}>
           <Image
             src={FirstImage}
@@ -58,8 +58,10 @@ export default function SingleEventPage({ params: { lang } }: Props) {
             الوطنية التي يمتلكها الطرفان.
           </p>
         </div>
-        <FooterCta lastUpdateDate={'12/5/2024'} />
       </section>
+      <div className="container">
+        <FooterCta lastUpdateDate={'12/5/2024'} />
+      </div>
     </>
   );
 }

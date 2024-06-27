@@ -1,11 +1,10 @@
 import Navbar from '@/components/navbar';
 import PageHeader from '@/components/page-header/PageHeader';
 import SubLinks from '@/app/[lang]/(about)/components/SubLinks';
-import CommentCta from '@/components/comment-cta';
-import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import VisionIcon from '@/components/icons/VisionIcon';
 import MissionIcon from '@/components/icons/MissionIcon';
+import CenterStarIcon from '@/components/icons/CenterStarIcon';
 import CenterStrategyImage from '@/public/center-strategy-image.png';
 import RoundedPolygonFilter from '@/components/svg-filters/RoundedPolygonFilter';
 import FooterCta from '@/components/footer-cta';
@@ -75,23 +74,24 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
               }
             >
               <div className={'w-full'}>
+                <CenterStarIcon />
                 <h3
-                  className={'mb-12 text-2xl font-bold text-black md:text-3xl'}
+                  className={'mb-12 mt-4 text-2xl font-bold text-black md:text-3xl'}
                 >
                   قيم المركز
                 </h3>
                 <ul className={'flex flex-col gap-8'}>
                   <li className={'flex flex-col gap-2'}>
-                    <p className={'text-xl font-medium text-black'}>الكفاءة</p>
-                    <p className={'text-sub_p'}>
+                    <p className={'text-xl font-medium text-sub_p'}>الكفاءة</p>
+                    <p className={'text-black/50 text-sm'}>
                       تأتي الكفاءة على رأس أولويات المركز، من خلال السعي إلـى
                       تحسين استخدام الموارد الطاقية بطريقة تضمن أقصى استفادة
                       بأقل تكلفة وأدنى تأثير بيئي.
                     </p>
                   </li>
                   <li className={'flex flex-col gap-2'}>
-                    <p className={'text-xl font-medium text-black'}>المسؤلية</p>
-                    <p className={'text-sub_p'}>
+                    <p className={'text-xl font-medium text-sub_p'}>المسؤلية</p>
+                    <p className={'text-black/50 text-sm'}>
                       تنعكس المسؤولية في عمل المركز في التزامه بضمان استخدام
                       الطاقة بشكل مستدام ومسؤول، من خلال وضع وتنفيذ السياسات
                       واللوائح التي تحمي البيئة وتساهم في تحقيق أهداف رؤية
@@ -99,10 +99,10 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                     </p>
                   </li>
                   <li className={'flex flex-col gap-2'}>
-                    <p className={'text-xl font-medium text-black'}>
+                    <p className={'text-xl font-medium text-sub_p'}>
                       العمل بروح الفريق
                     </p>
-                    <p className={'text-sub_p'}>
+                    <p className={'text-black/50'}>
                       يتعاون المركز مع الجهات الحكومية والخاصة لتحقيق أهداف
                       كفاءة الطاقة، ويشمل ذلك التنسيق مع الجهات المختلفة لتطوير
                       اللوائح والمعايير، وتبادل المعرفة والخبرات، وتنفيذ
@@ -110,10 +110,10 @@ export default function AboutCenterPage({ params: { lang } }: Props) {
                     </p>
                   </li>
                   <li className={'flex flex-col gap-2'}>
-                    <p className={'text-xl font-medium text-black'}>
+                    <p className={'text-xl font-medium text-sub_p'}>
                       التكامل مع الشركاء
                     </p>
-                    <p className={'text-sub_p'}>
+                    <p className={'text-black/50 text-sm'}>
                       يعزز المركز روح الفريق من خلال تشجيع التعاون والعمل
                       الجماعي بين موظفيه ومع الشركاء والمجتمع، ما يتيح تحقيق
                       نتائج أفضل وتقديم حلول متكاملة وفعالة لمواجهة تحديات

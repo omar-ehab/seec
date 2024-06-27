@@ -15,7 +15,8 @@ export default function ServiceCard({
   className,
 }: Props) {
   return (
-    <div
+    <Link
+      href={`/online-services/slug`}
       className={cn(
         'home__services__slide-gradient group rounded-2xl border-2 border-[#D7D7D7] bg-white p-6 hover:border-white',
         className
@@ -28,17 +29,16 @@ export default function ServiceCard({
       >
         <Image src={src} alt={title} width={64} height={64} />
       </div>
-      <Link
-        href={`/online-services/slug`}
+      <div
         className={
           'text-[1.25rem] font-medium text-black group-hover:text-white'
         }
       >
         {title}
-      </Link>
+      </div>
       <p className={'text-sm text-black/50 group-hover:text-white/50'}>
         {description}
       </p>
-    </div>
+    </Link>
   );
 }
