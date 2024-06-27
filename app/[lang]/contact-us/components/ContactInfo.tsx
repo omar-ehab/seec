@@ -7,6 +7,11 @@ import Link from 'next/link';
 import TwitterIcon from '@/components/icons/TwitterIcon';
 import YoutubeIcon from '@/components/icons/YoutubeIcon';
 import LinedInIcon from '@/components/icons/LinedInIcon';
+import MailReplyIcon from '@/components/icons/MailReplyIcon';
+import MailBoxIcon from '@/components/icons/MailBoxIcon';
+import WhatsappIcon from '@/components/icons/WhatsappIcon';
+import { Button } from '@/components/ui/button';
+import NoteEditIcon from '@/components/icons/NoteEditIcon';
 
 export default function ContactInfo() {
   return (
@@ -53,17 +58,52 @@ export default function ContactInfo() {
             </p>
           </div>
         </div>
+        <div className={'mb-4 flex items-center gap-4'}>
+          <MailReplyIcon className={'text-white'} size={24} />
+          <div>
+            <p className={'text-sm text-[#D7DAD7]'}>الرمز البريدي</p>
+            <p className={'text-lg text-white md:text-xl'}>
+              12382
+            </p>
+          </div>
+        </div>
+        <div className={'mb-4 flex items-center gap-4'}>
+          <MailBoxIcon className={'text-white'} size={24} />
+          <div>
+            <p className={'text-sm text-[#D7DAD7]'}>الصندوق البريدي</p>
+            <p className={'text-lg text-white md:text-xl'}>
+              6764
+            </p>
+          </div>
+        </div>
         <div
           className={
-            'my-8 flex h-[255px] w-full items-center justify-center rounded-2xl bg-[#F1F2F4]'
+            'my-8 flex h-[146px] w-full items-center justify-center rounded-2xl bg-[#F1F2F4]'
           }
         >
           <p className={'text-black'}>Google Maps will live here</p>
         </div>
       </div>
-      <div className={'z-10'}>
+      <Button variant={'outline'} className={'border-white text-white z-10 bg-transparent rounded-full mb-8 flex items-center justify-center gap-2'}>
+        <NoteEditIcon />
+        <span>استطلاع الرأي</span>
+      </Button>
+      <div className={'z-10 flex flex-col items-center'}>
         <p className={'mb-2 text-sm text-[#D7DAD7]'}>تابعنا على</p>
         <ul className={'flex items-center gap-4'}>
+          <li>
+            <Link
+              href={'#'}
+              className={
+                'bg group flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(202,214,219,.1)] hover:bg-white'
+              }
+            >
+              <WhatsappIcon
+                className={'text-white group-hover:text-[#008E3D]'}
+                size={20}
+              />
+            </Link>
+          </li>
           <li>
             <Link
               href={'#'}
