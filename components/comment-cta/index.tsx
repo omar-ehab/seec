@@ -1,6 +1,6 @@
 import CommentIcon from '@/components/icons/colored/CommentIcon';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import CommentDialog from '@/components/comment-cta/CommentDialog';
 
 export default function CommentCta({ className }: { className?: string }) {
   return (
@@ -16,14 +16,7 @@ export default function CommentCta({ className }: { className?: string }) {
           هل لديك تعليق أو استفسار عن الخدمة
         </p>
       </div>
-      <Button
-        variant={'outline'}
-        className={
-          'rounded-full border-primary bg-white text-primary hover:text-primary'
-        }
-      >
-        اضافة تعليق
-      </Button>
+      <CommentDialog />
     </div>
   );
 }
