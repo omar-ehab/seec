@@ -5,8 +5,6 @@ import DoubleSquareMonoColor from '@/components/shapes/DoubleSquareMonoColor';
 import { Button } from '@/components/ui/button';
 import InfoCard from '@/app/[lang]/careers/[slug]/components/InfoCard';
 import UserMultipleIcon from '@/components/icons/colored/UserMultipleIcon';
-import SubFilters from '@/app/[lang]/careers/[slug]/components/SubFilters';
-import SubPage from '@/app/[lang]/careers/[slug]/components/SubPage';
 import CommentCta from '@/components/comment-cta';
 import CalenderIcon from '@/components/icons/colored/CalenderIcon';
 import ClockIcon from '@/components/icons/colored/ClockIcon';
@@ -112,8 +110,63 @@ export default function ServicePage({
           </div>
         </div>
         <div>
-          <SubFilters lang={lang} />
-          <SubPage />
+          <div className={'mt-0'}>
+            <h4 className={'mb-6 text-xl font-medium text-black md:text-2xl'}>
+              متطلبات الوظيفة
+            </h4>
+            <ul className={'flex flex-col gap-4 text-sm xs:text-base'}>
+              <li className={'flex items-start gap-2 xs:gap-4'}>
+            <span
+              className={
+                'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium leading-none text-black xs:size-8'
+              }
+            >
+              1
+            </span>
+                <p>Mobile Application Development and iOS Development skills</p>
+              </li>
+              <li className={'flex items-start gap-2 xs:gap-4'}>
+            <span
+              className={
+                'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium leading-none text-black xs:size-8'
+              }
+            >
+              2
+            </span>
+                <p>Experience creating mobile applications for iOS</p>
+              </li>
+              <li className={'flex items-start gap-2 xs:gap-4'}>
+            <span
+              className={
+                'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium leading-none text-black xs:size-8'
+              }
+            >
+              3
+            </span>
+                <p>Software Development skills</p>
+              </li>
+              <li className={'flex items-start gap-2 xs:gap-4'}>
+            <span
+              className={
+                'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium leading-none text-black xs:size-8'
+              }
+            >
+              4
+            </span>
+                <p>Strong problem-solving and analytical skills</p>
+              </li>
+              <li className={'flex items-start gap-2 xs:gap-4'}>
+            <span
+              className={
+                'bullet-gradient flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-medium leading-none text-black xs:size-8'
+              }
+            >
+              5
+            </span>
+                <p>Good understanding of user interface and user experience...</p>
+              </li>
+            </ul>
+          </div>
           <div className={'mt-24'}>
             <p className={'mb-8'}>
               <span className={'ml-2 text-sub_p'}>آخر تحديث بتاريخ:</span>
