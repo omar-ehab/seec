@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ChevronRightIcon, ChevronLeftIcon } from 'lucide-react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
+import 'moment/locale/ar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { useMemo, useState } from 'react';
 import {
