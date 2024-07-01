@@ -6,8 +6,7 @@ import SearchInput from '@/app/[lang]/(media)/events/components/SearchInput';
 import EventsCard from '@/app/[lang]/(media)/events/components/EventCard';
 import FirstImage from '@/app/[lang]/(media)/events/images/1.png';
 import Pagination from '@/components/pagination';
-import { Button } from '@/components/ui/button';
-import CalenderIcon from '@/components/icons/CalenderIcon';
+import EventsCalendarDialog from '@/app/[lang]/(media)/events/components/EventsCalendarDialog';
 
 type Props = {
   params: {
@@ -39,13 +38,7 @@ export default function EventsPage({ params: { lang } }: Props) {
               'flex w-full flex-grow items-start gap-4 xs:w-auto xs:flex-grow-0 xs:items-center'
             }
           >
-            <Button
-              variant={'outline'}
-              size={'icon'}
-              className={'rounded-full text-sub_p'}
-            >
-              <CalenderIcon size={20} />
-            </Button>
+            <EventsCalendarDialog />
             <SearchInput />
           </div>
         </div>
